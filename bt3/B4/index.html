@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDT</title>
+    <!-- font -->
+    <link rel="icon" type="image/x-icon"
+        href="https://png.pngtree.com/template/20190927/ourlarge/pngtree-letter-t-line-logo-designs-image_312013.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header--inner">
+                <div class="logo">
+                    <a href="#"><strong class="strong-blue">EDT</strong></a>
+                </div>
+                <!-- mobile-nav -->
+                <label for="header__nav-toggle" class="header__menu-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 17H19M5 12H19M5 7H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </label>
+                <input type="checkbox" id="header__nav-toggle">
+                <label for="header__nav-toggle" class="header__overlay"></label>
+                <nav class="header__nav--mobile">
+                    <div class="logo header__mobile-logo">
+                        <a href="#"><strong class="strong-blue">Thắng</strong></a>
+                    </div>
+                    <div class="header__nav--mobile-list">
+                        <a href="#" class="header__nav--link">
+                            <label for="header__nav-toggle" onclick="window.location.href='#'">Home</label>
+                        </a>
+                        <a href="#info" class="header__nav--link">
+                            <label for="header__nav-toggle" onclick="window.location.href='#info'">Info</label>
+                        </a>
+                        <a href="#skills" class="header__nav--link">
+                            <label for="header__nav-toggle" onclick="window.location.href='#skills'">Skills</label>
+                        </a>
+                        <a href="#education" class="header__nav--link">
+                            <label for="header__nav-toggle" onclick="window.location.href='#education'">Exercise</label>
+                        </a>
+                        <span class="light--mode">
+                            <svg class="light--mode-icon icon-dark" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9 6C9 10.9706 13.0294 15 18 15C18.9093 15 19.787 14.8655 20.6144 14.6147C19.4943 18.3103 16.0613 20.9999 12 20.9999C7.02944 20.9999 3 16.9707 3 12.0001C3 7.93883 5.69007 4.50583 9.38561 3.38574C9.13484 4.21311 9 5.09074 9 6Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <svg class="light--mode-icon icon-light" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 4V2M12 20V22M6.41421 6.41421L5 5M17.728 17.728L19.1422 19.1422M4 12H2M20 12H22M17.7285 6.41421L19.1427 5M6.4147 17.728L5.00049 19.1422M12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="header__nav--mobile-footer">
+                        <p class="sub-heading">© 2024 - By Nguyễn Đức Thắng <strong class="heart">&#10084;</strong></p>
+                    </div>
+
+                </nav>
+                <!-- end Mobile-nav -->
+                <nav class="header__nav">
+                    <a href="#" class="header__nav--link">Home</a>
+                    <a href="#info" class="header__nav--link">Info</a>
+                    <a href="#skills" class="header__nav--link">Skills</a>
+                    <a href="#education" class="header__nav--link">Exercise</a>
+                    <span class="light--mode">
+                        <svg class="light--mode-icon icon-dark" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 6C9 10.9706 13.0294 15 18 15C18.9093 15 19.787 14.8655 20.6144 14.6147C19.4943 18.3103 16.0613 20.9999 12 20.9999C7.02944 20.9999 3 16.9707 3 12.0001C3 7.93883 5.69007 4.50583 9.38561 3.38574C9.13484 4.21311 9 5.09074 9 6Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg class="light--mode-icon icon-light" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 4V2M12 20V22M6.41421 6.41421L5 5M17.728 17.728L19.1422 19.1422M4 12H2M20 12H22M17.7285 6.41421L19.1427 5M6.4147 17.728L5.00049 19.1422M12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <!-- Home -->
+            <section id="home" class="home">
+                <div class="row">
+                    <div class="col col-xl-6 col-lg-6 col-sm-12 col-12">
+                        <section class="home__content">
+                            <h1 class="heading">Welcome to
+                                <strong class="strong-primary">&nbsp;EDT&nbsp;'s&nbsp;Website.</strong>
+                            </h1>
+                            <p class="sub-heading"></p>
+                            <a href="#info" class="btn">About me</a>
+                        </section>
+                    </div>
+                    <div class="col col-xl-6 col-lg-6 col-sm-12 col-12">
+                        <img src="avt.jpg" style="width: 300px;border-radius: 50%;">
+                    </div>
+                    <div class="box__img2"></div>
+                    <figure class="home-icon">
+                        <img src="./assets/icon/Vector.svg" alt="vector">
+                        <img src="./assets/icon/Cone.png" alt="cone">
+                        <img src="./assets/icon/Cylinder2.png" alt="pi">
+                        <img src="./assets/icon/Knot.png" alt="knot" id="info">
+                    </figure>
+                </div>
+            </section>
+            <!-- onTop -->
+            <aside class="onTop"><a href="#" data-aos="fade-up" data-aos-anchor-placement="center-bottom"><img
+                        src="./assets/icon/Up.svg" alt="Top"></a></aside>
+            <!-- Info -->
+            <section class="info">
+                <div class="row">
+                    <div class="col col-xl-5 col-sm-12 col-12">
+                        <article class="info__left">
+                            <h2 class="heading">About me</h2>
+                            <p class="sub-heading">Nguyễn Đức Thắng</p>
+                            <p class="text">Tôi có đam mê với công nghệ, lập trình, đặc biệt là tiền bạc và
+                                tôi luôn không ngừng học hỏi để cải thiện kỹ năng của mình. Tôi mong muốn được kết nối
+                                với nhiều người có cùng đam mê và học hỏi thêm từ những trải nghiệm mới.</p>
+                            <div class="info--media">
+                                <a href="https://www.facebook.com/arrogant2k5/" target="_blank"
+                                    rel="noopener noreferrer" class="btn-blue">Facebook</a>
+                                <a href="https://www.instagram.com/nguyenduc4983/" target="_blank"
+                                    rel="noopener noreferrer" class="btn-2">Instagram</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col offset-xl-1 col-xl-6 col-sm-12 col-12"></div>
+                    <figure class="info-icon">
+                        <img src="./assets/icon/Thorus2.png" alt="Thorus2">
+                        <img src="./assets/icon/Helix.png" alt="Helix">
+                        <img src="./assets/icon/Spheres2.png" alt="Helix">
+                        <img src="./assets/icon/Spheres1.png" alt="Helix">
+                    </figure>
+                </div>
+            </section>
+            <!-- Skill -->
+            <section id="skills" class="skills">
+                <div class="row">
+                    <div class="col col-xl-6 col-sm-12 col-12">
+                        <article class="skills__left">
+                            <div class="skills--user">
+                                <div class="logo">
+                                    <a href="#"><strong class="strong-blue">Skill</strong></a>
+                                </div>
+                            </div>
+                            <span class="skill--item-wrap-1">
+                                <figure class="skill--item">
+                                    <img src="./assets/img/html.png" alt="HTML" class="skill--img">
+                                </figure>
+                                <figure class="skill--item">
+                                    <img src="./assets/img/css.png" alt="HTML" class="skill--img">
+                                </figure>
+                            </span>
+                            <span class="skill--item-wrap-2">
+                                <figure class="skill--item">
+                                    <img src="./assets/img/javascript.png" alt="HTML"
+                                        class="skill--img skill--img-right">
+                                </figure>
+                                <figure class="skill--item">
+                                    <img src="./assets/img/javascript.png" alt="HTML"
+                                        class="skill--img skill--img-right">
+                                </figure>
+                            </span>
+                        </article>
+                    </div>
+                    <figure class="skill-icon">
+                        <img src="./assets/icon/Cylinder1.png" alt="Thorus2">
+                        <img src="./assets/icon/Pyramid1.png" alt="Helix">
+                        <img src="./assets/icon/Pyramid 2.png" alt="Helix">
+                        <img src="./assets/icon/Cube2.png" alt="Cube2">
+                    </figure>
+                </div>
+            </section>
+            <!-- Education -->
+            <section id="education" class="education">
+                <div class="row">
+                    <div class="col">
+                        <article class="education__content">
+                            <h2 class="heading" style="padding-bottom: 20px;">Exercise</h2>
+                            <!-- <p class="sub-heading">University: University of transport and communications</p> -->
+                            <ul class="exer">
+                                <li>
+                                    <h1><button onclick="toggleVisibility('btvn1')" class="excer-btn">BTVN B1</button>
+                                    </h1>
+                                    <div id="btvn1" class="exer-content">
+                                        <div>
+                                            <button>
+                                                <a href="https://thang100705.github.io/task1/task1.html">Bài tập trên
+                                                    lớp</a>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <h3>b1</h3>
+                                            <button>
+                                                <a href="https://thang100705.github.io/BTVN/B1.html">Bài 1</a>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <h3>b2</h3>
+                                            <button>
+                                                <a href="https://thang100705.github.io/BTVN/bai2-1.html">Bài 2.1</a>
+                                            </button>
+                                            <button>
+                                                <a href="https://thang100705.github.io/BTVN/bai2-2.html">Bài 2.2</a>
+                                            </button>
+                                            <button>
+                                                <a href="https://thang100705.github.io/BTVN/bai2-3.html">Bài 2.3</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h1><button onclick="toggleVisibility('btvn2')" class="excer-btn">BTVN B2</button>
+                                    </h1>
+                                    <div id="btvn2" class="exer-content">
+                                        <h3>b1</h3>
+                                        <button>
+                                            <a
+                                                href="https://thang100705.github.io/BTVN-B2/TestLab1-inline.html">Inline</a>
+                                        </button>
+                                        <button>
+                                            <a
+                                                href="https://thang100705.github.io/BTVN-B2/TestLab1-internal.html">Internal</a>
+                                        </button>
+                                        <button>
+                                            <a
+                                                href="https://thang100705.github.io/BTVN-B2/TestLab1-external.html">External</a>
+                                        </button>
+                                        <h3>b2</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/BTVN-B2/2-1.html">Bài 2.1</a>
+                                        </button>
+                                        <button>
+                                            <a href="https://thang100705.github.io/BTVN-B2/2.2.html">Bài 2.2</a>
+                                        </button>
+                                        <button>
+                                            <a href="https://thang100705.github.io/BTVN-B2/2.3.html">Bài 2.3</a>
+                                        </button>
+                                        <h3>b3</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/BTVN-B2/b3.html">Bài 3</a>
+                                        </button>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h1><button onclick="toggleVisibility('btvn3')" class="excer-btn">BTVN B3</button>
+                                    </h1>
+                                    <div id="btvn3" class="exer-content">
+                                        <h3>b1</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/B3/bt3/b1/1.2/1.2.html">Bài 1.1</a>
+                                        </button>
+                                        <button>
+                                            <a href="https://thang100705.github.io/B3/bt3/b1/1.1/btTh.html">Bài 1.2</a>
+                                        </button>
+                                        <h3>b2</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/B3/bt3/b2/b2.html">Bài 2</a>
+                                        </button>
+                                        <h3>b3</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/B3/bt3/b3/3.html">Bài 3</a>
+                                        </button>
+                                        <h3>b4</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/B3/bt3/B4/index.html">Bài 4</a>
+                                        </button>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h1><button onclick="toggleVisibility('btvn4')" class="excer-btn">BTVN B4</button>
+                                    </h1>
+                                    <div id="btvn4" class="exer-content">
+                                        <h3>b1</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/B3/b1/1.html">Bài 1</a>
+                                        </button>
+                                        <h3>b2</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/B3/bt3/B4/index.html">Bài 2</a>
+                                        </button>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h1><button onclick="toggleVisibility('btvn5')" class="excer-btn">BTVN B5</button>
+                                    </h1>
+                                    <div id="btvn5" class="exer-content">
+                                        <h3>b1</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/B3/btvn/btvn.html">Bài 1</a>
+                                        </button>
+                                        <h3>b2</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/B3/btvn/tt.html">Bài 2</a>
+                                        </button>
+                                        <h3>b3</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/B3/bt3/B4/index.html">Bài 4</a>
+                                        </button>
+                                    </div>
+                                </li>
+
+
+                            </ul>
+
+
+
+                            <ul class="exer">
+                                <li>
+                                    <h1><button onclick="toggleVisibility('btvn6')" class="excer-btn">BTVN B6</button>
+                                    </h1>
+                                    <div id="btvn6" class="exer-content">
+                                        <h3>b1</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/BTVN-B1/bt.html">Bài 1</a>
+                                        </button>
+                                        <h3>b2</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/BTVN-B1/grid.html">Bài 2</a>
+                                        </button>
+                                        <h3>b3</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/BTVN-B1/bt3.html">Bài 3</a>
+                                        </button>
+                                        <h3>b4</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/B3/bt3/B4/index.html">Bài 4</a>
+                                        </button>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h1><button onclick="toggleVisibility('btvn7')" class="excer-btn">BTVN B7</button>
+                                    </h1>
+                                    <div id="btvn7" class="exer-content">
+                                        <h3>b1</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/B3/bt3/B4/index.html">Bài 1</a>
+                                        </button>
+                                        <h3>b2</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/B3/bt.html">Bài 2</a>
+                                        </button>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h1><button onclick="toggleVisibility('btvn8')" class="excer-btn">BTVN B8</button>
+                                    </h1>
+                                    <div id="btvn8" class="exer-content">
+                                        <h3>b1</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/BTVN/btjs/test.html">Bài 1</a>
+                                        </button>
+                                        <h3>b2</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/BTVN/btjs/maxmin.html">Bài 2</a>
+                                        </button>
+                                        <h3>b3</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/BTVN/btjs/b3.html">Bài 3</a>
+                                        </button>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h1><button onclick="toggleVisibility('btvn9')" class="excer-btn">BTVN B9</button>
+                                    </h1>
+                                    <div id="btvn9" class="exer-content">
+                                        <h3>b1</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/BTVN/btjs/test.html">Bài 1</a>
+                                        </button>
+                                        <h3>b2</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/BTVN/btjs/maxmin.html">Bài 2</a>
+                                        </button>
+                                    </div>
+                                </li>
+
+
+                                <li>
+                                    <h1><button onclick="toggleVisibility('btvn10')" class="excer-btn">BTVN B10</button>
+                                    </h1>
+                                    <div id="btvn10" class="exer-content">
+                                        <h3>b1</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/EDT/b1.html">bài 1</a>
+                                        </button>
+                                        <h3>b2</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/EDT/b2.html">bài 2</a>
+                                        </button>
+                                        <h3>b3</h3>
+                                        <button>
+                                            <a href="https://thang100705.github.io/B3/bt3/B4/index.html">bài 3</a>
+                                        </button>
+                                    </div>
+
+
+
+                                </li>
+
+
+                            </ul>
+
+                        </article>
+                    </div>
+
+
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="sub-heading">© 2024 - By Nguyễn Đức Thắng <strong class="heart">&#10084;&#10084;&#10084;</strong></p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        function toggleVisibility(id) {
+            var element = document.getElementById(id);
+            // Thay đổi từ 'none' sang 'block' hoặc ngược lại
+            element.style.display = element.style.display === "none" ? "block" : "none";
+        }
+
+        // Đảm bảo rằng tất cả các div bắt đầu ở chế độ 'none'
+        document.addEventListener("DOMContentLoaded", function () {
+            var elements = document.querySelectorAll('.exer-content');
+            elements.forEach(function (el) {
+                el.style.display = 'none';
+            });
+        });
+    </script>
+    <!-- <script>
+        AOS.init();
+        document.addEventListener('contextmenu', function(event) { // Click chuột phải
+    event.preventDefault();     
+});
+window.addEventListener('keydown', function(event) {
+    if (event.keyCode === 123 ||
+        event.keyCode === 85 ||
+        event.keyCode === 73 ||
+        event.keyCode === 74 ||
+        event.keyCode === 67) 
+    { // F12 U I J C
+        event.preventDefault();
+    }
+});
+    </script> -->
+</body>
+
+</html>
