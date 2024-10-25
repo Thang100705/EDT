@@ -32,6 +32,8 @@
 .overlay.show {
     display: block;
     /* Hiển thị overlay khi lớp 'show' được thêm vào */
+    z-index: 999;
+
 }
 
 

@@ -309,33 +309,35 @@
                         Ô tô
                     </label>
                 </div>
-                <form>
+                <form id="bookingForm">
                     <div class="row">
-                        <input type="text" placeholder="Từ ">
-                        <input type="text" placeholder="Đến ">
-                        <input type="date" id="startDate" placeholder="Ngày đi" min="">
+                        <input type="text" id="fromLocation" placeholder="Từ " required>
+                        <input type="text" id="toLocation" placeholder="Đến " required>
+                        <input type="date" id="startDate" placeholder="Ngày đi" min="" required>
 
                         <!-- Trường "Ngày về" với ngày tối thiểu là ngày hiện tại -->
                         <input type="date" id="endDate" placeholder="Ngày về" style="border: none;" min="">
                     </div>
                     <div class="row">
-                        <input type="text" placeholder="Số khách ">
-                        <select>
-                            <option>Loại vé</option>
-                            <option>Khứ hồi</option>
-                            <option>Một chiều</option>
+                        <input type="number" id="numGuests" placeholder="Số khách " required min="1">
+                        <select id="ticketType" required>
+                            <option value="">Loại vé</option>
+                            <option value="round-trip">Khứ hồi</option>
+                            <option value="one-way">Một chiều</option>
                         </select>
-                        <select>
-                            <option>Loại chuyến đi </option>
-                            <option>Tour</option>
-                            <option>Cá nhân</option>
+                        <select id="tripType" required>
+                            <option value="">Loại chuyến đi</option>
+                            <option value="tour">Tour</option>
+                            <option value="personal">Cá nhân</option>
                         </select>
-                        <input type="text" placeholder="Số điện thoại / Email" style="border: none;">
+                        <input type="text" id="contactInfo" placeholder="Số điện thoại / Email" style="border: none;"
+                            required>
                     </div>
                 </form>
                 <a href="../Tiền/ThToan.html" class="book-ticket restricted-link" id="bookTicketLink">Đặt vé</a>
             </div>
         </div>
+
 
         <section id="fot">
             <footer class="footer__pading">
@@ -400,6 +402,16 @@
 
 
 </body>
+<script>
+
+    // Giả định hàm kiểm tra xem người dùng đã đăng nhập hay chưa
+    function checkUserLoggedIn() {
+        // Kiểm tra điều kiện đăng nhập, ví dụ kiểm tra cookie hoặc localStorage
+        // Ở đây trả về false để mô phỏng trường hợp chưa đăng nhập
+        return false;
+    }
+
+</script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const isLoggedIn = localStorage.getItem("isLoggedIn");
