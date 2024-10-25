@@ -1,0 +1,433 @@
+.header_navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(194, 231, 252);
+}
+
+.header_navbar-function {
+    display: flex;
+    font-size: 1.6rem;
+    margin: 10px 20px;
+}
+
+.logo-img {
+    max-width: 130px;
+    width: 100%;
+}
+
+.logo-img-fot {
+    max-width: 130px;
+    width: 100%;
+}
+
+.name-logo {
+    font-size: 3rem;
+    font-family: "Playball", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #244065;
+    transform: scaleX(1.2);
+    margin-left: 10px;
+
+}
+
+.header_navbar-list {
+    display: flex;
+    padding: 6px 5px 8px 5px;
+}
+
+.header_navbar-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    font-size: 1.6rem;
+}
+
+.header_navbar-item-funtion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+
+.header_navbar-contact {
+    margin-left: 4px;
+}
+
+.home:hover,
+#active {
+    cursor: pointer;
+    color: #4BBEFF;
+    transition: .4s;
+}
+
+.home {
+    position: relative;
+    color: #898686;
+    padding: 10px 20px;
+}
+
+#active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 70%;
+    height: 3px;
+    transition: 0.4s;
+    border-radius: 1px;
+    background-color: #4BBEFF;
+}
+
+.home::after {
+    content: '';
+    position: absolute;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 3px;
+    transition: 0.4s;
+    border-radius: 1px;
+    background-color: #4BBEFF;
+}
+
+.home:hover:after {
+    width: 70%;
+    left: 14%;
+    transition: 0.4s ease;
+}
+
+.header_navbar-item-home {
+    margin-left: 50px;
+}
+
+.header_navbar-sepa {
+    padding: auto;
+    border-right: 1px solid #333;
+}
+
+.header_navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.header_navbar-function a {
+    font-size: 2rem;
+}
+
+
+
+/*       Region  banner */
+.book-copntainer {
+    display: flex;
+}
+
+.img-region {
+    filter: brightness(0.7);
+    position: relative;
+    max-width: 1513px;
+    max-height: 600px;
+    width: 100%;
+}
+
+.tour-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__tent {
+    padding: 0px 35px;
+}
+
+.logo-img {
+    max-width: 130px;
+    width: 100%;
+}
+
+.user-avatar {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.user {
+    font-weight: bold;
+    padding: 0 3px;
+}
+
+.header_navbar-item button {
+    border: none;
+    background-color: rgb(194, 231, 252);
+    font-size: 1.6rem;
+}
+
+.header_navbar-item button:hover {
+    cursor: pointer;
+}
+
+.background {
+    position: relative;
+    height: 80vh;
+    /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url('https://owa.bestprice.vn/images/destinations/uploads/ruong-bac-thang-hoang-su-phi-600e3b814c0cd.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit;
+    /* Inherit the background image */
+    background-repeat: inherit;
+    background-position: inherit;
+    background-size: inherit;
+    /* Adjust the blur amount */
+    /* Adjust opacity as needed */
+    z-index: 0;
+    filter: brightness(0.7);
+    /* Ensure it's behind the text */
+}
+
+.Region__name-1 {
+    /* Ensure the text stays above the blurred background */
+    z-index: 1;
+    /* Higher index than the pseudo-element */
+    font-family: "Platypi", serif;
+    font-size: 10rem;
+    /* Adjust font size */
+    font-weight: 600;
+    line-height: 1.3;
+    color: #fff;
+    /* White text color for contrast */
+    text-align: center;
+    /* Center text */
+}
+
+
+
+
+.tt__all-1 {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.tt__all-2 {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.tt-bg {
+    width: 100%;
+    background-color: #F5FCFE;
+    padding: 20px 30px;
+    border-radius: 50px;
+}
+
+.tt-bg1 {
+    margin-top: 30px;
+    background-color: #FFF6F6;
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tt-bg_1 {
+    width: 70%;
+    height: 70%;
+    background-color: #F5FCFE;
+    padding: 20px 30px;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+.tt-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tt-item {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.tt-complex {
+    display: flex;
+}
+
+.tt-item_content {
+    font-size: 1.6rem;
+    padding: 15px 3px;
+    font-weight: 600;
+}
+
+.tt-item-text {
+    font-size: 1.6rem;
+    padding: 15px 2px;
+}
+
+.tt-item_cont {
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 5px 3px;
+}
+
+.tt-item-te {
+    font-size: 1.6rem;
+    padding: 5px 3px;
+}
+
+.tt-item-te1 {
+    font-size: 1.6rem;
+    padding: 5px 3px;
+    color: red;
+    font-weight: 600;
+}
+
+.tt-right {
+    text-align: start;
+}
+
+.tt-price {
+    font-size: 2rem;
+    color: red;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-left: 100px;
+    text-align: end;
+}
+
+.ThToan__content {
+    font-size: 36px;
+    font-weight: 700;
+    color: #4BBEFF;
+    display: flex;
+    padding-right: 35.8%;
+}
+
+.main-feed {
+    width: 30%;
+}
+
+.feed-back {
+    background-color: #DCECFF;
+    padding: 30px 50px;
+    margin-top: 30px;
+    border-radius: 30px;
+
+}
+
+.feed-back__content {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+
+.star {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.star img {
+    width: 10%;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer__pading {
+    padding-top: 100px;
+}
+
+.footer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: rgb(194, 231, 252);
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.logo__cotent {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.logo__sdt {
+    font-size: 1.8rem;
+}
+
+.logo__size {
+    font-size: 3.4rem;
+}
+
+.logo__size i {
+    margin: 0 10px;
+}
+
+.logo__img {
+    width: 40px;
+    height: 38px;
+    margin: 0 10px;
+}
+
+.footer__margin {
+    padding: 0 50px 0 50px;
+}

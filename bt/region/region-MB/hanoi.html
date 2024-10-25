@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/hanoi.css">
+    <link rel="stylesheet" href="css/hn.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/respon.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playball&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+        }
+    </style>
+    <div class="class">
+        <header class="header">
+            <div class="grid">
+                <nav class="header_navbar ">
+                    <ul class="header_navbar-list">
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="header_navbar-contact disapp1 ">0327195539</div>
+                        </a>
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div class="header_navbar-contact disapp1 ">Contact@gmail.com</div>
+                        </a>
+                    </ul>
+                    <ul class="header_navbar-list">
+                        <li class="header_navbar-item">
+                            <a href="#" class="header_navbar-facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span class="disapp">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="header_navbar-item ">
+                            <a href="#" class="header_navbar-instra">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span class="disapp">Instragram</span>
+                            </a>
+                        </li>
+
+                        <li class="header_navbar-sepa"></li>
+                        <li class="header_navbar-item" id="loginLink">
+                            <a href="login-regis/login.html" class="header_navbar-login">
+                                <i class="fa-solid fa-lock"></i>
+                                <span class="disapp">Đăng Nhập</span>
+                            </a>
+                        </li>
+                        <!-- Liên kết Đăng Ký -->
+                        <li class="header_navbar-item" id="registerLink">
+                            <a href="login-regis/register.html" class="header_navbar-regis">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="disapp">Đăng Ký</span>
+                            </a>
+                        </li>
+                        <!-- Avatar và Tên người dùng -->
+                        <li class="header_navbar-item" id="userInfo" style="display: none;">
+                            <a class="user-avatar" href="../../LSGiaodich/ThToan.html">
+                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/02e0d039-fbc0-4059-902e-45c3ede4df5b/dgcuy5w-5f5250b2-c1b8-4d5c-b9c6-f192d23c7f72.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAyZTBkMDM5LWZiYzAtNDA1OS05MDJlLTQ1YzNlZGU0ZGY1YlwvZGdjdXk1dy01ZjUyNTBiMi1jMWI4LTRkNWMtYjljNi1mMTkyZDIzYzdmNzIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.L36pDjQ1d1ks1FS5CH5kldYy6j7x2IbfQ-znM7Lo4zU"
+                                    alt="User Avatar">
+                                <span class="user">Admin</span>
+                            </a>
+                            <button onclick="logout()">Đăng xuất</button>
+
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="header_navbar-function">
+                    <div class="header_navbar-item ">
+                        <li class="header_navbar-item">
+                            <a href="../../btChinh.html" class="header_navbar-logo">
+                                <img src="../../img/IMG_1077.PNG" class="logo-img">
+                                <span class="name-logo">Travel Tour</span>
+                            </a>
+                        </li>
+                    </div>
+                    <ul class="header_navbar-item-funtion menu" id="menu">
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../../btChinh.html" class="home ">Trang Chủ</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../region-Bac.html" class="home home-fun">Vùng Miền</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#dd" class="home home-fun" id="active">Địa Điểm</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="../../btChinh.html#booking" class="home ">Dịch Vụ</a>
+                        </li>
+
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#fot" class="home ">Về Chúng Tôi</a>
+                        </li>
+                    </ul>
+                    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+                </nav>
+                <div class="overlay" id="overlay"></div>
+
+            </div>
+        </header>
+
+        <div class="app-copntainer" id="dd">
+            <p class="des__content des__content-1">HÀ NỘI </p>
+
+            <div class="grid__row">
+                <div class="grid__column-9 grid__column-6__item">
+                    <div class="tour-item">
+                        <img src="https://inkythuatso.com/uploads/thumbnails/800/2023/03/1-hinh-anh-lang-bac-ho-inkythuatso-04-11-23-13.jpg"
+                            class="tour-item__img-6">
+                    </div>
+                    <div class="tour-item-content ">
+                        <h3>Lăng Bác</h3>
+                        <p>Lăng Bác, chính thức là Lăng Chủ tịch Hồ Chí Minh, tọa lạc tại quảng trường Ba Đình, Hà Nội.
+                            Được khởi công xây dựng vào năm 1973 và hoàn thành vào năm 1975, lăng là nơi an nghỉ của Chủ
+                            tịch Hồ Chí Minh, vị lãnh tụ vĩ đại của Việt Nam.
+
+                            Lăng Bác là công trình kiến trúc hoành tráng, với mặt tiền rộng lớn và mái che hình bậc
+                            thang, thiết kế giản dị nhưng trang nghiêm, thể hiện lòng tôn kính sâu sắc của nhân dân Việt
+                            Nam đối với Bác Hồ. Bên trong lăng, thi hài của Chủ tịch Hồ Chí Minh được đặt trong một quan
+                            tài bằng kính, và người dân cũng như du khách có thể vào viếng, bày tỏ lòng thành kính.
+
+                            Lăng Bác không chỉ là nơi tưởng nhớ mà còn là biểu tượng của tinh thần dân tộc và sự đoàn
+                            kết của nhân dân Việt Nam.</p>
+
+
+                    </div>
+                    <div class="tour-item-content-booking">
+                        <a href="../../TT/Book.html#book" class=" tour-item-content-re">
+                            <button class="booking">
+                                <span>Đặt Tour</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid__column-9 grid__column-6__item">
+                    <div class="tour-item">
+                        <img src="https://www.bqllang.gov.vn/images/NAM_2022/THANG_9/12-9/quang_truong_ba_dinh_1.png"
+                            class="tour-item__img-6">
+                    </div>
+                    <div class="tour-item-content ">
+                        <h3>Quảng Trường Ba Đình Lịch Sử</h3>
+                        <p>
+                            Nằm ở trung tâm thủ đô Hà Nội, là nơi Chủ tịch Hồ Chí Minh đã đọc bản Tuyên ngôn Độc lập vào
+                            ngày 2 tháng 9 năm 1945, khai sinh ra nước Việt Nam Dân chủ Cộng hòa. Sự kiện này đánh dấu
+                            sự kết thúc của chế độ thực dân Pháp và mở ra một chương mới trong lịch sử dân tộc Việt Nam.
+                            Quảng trường Ba Đình có diện tích khoảng 32.000 m², được bao quanh bởi nhiều công trình kiến
+                            trúc quan trọng như Lăng Chủ tịch Hồ Chí Minh, Phủ Chủ tịch, Bảo tàng Hồ Chí Minh, và chùa
+                            Một Cột. Trong ký ức của người Việt Nam, Quảng trường Ba Đình là biểu tượng của tinh thần
+                            yêu nước, của sự kiên cường và ý chí đấu tranh giành độc lập, tự do.</p>
+                    </div>
+                </div>
+                <div class="grid__column-9 grid__column-6__item">
+                    <div class="tour-item">
+                        <img src="https://i.pinimg.com/564x/30/e9/8b/30e98b99f23aa48c290a3df7564c7698.jpg"
+                            class="tour-item__img-6">
+                    </div>
+                    <div class="tour-item-content">
+                        <h3>Hồ Gươm</h3>
+                        <p>
+                            Hồ Gươm - Hồ Hoàn Kiếm, nằm ở trung tâm thủ đô Hà Nội, là một trong những danh thắng nổi
+                            tiếng và mang nhiều giá trị lịch sử, văn hóa của Việt Nam. Theo truyền thuyết, vào thế kỷ
+                            15, vua Lê Lợi đã được Thần Kim Quy trao cho một thanh gươm thần để đánh đuổi quân xâm lược
+                            Minh. Sau khi giành được độc lập, vua trả lại gươm cho Thần Kim Quy tại hồ này, từ đó hồ
+                            được gọi là Hồ Gươm hay Hồ Hoàn Kiếm. Bao quanh hồ là những công trình kiến trúc mang đậm
+                            dấu ấn văn hóa như Tháp Rùa, Đền Ngọc Sơn và cầu Thê Húc. Hồ Gươm là biểu tượng của Hà Nội,
+                            gắn liền với hình ảnh thủ đô nghìn năm văn hiến.</p>
+                    </div>
+                </div>
+
+                <div class="grid__column-9 grid__column-6__item">
+                    <div class="tour-item">
+                        <img src="https://statics.vinpearl.com/dia-diem-du-lich-ha-noi-5_1688468933.jpg"
+                            class="tour-item__img-6">
+                    </div>
+                    <div class="tour-item-content">
+                        <h3>Hồ Tây</h3>
+                        <p>
+                            Hồ Tây là hồ nước tự nhiên lớn nhất ở Hà Nội, nằm ở phía tây bắc của trung tâm thành phố.
+                            Với diện tích khoảng 500 ha và chu vi hơn 17 km, Hồ Tây không chỉ là một cảnh quan thiên
+                            nhiên tuyệt đẹp mà còn là một địa điểm gắn liền với nhiều truyền thuyết và sự kiện lịch sử
+                            của Hà Nội. Hồ Tây có phong cảnh thơ mộng, bao quanh bởi nhiều di tích văn hóa, tâm linh như
+                            chùa Trấn Quốc, phủ Tây Hồ, và đền Quán Thánh. Đây cũng là nơi người dân và du khách thường
+                            đến để thư giãn, ngắm cảnh hoàng hôn, và tận hưởng không khí trong lành. Với vẻ đẹp yên bình
+                            và không gian thoáng đãng, Hồ Tây được coi là "lá phổi xanh" của thủ đô, mang đến sự tĩnh
+                            lặng giữa lòng Hà Nội náo nhiệt.</p>
+                    </div>
+                </div>
+
+                <div class="grid__column-9 grid__column-6__item">
+                    <div class="tour-item">
+                        <img src="https://hn.ss.bfcplatform.vn/tckt/2023/07/23A07034-01.jpg" class="tour-item__img-6">
+                    </div>
+                    <div class="tour-item-content">
+                        <h3>Hoàng Thành Thăng Long
+                        </h3>
+                        <p>
+                            Hoàng thành Thăng Long là một quần thể di tích lịch sử quan trọng nằm ở trung tâm thủ đô Hà
+                            Nội. Được xây dựng từ thế kỷ 11 dưới thời vua Lý Thái Tổ, sau khi dời đô từ Hoa Lư về Thăng
+                            Long. Là trung tâm chính trị, văn hóa của các triều đại phong kiến Việt Nam trong suốt hơn
+                            một nghìn năm. Khu di tích bao gồm nhiều công trình kiến trúc đặc biệt là Cột cờ Hà Nội.
+                            Năm 2010, Hoàng thành Thăng Long được UNESCO công nhận là Di sản Văn hóa Thế giới, ghi nhận
+                            giá trị to lớn của nó trong lịch sử và văn hóa Việt Nam. Ngày nay, Hoàng thành Thăng Long
+                            không chỉ là nơi lưu giữ dấu ấn của các triều đại mà còn là điểm đến quan trọng để tìm hiểu
+                            về lịch sử thủ đô và đất nước.
+
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="grid__column-9 grid__column-6__item">
+                    <div class="tour-item">
+                        <img src="https://statics.vinpearl.com/dia-diem-du-lich-ha-noi-13_1688468758.jpg"
+                            class="tour-item__img-6">
+                    </div>
+                    <div class="tour-item-content">
+                        <h3>Phố Cổ</h3>
+                        <p>
+                            Phố Cổ Hà Nội là khu vực lịch sử nổi bật với hệ thống phố xá và kiến trúc cổ kính. Được hình
+                            thành từ thế kỷ 11, khu phố này giữ gìn nét văn hóa và lịch sử lâu đời của thủ đô. Các con
+                            phố nhỏ hẹp thường được đặt tên theo nghề truyền thống, như phố Hàng Bạc, phố Hàng Mã. Phố
+                            Cổ không chỉ nổi tiếng với các dãy nhà cổ và cửa hàng truyền thống mà còn với các món ăn
+                            đường phố đặc sắc như phở, bún chả. Khu vực này còn có nhiều di tích văn hóa quan trọng, như
+                            Đền Ngọc Sơn và Nhà Thờ Lớn Hà Nội. Phố Cổ là điểm đến hấp dẫn cho du khách và cũng là nơi
+                            sinh hoạt văn hóa sôi động của người dân địa phương.
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+        <p class="des__content des__pad">Ẩm Thực </p>
+        <section class="container">
+            <div class="card__container swiper">
+                <div class="card__content">
+                    <div class="swiper-wrapper">
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://mia.vn/media/uploads/blog-du-lich/pho-10-ly-quoc-su-06-1701909870.jpeg"
+                                    alt="image" class="card__img">
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Phở</h3>
+
+
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://gcs.tripi.vn/public-tripi/tripi-feed/img/474693gub/thumb.jpeg"
+                                    alt="image" class="card__img">
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Bún Riêu</h3>
+
+
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://statics.vinpearl.com/banh-xeo-ngon-ha-noi-2_1685783472.jpg"
+                                    alt="image" class="card__img">
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Bánh Xèo</h3>
+
+
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="	https://static.vinwonders.com/2022/10/banh-mi-hoi-an-02.jpg" alt="image"
+                                    class="card__img">
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Bánh Mì</h3>
+
+
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://tophanoiaz.com/wp-content/uploads/2023/09/hinh-anh-bun-cha-ha-noi_19.jpg"
+                                    alt="image" class="card__img">
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Bún chả</h3>
+
+
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://cdn.tgdd.vn/2021/04/CookRecipe/Avatar/chao-suon-ha-noi-thumbnail.jpg"
+                                    alt="image" class="card__img">
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Cháo sườn</h3>
+
+
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://bepxua.vn/wp-content/uploads/2022/04/cach-nau-xoi-man.jpg" alt="image"
+                                    class="card__img">
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Xôi</h3>
+
+
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://static.vinwonders.com/production/com-ha-noi-06.jpg" alt="image"
+                                    class="card__img">
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Cốm</h3>
+
+
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://owa.bestprice.vn/images/articles/uploads/dan-ban-dia-mach-10-quan-che-ngon-o-hoi-an-ai-cung-nghien-5f47394555917.jpg"
+                                    alt="image" class="card__img">
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Chè</h3>
+
+
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+
+                <!-- Pagination -->
+            </div>
+        </section>
+
+        <section id="fot">
+            <footer class="footer__pading">
+                <div class="footer">
+                    <ul class="footer__tent">
+                        <li class="logo">
+                            <img src="../../img/IMG_1077.PNG" class="logo-img-fot">
+                            <span class="name-logo name-logo-fot">Travel Tour</span>
+                        </li>
+                    </ul>
+                    <ul class="footer__tent">
+                        <li class="logo"></li>
+                        <span class="logo__cotent">Công ty EDT</span>
+                        </li>
+                        <li class="logo">
+                            <div class="logo__sdt">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Địa chỉ : Tầng xx, Hà Nội
+                            </div>
+                        </li>
+                        <li class="logo">
+                            <div class="logo__sdt">
+                                <i class="fa-solid fa-phone"> </i>
+                                Điện thoại : 0327195539
+                            </div>
+                        </li>
+                        <li class="logo">
+                            <div class="logo__sdt">
+                                <i class="fa-regular fa-envelope"></i>
+                                Email : Contact@gmail.com
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="footer__tent">
+                        <li class="logo">
+                            <span class="logo__cotent name-logo-fot" style="margin:0 0 10px 100px;">Liên hệ</span>
+                        </li>
+                        <li class="logo">
+                            <div class="logo__sdt ">
+                                <a href="#" class="logo__size">
+                                    <img src="../../img/IMG_1085.PNG" class="logo__img">
+                                </a>
+                                <a href="#" class="logo__size">
+                                    <img src="../../img/IMG_1088.PNG" class="logo__img">
+                                </a>
+                                <a href="#" class="logo__size">
+                                    <img src="../../img/IMG_1082.JPG" class="logo__img" style="border-radius: 50%;">
+                                </a>
+                                <a href="#" class="logo__size">
+                                    <img src="../../img/IMG_1083.PNG" class="logo__img">
+                                </a>
+
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </footer>
+        </section>
+    </div>
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking custom script -->
+    <!--=============== MAIN JS ===============-->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

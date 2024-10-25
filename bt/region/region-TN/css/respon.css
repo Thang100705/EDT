@@ -1,0 +1,533 @@
+.menu-toggle {
+    display: none;
+    font-size: 5rem;
+    color: #111;
+    background: none;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+.header_navbar-function {
+    position: relative;
+    display: flex;
+    margin: 10px 20px;
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    /* Màu đen mờ */
+    z-index: 1;
+    /* Đặt overlay dưới navbar */
+    display: none;
+    /* Ẩn overlay theo mặc định */
+}
+
+.overlay.show {
+    display: block;
+    /* Hiển thị overlay khi lớp 'show' được thêm vào */
+}
+
+@media only screen and (max-width: 480px) {
+    .slideshow-container {
+        height: 300px;
+        /* Giảm chiều cao xuống 300px cho màn hình rất nhỏ */
+    }
+
+    .mySlides img {
+        height: 300px;
+        /* Hình ảnh cũng điều chỉnh theo */
+    }
+
+    .footer__tent {
+        padding: 0 20px !important;
+    }
+
+}
+
+
+/*Không động*/
+@media (max-width: 1023px) {
+    .footer__tent {
+        padding: 0 28px;
+    }
+
+    .header_navbar-function {
+        justify-content: space-between;
+    }
+
+    /* Ẩn menu trên màn hình nhỏ */
+    .disapp {
+        display: none;
+    }
+
+    .book-nav_item-content {
+        margin-left: 0;
+    }
+
+    a {
+        font-size: 1.4rem;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        justify-items: end;
+        top: 100%;
+        /* Đặt menu ngay dưới navbar */
+        right: 0;
+        /* Căn menu sang bên phải */
+        z-index: 1000;
+        /* Đảm bảo menu nổi bật hơn */
+        float: right;
+    }
+
+    /* Hiển thị nút toggle menu */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Hiển thị menu khi người dùng nhấn vào nút toggle */
+    .menu.open {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    img {
+        height: 70%;
+        overflow: hidden;
+    }
+
+    .header_navbar-search {
+        width: 50%;
+        top: 20%;
+        right: 24%;
+        margin: 0 auto;
+    }
+
+    .des__content {
+        font-size: 3rem;
+        line-height: 1.3;
+    }
+
+    /* Intro */
+    .intro-filter {
+        flex-direction: column;
+
+    }
+
+    .intro-text {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .grid__column-6 {
+        width: 100%;
+    }
+
+    /* Region responsive */
+    .home-region {
+        flex-direction: column;
+    }
+
+    .tour-item__img-4 {
+        max-width: 200px;
+        height: 200px;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+
+    /* Footer */
+    .logo__sdt {
+        font-size: 1.2rem;
+    }
+
+    .logo__cotent {
+        font-size: 1.6rem;
+    }
+
+    .name-logo-fot {
+        display: none;
+    }
+
+    .logo__img {
+        margin-top: 10px;
+    }
+
+    .footer {
+        padding: 0;
+        text-align: start;
+        align-items: start;
+    }
+
+    .footer__pading {
+        padding-top: 50px;
+    }
+
+    .btn-book {
+        width: 40%;
+        font-size: 1.4rem;
+    }
+
+    .book-nav_item-content {
+        justify-content: center;
+        padding: 10px 25px 10px 10px;
+    }
+
+    .book-drive {
+        font-size: 1rem;
+
+    }
+}
+
+/*Ipad Mini, Air*/
+@media(min-width :740px) and (max-width: 1023px) {
+
+    /* Ẩn menu trên màn hình nhỏ */
+    .disapp-pad {
+        display: none;
+    }
+
+    a {
+        font-size: 1.8rem;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        justify-items: end;
+        top: 100%;
+        /* Đặt menu ngay dưới navbar */
+        right: 0;
+        /* Căn menu sang bên phải */
+        z-index: 1000;
+        /* Đảm bảo menu nổi bật hơn */
+        float: right;
+    }
+
+    /* Hiển thị nút toggle menu */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Hiển thị menu khi người dùng nhấn vào nút toggle */
+    .menu.open {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    img {
+        height: 70%;
+        overflow: hidden;
+    }
+
+    .name-logo {
+        font-size: 2.6rem;
+    }
+
+    .logo-img {
+        width: 50%;
+    }
+
+
+    /*Từ đây nè*/
+    .des__content-1 {
+        padding: 50px 100px;
+    }
+
+    .grid__column-9 {
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+        width: 100%;
+    }
+
+
+    .tour-item,
+    .tour-item-content,
+    .tour-item__img-6 {
+        max-width: 400px;
+        max-height: 350px;
+        text-align: center;
+        margin: 20px 0;
+        width: 100%;
+
+    }
+
+    .tour-item-content {
+        max-width: 600px;
+        max-height: 300px;
+        text-align: center;
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .tour-item-content h3 {
+        font-size: 2rem !important;
+    }
+
+    .tour-item-content p {
+        font-size: 1.4rem;
+    }
+}
+
+/*Ipad Pro*/
+@media (min-width:1024px) and (max-width: 1100px) {
+    .header_navbar-search {
+        right: 27%;
+        top: 12%;
+        margin: 0 auto;
+    }
+
+    .intro-text {
+        font-size: 2.4rem;
+    }
+
+    .des__content {
+        font-size: 3.4rem;
+    }
+
+    .header_navbar-function a {
+        font-size: 1.6rem;
+    }
+
+    .header_navbar-item-home {
+        margin: 0;
+    }
+
+    .logo-img {
+        width: 40%;
+    }
+
+    .name-logo {
+        font-size: 2.8rem;
+    }
+
+    .header_navbar-item-funtion {
+        margin: 0;
+    }
+
+    /*Từ đây nè*/
+    .des__content-1 {
+        padding: 50px 100px;
+    }
+
+    .grid__column-9 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+
+    .tour-item,
+    .tour-item-content,
+    .tour-item__img-6 {
+        margin: 10px 0;
+    }
+
+    .tour-item__img-6 {
+        margin: 10px 0;
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    .tour-item-content {
+        max-width: 90%;
+    }
+
+    .tour-item-content h3 {
+        font-size: 2.5rem !important;
+    }
+
+    .tour-item-content p {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (min-width:1101px) and (max-width: 1460px) {
+
+    .header_navbar-function a {
+        font-size: 1.8rem;
+    }
+
+    .header_navbar-item-home {
+        margin: 0;
+    }
+
+    .logo-img {
+        width: 50%;
+    }
+
+    .name-logo {
+        font-size: 2.8rem;
+    }
+
+    /*Từ đây nè*/
+    .des__content-1 {
+        padding: 100px 100px;
+    }
+
+    .grid__column-9 {
+        width: 100%;
+        display: flex;
+        padding: 0 0;
+    }
+
+    .tour-item-content h3 {}
+
+
+}
+
+@media (max-width:740px) {
+    .menu {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        justify-items: end;
+        top: 100%;
+        /* Đặt menu ngay dưới navbar */
+        right: 0;
+        /* Căn menu sang bên phải */
+        z-index: 1000;
+        /* Đảm bảo menu nổi bật hơn */
+        float: right;
+    }
+
+    .disapp {
+        display: none;
+    }
+
+    .disapp1 {
+        display: none;
+    }
+
+    /* Hiển thị nút toggle menu */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Hiển thị menu khi người dùng nhấn vào nút toggle */
+    .menu.open {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    img {
+        height: 70%;
+        overflow: hidden;
+    }
+
+    .book-filter {
+        margin-left: 39px;
+        justify-content: start;
+    }
+
+    .btn-book {
+        width: 80%;
+    }
+
+    .logo-img {
+        width: 50%;
+    }
+
+    .name-logo {
+        font-size: 1.8rem;
+        margin-left: 10px;
+    }
+
+    .logo-img-fot {
+        width: 100%;
+    }
+
+    .logo__img {
+        max-width: 26px;
+        margin: 10px 0 0 0;
+    }
+
+    /*Từ đây nè*/
+    .des__content-1 {
+        padding: 50px 100px;
+    }
+
+    .grid__column-9 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .grid__column-6__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tour-item,
+    .tour-item-content,
+    .tour-item__img-6 {
+        text-align: center;
+        margin: 0;
+        max-width: 500px;
+        width: 100%;
+
+    }
+
+    .tour-item-content {
+        max-width: 100%;
+    }
+
+    .tour-item-content h3 {
+        font-size: 2rem;
+    }
+
+    .tour-item-content p {
+        font-size: 1.8rem;
+    }
+
+    .Region__name-2 {
+        font-size: 3.5rem !important;
+    }
+
+    .des__content {
+        font-size: 2.6rem;
+    }
+
+    .TT__img-6 {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .TT__img {
+        max-width: 500px;
+        width: 97%;
+    }
+
+    .TT__imgC {
+        max-width: 500px;
+        width: 97%;
+
+    }
+
+
+
+}

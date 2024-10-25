@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tour</title>
+    <link rel="icon" href="img/IMG_1077.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/hanoi.css">
+    <link rel="stylesheet" href="css/hn.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/respon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playball&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+        }
+    </style>
+    <div class="class">
+        <header class="header">
+            <div class="grid">
+                <nav class="header_navbar ">
+                    <ul class="header_navbar-list">
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="header_navbar-contact disapp1 ">0327195539</div>
+                        </a>
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div class="header_navbar-contact disapp1 ">Contact@gmail.com</div>
+                        </a>
+                    </ul>
+                    <ul class="header_navbar-list">
+                        <li class="header_navbar-item">
+                            <a href="#" class="header_navbar-facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span class="disapp">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="header_navbar-item ">
+                            <a href="#" class="header_navbar-instra">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span class="disapp">Instragram</span>
+                            </a>
+                        </li>
+
+                        <li class="header_navbar-sepa"></li>
+                        <li class="header_navbar-item" id="loginLink">
+                            <a href="login-regis/login.html" class="header_navbar-login">
+                                <i class="fa-solid fa-lock"></i>
+                                <span class="disapp">Đăng Nhập</span>
+                            </a>
+                        </li>
+                        <!-- Liên kết Đăng Ký -->
+                        <li class="header_navbar-item" id="registerLink">
+                            <a href="login-regis/register.html" class="header_navbar-regis">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="disapp">Đăng Ký</span>
+                            </a>
+                        </li>
+                        <!-- Avatar và Tên người dùng -->
+                        <li class="header_navbar-item" id="userInfo" style="display: none;">
+                            <a class="user-avatar" href="../../LSGiaodich/ThToan.html">
+                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/02e0d039-fbc0-4059-902e-45c3ede4df5b/dgcuy5w-5f5250b2-c1b8-4d5c-b9c6-f192d23c7f72.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAyZTBkMDM5LWZiYzAtNDA1OS05MDJlLTQ1YzNlZGU0ZGY1YlwvZGdjdXk1dy01ZjUyNTBiMi1jMWI4LTRkNWMtYjljNi1mMTkyZDIzYzdmNzIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.L36pDjQ1d1ks1FS5CH5kldYy6j7x2IbfQ-znM7Lo4zU"
+                                    alt="User Avatar">
+                                <span class="user">Admin</span>
+                            </a>
+                            <button onclick="logout()">Đăng xuất</button>
+
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="header_navbar-function">
+                    <div class="header_navbar-item ">
+                        <li class="header_navbar-item">
+                            <a href="../../btChinh.html" class="header_navbar-logo">
+                                <img src="../../img/IMG_1077.PNG" class="logo-img">
+                                <span class="name-logo">Travel Tour</span>
+                            </a>
+                        </li>
+                    </div>
+                    <ul class="header_navbar-item-funtion menu" id="menu">
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../../btChinh.html" class="home ">Trang Chủ</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../region-Nam.html" class="home home-fun">Vùng Miền</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#dd" class="home home-fun" id="active">Địa Điểm</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="../../btChinh.html#booking" class="home ">Dịch Vụ</a>
+                        </li>
+
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#fot" class="home ">Về Chúng Tôi</a>
+                        </li>
+                    </ul>
+                    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+                </nav>
+                <div class="overlay" id="overlay"></div>
+
+            </div>
+        </header>
+
+        <div class="app-copntainer" id="dd">
+            <div class="grid">
+                <p class="des__content des__content-1">TÂY NINH</p>
+                <div class="home-filter">
+                    <div class="grid__row">
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://cdn3.ivivu.com/2023/12/nui-ba-den-ivivu3.jpg"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content ">
+                                <h3>Núi Bà Đen</h3>
+                                <p>Núi Bà Đen nằm cách trung tâm thành phố Tây Ninh 11 km. Không chỉ nổi tiếng với những
+                                    câu chuyện truyền miệng về phong tục, tín ngưỡng của người dân Tây Ninh, núi Bà Đen
+                                    còn được biết đến như “nóc nhà” của Nam Bộ với đỉnh cao nhất là 986 m, diện tích 24
+                                    km², được hình thành bởi ba ngọn núi: núi Heo, núi Phụng, núi Bà Đen.
+
+                                    Sau khi đến núi Bà Đen, bạn có thể dùng nhiều cách để lên núi. Nếu bạn là người chưa
+                                    có kinh nghiệm nhiều về leo núi, nên chọn lên núi bằng đường chùa để dễ di chuyển và
+                                    có trạm tiếp nước cho bạn. Nếu là người thích mạo hiểm, đường cột điện do những
+                                    người làm rẫy và bộ đội đi lâu thành đường mòn sẽ là lựa chọn hấp dẫn cho nhóm của
+                                    bạn.</p>
+
+
+                            </div>
+                            <div class="tour-item-content-booking">
+                                <a href="../../TT/Book.html#book" class=" tour-item-content-re">
+                                    <button class="booking">
+                                        <span>Đặt Tour</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-tay-ninh-7.jpg?tr=dpr-2,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content ">
+                                <h3>Tòa thánh Tây Ninh</h3>
+                                <p>Nơi đây còn được gọi là Đền Thánh, một công trình tôn giáo có kiến trúc độc đáo khiến
+                                    nhiều du khách bất ngờ. Nếu đã đặt chân tới đây, bạn đừng ngần ngại để vào trong
+                                    tham quan, chiêm ngưỡng sự công phu, tinh tế của công trình này.
+                                    Nơi đây sẽ khiến bạn không thể rời mắt một đi đặt chân vào đây. Bước vào chánh điện
+                                    - nơi thờ Thiên Nhãn, có vị trí phía trên của quả càn khôn với 3.027 ngôi sao (Tín
+                                    ngưỡng này tin rằng có 3.072 quả địa cầu). “Cửu phẩm thần tiên” được thể hiện bằng 9
+                                    cấp bậc trên nền tòa thánh mỗi, mỗi bậc là một phẩm cấp.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://www.vietnambooking.com/wp-content/uploads/2022/10/tour-du-lich-ho-dau-tieng-1.jpg"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3> Hồ Dầu Tiếng</h3>
+                                <p>Một địa điểm du lịch Tây Ninh tiếp theo mà bạn không thể bỏ qua là Hồ Dầu Tiếng. Nơi
+                                    đây là hồ nhân tạo lớn nhất Việt Nam, song song đó, hồ còn sở hữu phong cảnh hữu
+                                    tình và hệ sinh thái độc đáo. Với diện tích cảnh quan mặt hồ hơn 27.000 ha, nơi đây
+                                    tạo nên một bức tranh thiên nhiên hút mắt. Cũng do có diện tích lớn như vậy, hồ Dầu
+                                    Tiếng còn được gọi là “Biển Hồ” của Tây Ninh.</p>
+                            </div>
+                        </div>
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://tripzone.vn/uploads/202106/22/04/074335-avatar.jpg"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Tháp cổ Bình Thạnh, tháp Chót Mạt</h3>
+                                <p>Được hình thành từ thế kỷ thứ VIII - IX, trải qua hơn một nghìn năm tuổi, chứng kiến
+                                    bao sự chuyển biến của con người, thời đại, tòa tháp cổ này vẫn giữ những cấu trúc,
+                                    hình hạng điêu khắc của mình. Là một chứng tích kiến trúc quan trong trong di sản
+                                    văn hóa dân tộc.
+                                    Bãi biển Cầu Mỵ là điểm được check in nhiều nhất ở đảo Cô Tô vì nơi đây là địa điểm
+                                    ngắm bình minh đẹp nhất quần đảo và có những lớp đá trơn mượt với nhiều màu sắc và
+                                    hình thù được xếp chồng lên nhau, cực kỳ đẹp mắt. Bạn sẽ có những tấm ảnh sống ảo
+                                    với background đẹp như tranh.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-tay-ninh-15-1024x623.jpg?tr=dpr-0.9375,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Khu du lịch Long Điền Sơn</h3>
+                                <p>Nếu đã đến Tây Ninh, bạn đừng bỏ lỡ một lần đi vào Long Điền Sơn. Nếu các địa điểm du
+                                    lịch Tây Ninh bên ngoài gắn liền với núi non hùng vĩ, bạn sẽ được có những khoảnh
+                                    khắc bình yên, dễ chịu với phong cảnh nhẹ nhàng nơi đây.
+                                    Tại Long Điền Sơn, bạn sẽ có các hoạt động vui chơi giải trí như ngắm cảnh, đạp
+                                    thiên nga, tắm hồ bơi, xe điện đụng, đua xe F1… Phù hợp cho những ai đi với gia
+                                    đình, cả nhà sẽ có thật nhiều khoảnh khắc đáng nhớ tại đây.
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-tay-ninh-17.jpg?tr=dpr-0.9375,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Vườn quốc gia Lò Gò</h3>
+                                <p>Nếu bạn đang tìm kiếm một địa điểm du lịch yên tĩnh, không phổ biến, đông đúc mà tìm
+                                    về những nơi thân thiện với môi trường, trải nghiệm những hoạt động lành mạnh như đi
+                                    bộ, đạp xe… thì Vườn quốc gia Lò Gò, Ma Xát là địa điểm du lịch Tây Ninh dành riêng
+                                    cho bạn.
+                                    Đặc trưng của vườn quốc gia Lò Xo Ma Xát là các dạng địa hình đồi thấp, những trảng
+                                    đất nước ngập theo mùa, sông, suối tự nhiên làm nên một hệ sinh thái phong phú và
+                                    độc đáo.
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <p class="des__content  des__pad">Ẩm Thực </p>
+                <section class="container">
+                    <div class="card__container swiper">
+                        <div class="card__content swiper-initialized swiper-horizontal swiper-pointer-events">
+                            <div class="swiper-wrapper" id="swiper-wrapper-934a62a4510111d48" aria-live="polite"
+                                style="cursor: grab; transition-duration: 0ms; transform: translate3d(-1092px, 0px, 0px);">
+                                <article class="card__article swiper-slide swiper-slide-duplicate"
+                                    data-swiper-slide-index="3" role="group" aria-label="4 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/09/dac-san-tay-ninh-5-1024x686.jpg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Nem bưởi Tây Ninh</h3>
+                                        &lt;
+                                    </div>
+                                </article>
+                                <article class="card__article swiper-slide swiper-slide-duplicate"
+                                    data-swiper-slide-index="4" role="group" aria-label="5 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://static.ecosite.vn/3359/picture/2018/05/18/than-lan-nui-ba-den-tay-ninh02-1526632249.jpg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Thằn lằn núi Bà Đen</h3>
+                                        &lt;
+                                    </div>
+                                </article>
+                                <article class="card__article swiper-slide swiper-slide-duplicate swiper-slide-prev"
+                                    data-swiper-slide-index="5" role="group" aria-label="6 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/09/dac-san-tay-ninh-7.jpg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Muối tôm</h3>
+
+
+                                    </div>
+                                </article>
+                                <article class="card__article swiper-slide swiper-slide-active"
+                                    data-swiper-slide-index="0" role="group" aria-label="1 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/09/dac-san-tay-ninh-2.jpg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bánh tráng phơi sương</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide swiper-slide-next"
+                                    data-swiper-slide-index="1" role="group" aria-label="2 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/09/dac-san-tay-ninh-3-1024x768.jpg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bánh canh Trảng Bàng</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide" data-swiper-slide-index="2" role="group"
+                                    aria-label="3 / 6" style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/09/dac-san-tay-ninh-4.jpg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bò tơ Tây Ninh</h3>
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide" data-swiper-slide-index="3" role="group"
+                                    aria-label="4 / 6" style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/09/dac-san-tay-ninh-5-1024x686.jpg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Nem bưởi Tây Ninh</h3>
+                                        &lt;
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide" data-swiper-slide-index="4" role="group"
+                                    aria-label="5 / 6" style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://static.ecosite.vn/3359/picture/2018/05/18/than-lan-nui-ba-den-tay-ninh02-1526632249.jpg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Thằn lằn núi Bà Đen</h3>
+                                        &lt;
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide swiper-slide-duplicate-prev"
+                                    data-swiper-slide-index="5" role="group" aria-label="6 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/09/dac-san-tay-ninh-7.jpg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Muối tôm</h3>
+
+
+                                    </div>
+                                </article>
+
+
+                                <article
+                                    class="card__article swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                                    data-swiper-slide-index="0" role="group" aria-label="1 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/09/dac-san-tay-ninh-2.jpg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bánh tráng phơi sương</h3>
+
+
+                                    </div>
+                                </article>
+                                <article
+                                    class="card__article swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                                    data-swiper-slide-index="1" role="group" aria-label="2 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/09/dac-san-tay-ninh-3-1024x768.jpg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bánh canh Trảng Bàng</h3>
+
+
+                                    </div>
+                                </article>
+                                <article class="card__article swiper-slide swiper-slide-duplicate"
+                                    data-swiper-slide-index="2" role="group" aria-label="3 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/09/dac-san-tay-ninh-4.jpg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bò tơ Tây Ninh</h3>
+
+                                    </div>
+                                </article>
+                            </div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+
+                        <!-- Navigation buttons -->
+                        <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+                            aria-controls="swiper-wrapper-934a62a4510111d48">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                        <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"
+                            aria-controls="swiper-wrapper-934a62a4510111d48">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+
+                        <!-- Pagination -->
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <section id="fot">
+        <footer class="footer__pading">
+            <div class="footer">
+                <ul class="footer__tent">
+                    <li class="logo">
+                        <img src="../../img/IMG_1077.PNG" class="logo-img-fot">
+                        <span class="name-logo name-logo-fot">Travel Tour</span>
+                    </li>
+                </ul>
+                <ul class="footer__tent">
+                    <li class="logo"></li>
+                    <span class="logo__cotent">Công ty EDT</span>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Địa chỉ : Tầng xx, Hà Nội
+                        </div>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-solid fa-phone"> </i>
+                            Điện thoại : 0327195539
+                        </div>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-regular fa-envelope"></i>
+                            Email : Contact@gmail.com
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="footer__tent">
+                    <li class="logo">
+                        <span class="logo__cotent name-logo-fot" style="margin:0 0 10px 100px;">Liên hệ</span>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt ">
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1085.PNG" class="logo__img">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1088.PNG" class="logo__img">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1082.JPG" class="logo__img" style="border-radius: 50%;">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1083.PNG" class="logo__img">
+                            </a>
+
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </footer>
+    </section>
+    <!--=============== SWIPER JS ===============-->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

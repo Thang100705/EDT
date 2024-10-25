@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tour</title>
+    <link rel="icon" href="img/IMG_1077.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/hanoi.css">
+    <link rel="stylesheet" href="css/hn.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/respon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playball&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+        }
+    </style>
+    <div class="class">
+        <header class="header">
+            <div class="grid">
+                <nav class="header_navbar ">
+                    <ul class="header_navbar-list">
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="header_navbar-contact disapp1 ">0327195539</div>
+                        </a>
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div class="header_navbar-contact disapp1 ">Contact@gmail.com</div>
+                        </a>
+                    </ul>
+                    <ul class="header_navbar-list">
+                        <li class="header_navbar-item">
+                            <a href="#" class="header_navbar-facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span class="disapp">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="header_navbar-item ">
+                            <a href="#" class="header_navbar-instra">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span class="disapp">Instragram</span>
+                            </a>
+                        </li>
+
+                        <li class="header_navbar-sepa"></li>
+                        <li class="header_navbar-item" id="loginLink">
+                            <a href="login-regis/login.html" class="header_navbar-login">
+                                <i class="fa-solid fa-lock"></i>
+                                <span class="disapp">Đăng Nhập</span>
+                            </a>
+                        </li>
+                        <!-- Liên kết Đăng Ký -->
+                        <li class="header_navbar-item" id="registerLink">
+                            <a href="login-regis/register.html" class="header_navbar-regis">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="disapp">Đăng Ký</span>
+                            </a>
+                        </li>
+                        <!-- Avatar và Tên người dùng -->
+                        <li class="header_navbar-item" id="userInfo" style="display: none;">
+                            <a class="user-avatar" href="../../LSGiaodich/ThToan.html">
+                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/02e0d039-fbc0-4059-902e-45c3ede4df5b/dgcuy5w-5f5250b2-c1b8-4d5c-b9c6-f192d23c7f72.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAyZTBkMDM5LWZiYzAtNDA1OS05MDJlLTQ1YzNlZGU0ZGY1YlwvZGdjdXk1dy01ZjUyNTBiMi1jMWI4LTRkNWMtYjljNi1mMTkyZDIzYzdmNzIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.L36pDjQ1d1ks1FS5CH5kldYy6j7x2IbfQ-znM7Lo4zU"
+                                    alt="User Avatar">
+                                <span class="user">Admin</span>
+                            </a>
+                            <button onclick="logout()">Đăng xuất</button>
+
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="header_navbar-function">
+                    <div class="header_navbar-item ">
+                        <li class="header_navbar-item">
+                            <a href="../../btChinh.html" class="header_navbar-logo">
+                                <img src="../../img/IMG_1077.PNG" class="logo-img">
+                                <span class="name-logo">Travel Tour</span>
+                            </a>
+                        </li>
+                    </div>
+                    <ul class="header_navbar-item-funtion menu" id="menu">
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../../btChinh.html" class="home ">Trang Chủ</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../region- TayNguyen.html" class="home home-fun">Vùng Miền</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#dd" class="home home-fun" id="active">Địa Điểm</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="../../btChinh.html#booking" class="home ">Dịch Vụ</a>
+                        </li>
+
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#fot" class="home ">Về Chúng Tôi</a>
+                        </li>
+                    </ul>
+                    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+                </nav>
+                <div class="overlay" id="overlay"></div>
+
+            </div>
+        </header>
+
+        <div class="app-copntainer" id="dd">
+            <div class="grid">
+                <p class="des__content des__content-1">ĐẮK NÔNG</p>
+                <div class="home-filter">
+                    <div class="grid__row">
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/11/thac-3-tang-1.jpg?tr=dpr-2,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content ">
+                                <h3> Thác Ba Tầng</h3>
+                                <p>Thác Ba Tầng cách thị xã Gia Nghĩa 8 km ngược hướng thành phố Buôn Ma Thuột. Có tên
+                                    gọi “Ba Tầng” là do thác có cấu trúc chia thành 3 tầng rõ rệt, nước chảy từ cao
+                                    xuống thấp tạo nên khung cảnh tuyệt đẹp với những lớp bọt trắng xóa. Ngoài tên gọi
+                                    trên, dòng thác còn có cái tên khác là thác Thủy Tiên.
+                                    Xung quanh ngọn thác chảy rì rầm suốt ngày đêm là những tán cây cổ thụ xanh mướt có
+                                    tuổi đời hàng trăm năm. Tất cả hòa quyện tạo nên khung cảnh thanh bình, tươi mát,
+                                    giúp bạn xua tan mọi buồn lo trong cuộc sống.</p>
+
+
+                            </div>
+                            <div class="tour-item-content-booking">
+                                <a href="../../TT/Book.html#book" class=" tour-item-content-re">
+                                    <button class="booking">
+                                        <span>Đặt Tour</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/03/dia-diem-du-lich-dak-nong-3.jpg?tr=dpr-0.9375,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content ">
+                                <h3>Thác Diệu Thanh</h3>
+                                <p>Thác Diệu Thanh (hay còn được gọi là thác Liêng Nung) cách thị trấn Gia Nghĩa hơn
+                                    11km, mất khoảng 20 phút di chuyển bằng xe máy. Đây được đánh giá là một trong những
+                                    địa điểm check-in ở Đắk Nông được nhiều bạn trẻ yêu thích nhất. Lý do chính là cấu
+                                    tạo thác vô cùng độc đáo với duy nhất một dòng chảy.
+                                    Đi theo con đường uốn lượn dẫn lên đỉnh thác bạn sẽ nghe được tiếng chim hót véo von
+                                    và tiếng suối chảy róc rách. Dòng thác đổ xuống vực sâu thăm thẳm trùng trùng điệp
+                                    điệp, bạn sẽ có cảm giác như lạc vào thế giới mới lạ
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/03/dia-diem-du-lich-dak-nong-7-1024x673.jpg?tr=dpr-0.9375,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Hồ Trúc Đắk Nông</h3>
+                                <p>Hồ Trúc Đắk Nông có tổng diện tích khoảng 25 ha, trong đó phần nước chiếm khoảng 15
+                                    ha, phần còn lại là một bán đảo với nhiều loại thực vật như thông, trúc, bằng lăng.
+                                    Trong đó trúc là loài cây chiếm ưu thế nhiều nhất.
+                                    Hồ là một công trình nhân tạo được xây vào những năm năm 80 của thế kỷ trước phục vụ
+                                    cho mục đích tưới tiêu và trồng cây của dân, về sau thì được quy hoạch thành khu du
+                                    lịch khu du lịch sinh thái.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://www.letravel.vn/uploaded/Anh-Cam-NangDL/cn-dl-taynguyen/bianhangdongchublukhanhtrinhxuyenqualongnuiluatrieunam1.jpg"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Hang động núi lửa Chư Bluk</h3>
+                                <p>Đắk Nông không chỉ có thác, có núi rừng còn có cả hang động. Với hang động núi lửa
+                                    Chư Bluk, đường đến đây là nơi các tín đồ trekking thường ghé tới. Đồng thời nơi đây
+                                    vẫn còn khá hoang sơ và chưa chịu nhiều tác động của con người. Hang có chiều dài
+                                    khoảng 25km với hơn 100 hang nhỏ bên trong.
+
+                                    Hang rộng lớn nên có thể quan sát hang từ xa nhưng việc tiếp cận không hề dễ dàng.
+                                    Thời điểm lý tưởng để trekking là vào mùa xuân, với khí hậu mát mẻ, cây cỏ xanh tươi
+                                    và trời nắng, ít mưa. Còn mùa mưa sẽ di chuyển không an toàn khi vào bên trong hang
+                                    động.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/03/dia-diem-du-lich-dak-nong-9-1024x597.jpg?tr=dpr-0.9375,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3> Vườn Quốc gia Tà Đùng</h3>
+                                <p>Vườn quốc gia nằm trên xã Đắk Som, huyện Đắk G’long, tỉnh Đắk Nông (cách thị trấn Gia
+                                    Nghĩa hơn 50km). Tại đây tỉ lệ che phủ rừng đạt đến 85% với hệ sinh thái vô cùng đa
+                                    dạng.
+
+                                    Đặc biệt, nơi này còn là mái nhà chung của 37 loài động vật quý hiếm thuộc danh sách
+                                    bảo vệ nghiêm ngặt. Nổi bật nhất là 3 loại đặc hữu cho Việt Nam gồm Voọc bạc trung
+                                    bộ, Vượn má hung (Hylobates gabriellae) và Chà vá chân đen. Ngoài ra, Tà Đùng là
+                                    vườn quốc gia duy nhất tại Việt Nam có sự xuất hiện của loài Hươu vàng (hay còn gọi
+                                    là hươu đầm lầy).</p>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/03/dia-diem-du-lich-dak-nong-11.jpg?tr=dpr-0.9375,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Chùa Hoa Nghiêm</h3>
+                                <p>Bắt nguồn từ nhu cầu sinh hoạt tôn giáo của người dân trong khu vực, chính quyền đã
+                                    cùng nhân dân thành lập chùa Hoa Nghiêm. Tuy chùa không có diện tích quá rộng nhưng
+                                    vẫn toát lên vẻ đẹp truyền thống của người Việt. Công trình chia thành nhiều hạng
+                                    mục như: tháp chuông, chánh điện, giảng đường, nhà tổ, đài Quan Âm…
+
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <p class="des__content des__pad ">Ẩm Thực </p>
+                <section class="container">
+                    <div class="card__container swiper">
+                        <div class="card__content">
+                            <div class="swiper-wrapper">
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/06/dac-san-dak-nong-6-1024x577.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Cá lăng sông Sêrêpốk </h3>
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/06/dac-san-dak-nong-7-1024x684.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Heo đồng bào nướng</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/06/dac-san-dak-nong-9-1024x1024.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Lẩu lá rừng</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/06/dac-san-dak-nong-2-1024x683.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Hạt tiêu Đắk N’rung</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/06/dac-san-dak-nong-4-1024x683.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name"> Xoài Đắk Gằn</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/06/dac-san-dak-nong-3-1024x576.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bơ sáp Đắk Mil</h3>
+
+
+                                    </div>
+                                </article>
+
+
+                            </div>
+                        </div>
+
+                        <!-- Navigation buttons -->
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+
+                        <!-- Pagination -->
+                    </div>
+                </section>
+
+
+            </div>
+        </div>
+    </div>
+    <section id="fot">
+        <footer class="footer__pading">
+            <div class="footer">
+                <ul class="footer__tent">
+                    <li class="logo">
+                        <img src="../../img/IMG_1077.PNG" class="logo-img-fot">
+                        <span class="name-logo name-logo-fot">Travel Tour</span>
+                    </li>
+                </ul>
+                <ul class="footer__tent">
+                    <li class="logo"></li>
+                    <span class="logo__cotent">Công ty EDT</span>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Địa chỉ : Tầng xx, Hà Nội
+                        </div>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-solid fa-phone"> </i>
+                            Điện thoại : 0327195539
+                        </div>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-regular fa-envelope"></i>
+                            Email : Contact@gmail.com
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="footer__tent">
+                    <li class="logo">
+                        <span class="logo__cotent name-logo-fot" style="margin:0 0 10px 100px;">Liên hệ</span>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt ">
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1085.PNG" class="logo__img">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1088.PNG" class="logo__img">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1082.JPG" class="logo__img" style="border-radius: 50%;">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1083.PNG" class="logo__img">
+                            </a>
+
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </footer>
+    </section>
+    <!--=============== SWIPER JS ===============-->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

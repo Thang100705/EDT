@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tour</title>
+    <link rel="icon" href="img/IMG_1077.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/hanoi.css">
+    <link rel="stylesheet" href="css/hn.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/respon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playball&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+        }
+    </style>
+    <div class="class">
+        <header class="header">
+            <div class="grid">
+                <nav class="header_navbar ">
+                    <ul class="header_navbar-list">
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="header_navbar-contact disapp1 ">0327195539</div>
+                        </a>
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div class="header_navbar-contact disapp1 ">Contact@gmail.com</div>
+                        </a>
+                    </ul>
+                    <ul class="header_navbar-list">
+                        <li class="header_navbar-item">
+                            <a href="#" class="header_navbar-facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span class="disapp">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="header_navbar-item ">
+                            <a href="#" class="header_navbar-instra">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span class="disapp">Instragram</span>
+                            </a>
+                        </li>
+
+                        <li class="header_navbar-sepa"></li>
+                        <li class="header_navbar-item" id="loginLink">
+                            <a href="login-regis/login.html" class="header_navbar-login">
+                                <i class="fa-solid fa-lock"></i>
+                                <span class="disapp">Đăng Nhập</span>
+                            </a>
+                        </li>
+                        <!-- Liên kết Đăng Ký -->
+                        <li class="header_navbar-item" id="registerLink">
+                            <a href="login-regis/register.html" class="header_navbar-regis">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="disapp">Đăng Ký</span>
+                            </a>
+                        </li>
+                        <!-- Avatar và Tên người dùng -->
+                        <li class="header_navbar-item" id="userInfo" style="display: none;">
+                            <a class="user-avatar" href="../../LSGiaodich/ThToan.html">
+                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/02e0d039-fbc0-4059-902e-45c3ede4df5b/dgcuy5w-5f5250b2-c1b8-4d5c-b9c6-f192d23c7f72.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAyZTBkMDM5LWZiYzAtNDA1OS05MDJlLTQ1YzNlZGU0ZGY1YlwvZGdjdXk1dy01ZjUyNTBiMi1jMWI4LTRkNWMtYjljNi1mMTkyZDIzYzdmNzIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.L36pDjQ1d1ks1FS5CH5kldYy6j7x2IbfQ-znM7Lo4zU"
+                                    alt="User Avatar">
+                                <span class="user">Admin</span>
+                            </a>
+                            <button onclick="logout()">Đăng xuất</button>
+
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="header_navbar-function">
+                    <div class="header_navbar-item ">
+                        <li class="header_navbar-item">
+                            <a href="../../btChinh.html" class="header_navbar-logo">
+                                <img src="../../img/IMG_1077.PNG" class="logo-img">
+                                <span class="name-logo">Travel Tour</span>
+                            </a>
+                        </li>
+                    </div>
+                    <ul class="header_navbar-item-funtion menu" id="menu">
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../../btChinh.html" class="home ">Trang Chủ</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../region- TayNguyen.html" class="home home-fun">Vùng Miền</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#dd" class="home home-fun" id="active">Địa Điểm</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="../../btChinh.html#booking" class="home ">Dịch Vụ</a>
+                        </li>
+
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#fot" class="home ">Về Chúng Tôi</a>
+                        </li>
+                    </ul>
+                    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+                </nav>
+                <div class="overlay" id="overlay"></div>
+
+            </div>
+        </header>
+        <div class="app-copntainer" id="dd">
+            <div class="grid">
+                <p class="des__content des__content-1">ĐẮK LẮK </p>
+                <div class="home-filter">
+                    <div class="grid__row">
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://trungnguyenlegend.com/wp-content/uploads/2015/02/img3410.jpg"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content ">
+                                <h3>Làng cà phê Trung Nguyên</h3>
+                                <p>Du khách sẽ được hòa mình trong không gian xanh, ngắm những cây cà phê cổ đan xen
+                                    những pho tượng Tây Nguyên, nghe những huyền thoại và văn hóa cà phê các nước, tham
+                                    quan không gian nhà dài Êđê, nơi trưng bày những hiện vật cổ có giá trị lớn và lâu
+                                    đời nhất của Tây Nguyên như bộ sưu tập cồng chiêng và các công cụ, nông cụ, vũ khí…,
+                                    cần thiết trong đời sống hàng ngày và sinh hoạt văn hóa, tín ngưỡng của người dân
+                                    Tây Nguyên; Những dụng cụ dùng trong quá trình trồng trọt, vận chuyển và chế biến cà
+                                    phê của người dân Tây Nguyên được trưng bày trên chiếc k’pan. Làm bằng tấm ván gỗ
+                                    dày và rất dài xẻ từ một thân cây cổ thụ, k’pan là biểu tượng cho sự sung túc của
+                                    những gia đình Ê Đê giàu có.</p>
+
+
+                            </div>
+                            <div class="tour-item-content-booking">
+                                <a href="../../TT/Book.html#book" class=" tour-item-content-re">
+                                    <button class="booking">
+                                        <span>Đặt Tour</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://images.baodantoc.vn/uploads/2021/Th%C3%A1ng_10/Ng%C3%A0y_14/NGN%C3%82/th%C3%A1c%20Dray%20Nur/45-1634114959-draynu.jpg"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content ">
+                                <h3>Cụm Thác Dray Sap, Dray Nur, Gia Long</h3>
+                                <p>Cụm thác gồm Dray Sap, Dray Nur và Gia Long là một đặc sản thiên nhiên nổi tiếng của
+                                    Buôn Ma Thuột nằm trên con sông Serepok.
+                                    Trong đó, thác Dray Sap được gọi là thác Chồng còn Dray Nur là thác Vợ. Nước ở đây
+                                    trong vắt, mát lạnh giữa rừng núi đại ngàn lại càng thêm trong trẻo.
+                                    Khi nhìn từ xa đến gần, bạn sẽ cảm nhận vẻ đẹp biến đổi kỳ diệu của cụm thác từ hùng
+                                    vĩ, mạnh mẽ đến trong lành và dễ chịu.</p>
+                            </div>
+                        </div>
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://kinhtenongthon.vn/data/data/bantaynguyen/2023/04/07/z4239502153854_336523e7cb0f8693db65246faec9d6e3.jpg"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Vườn quốc gia Yok Đôn</h3>
+                                <p>Được thành lập vào năm 1992, vườn quốc gia Yok Đôn có diện tích 1.155km2, bên trong
+                                    khu rừng có một hệ sinh thái và cảnh quan thiên nhiên vô cùng phong phú, đa dạng và
+                                    nổi bật lên là ngọn núi Yok Đôn và Reheng phía nam sông Sê – rê – pok.
+                                    Tại Yok Đôn, có hai loại rừng chủ yếu là rừng khộp và rừng tự nhiên tại Việt Nam thì
+                                    đây là nơi duy nhất có rừng khộp.
+                                    Có lẽ vì thế, nên vườn Quốc gia Yok Đôn được xem là một điểm đến hấp dẫn thu hút
+                                    khách du lịch trong và ngoài nước đến tham quan và khám phá.</p>
+                            </div>
+                        </div>
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2023/06/bao-tang-dak-lak-cover.jpg?tr=c-at_max"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Bảo tàng Đắk Lắk</h3>
+                                <p>Được xây dựng trên khuôn viên của Biệt điện Bảo Đại - một di tích lịch sử cấp quốc
+                                    gia, Bảo tàng Đắk Lắk là thành quả của sự hợp tác đặc biệt giữa Cộng hòa Pháp và Bảo
+                                    tàng Dân tộc học Việt Nam.
+                                    Bảo tàng là sự pha trộn giữa hiện đại và truyền thống, giữa bàn tay con người và tự
+                                    nhiên tạo nên không gian hài hòa và mang đậm tính địa phương của đồng bào các dân
+                                    tộc.</p>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://mia.vn/media/uploads/blog-du-lich/top-dia-diem-du-lich-daklak-noi-tieng-khong-the-bo-lo-phan-2-7-1652215860.jpg"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Tháp Chàm Yang Prong</h3>
+                                <p>Tháp Chàm Yang Prong là một tòa tháp Chăm cách trung tâm thành phố Buôn Ma Thuột
+                                    khoảng 100km. Theo nghiên cứu từ các nhà sử học thì công trình này đã được người
+                                    Chăm xây dựng vào thế kỉ 13, dưới thời cai trị của vua Jaya Simhavarman III. Tòa
+                                    tháp Chăm này được xây dựng với lối kiến trúc độc đáo, mang lại cho chúng ta rất
+                                    nhiều hiểu biết về lịch sử, văn hóa và tín ngưỡng của cộng đồng người Chăm từ xa
+                                    xưa.</p>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://mia.vn/media/uploads/blog-du-lich/top-dia-diem-du-lich-daklak-noi-tieng-khong-the-bo-lo-phan-2-8-1652215860.jpg"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Nhà thờ Thánh Tâm</h3>
+                                <p>Đây là nhà thờ chính tòa của giáo phận tại Buôn Ma Thuột.
+                                    Nhà thờ được thiết kế rất độc đáo khi đan xen giữa văn hóa phương Tây và kiến trúc
+                                    nhà đài của người dân tộc Ê Đê.
+                                    Nhà thờ Thánh Tâm vừa là điểm du lịch tâm linh vừa sở hữu không gian bình yên, rất
+                                    thích hợp để bạn check-in.</p>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+                <p class="des__content des__pad ">Ẩm Thực </p>
+                <section class="container">
+                    <div class="card__container swiper">
+                        <div class="card__content">
+                            <div class="swiper-wrapper">
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://cdn3.ivivu.com/2022/09/g%C3%A0-n%C6%B0%E1%BB%9Bng-b%E1%BA%A3n-%C4%91%C3%B4n1.jpg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Gà nướng Bản Đôn</h3>
+                                        <p class="card__description">
+
+                                        </p>
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://gcs.tripi.vn/public-tripi/tripi-feed/img/473808vjQ/cua-hang-ban-ruou-can-uy-tin-nhat-tai-buon-ma-thuot-674479.jpg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Rượu Cần</h3>
+                                        <p class="card__description">
+                                        </p>
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://lh6.googleusercontent.com/proxy/X0CGsmRFbN5PEeZ3tWwIf5fIsBtnQp4TfVwepm5Sfp3BOFM7vPvBEWk5XHhG1B4U017bYSK5JRe6qXhgijguiE3q7sHVoxjvu0dYRXpEjf9OMIGGBprrlP4"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Cơm Lam</h3>
+                                        <p class="card__description">
+                                        </p>
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://nongsansaigon.com.vn/wp-content/uploads/2021/10/Mat-ong-hoa-ca-phe-1.jpg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Mật ong hoa cà phê</h3>
+                                        <p class="card__description">
+                                        </p>
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/06/dac-san-dak-lak-6-1024x575.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Cá bống kho riềng</h3>
+                                        <p class="card__description">
+                                        </p>
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://baohanam.com.vn/DATA/IMAGES/2021/02/18/mon-ngon-doc-la-kho-quen-tu-ca-dang-tay-nguyen-56-3.jpeg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Cà đắng</h3>
+                                        <p class="card__description">
+                                        </p>
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/06/dac-san-dak-lak-7-1024x683.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Lẩu cá lăng</h3>
+                                        <p class="card__description">
+                                        </p>
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://diachiamthuc.vn/wp-content/uploads/2022/10/Ca-phe-Dak-Lak.jpeg.jpeg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Cà phê Đắk Lắk</h3>
+                                        <p class="card__description">
+
+                                        </p>
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://diachiamthuc.vn/wp-content/uploads/2022/10/Mang-le.jpg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Măng le</h3>
+                                        <p class="card__description">
+                                        </p>
+
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Navigation buttons -->
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+
+                        <!-- Pagination -->
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <section id="fot">
+        <footer class="footer__pading">
+            <div class="footer">
+                <ul class="footer__tent">
+                    <li class="logo">
+                        <img src="../../img/IMG_1077.PNG" class="logo-img-fot">
+                        <span class="name-logo name-logo-fot">Travel Tour</span>
+                    </li>
+                </ul>
+                <ul class="footer__tent">
+                    <li class="logo"></li>
+                    <span class="logo__cotent">Công ty EDT</span>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Địa chỉ : Tầng xx, Hà Nội
+                        </div>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-solid fa-phone"> </i>
+                            Điện thoại : 0327195539
+                        </div>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-regular fa-envelope"></i>
+                            Email : Contact@gmail.com
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="footer__tent">
+                    <li class="logo">
+                        <span class="logo__cotent name-logo-fot" style="margin:0 0 10px 100px;">Liên hệ</span>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt ">
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1085.PNG" class="logo__img">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1088.PNG" class="logo__img">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1082.JPG" class="logo__img" style="border-radius: 50%;">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1083.PNG" class="logo__img">
+                            </a>
+
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </footer>
+    </section>
+    <!--=============== SWIPER JS ===============-->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

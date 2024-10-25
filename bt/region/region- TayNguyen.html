@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tour</title>
+    <link rel="icon" href="img/IMG_1077.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/hn.css">
+    <link rel="stylesheet" href="css/region.css">
+    <link rel="stylesheet" href="css/respon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playball&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+        }
+    </style>
+    <div class="class">
+        <header class="header">
+            <div class="grid">
+                <nav class="header_navbar ">
+                    <ul class="header_navbar-list">
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="header_navbar-contact disapp1 ">0327195539</div>
+                        </a>
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div class="header_navbar-contact disapp1 ">Contact@gmail.com</div>
+                        </a>
+                    </ul>
+                    <ul class="header_navbar-list">
+                        <li class="header_navbar-item">
+                            <a href="#" class="header_navbar-facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span class="disapp">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="header_navbar-item ">
+                            <a href="#" class="header_navbar-instra">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span class="disapp">Instragram</span>
+                            </a>
+                        </li>
+
+                        <li class="header_navbar-sepa"></li>
+                        <li class="header_navbar-item" id="loginLink">
+                            <a href="login-regis/login.html" class="header_navbar-login">
+                                <i class="fa-solid fa-lock"></i>
+                                <span class="disapp">Đăng Nhập</span>
+                            </a>
+                        </li>
+                        <!-- Liên kết Đăng Ký -->
+                        <li class="header_navbar-item" id="registerLink">
+                            <a href="login-regis/register.html" class="header_navbar-regis">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="disapp">Đăng Ký</span>
+                            </a>
+                        </li>
+                        <!-- Avatar và Tên người dùng -->
+                        <li class="header_navbar-item" id="userInfo" style="display: none;">
+                            <a class="user-avatar" href="../LSGiaodich/ThToan.html">
+                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/02e0d039-fbc0-4059-902e-45c3ede4df5b/dgcuy5w-5f5250b2-c1b8-4d5c-b9c6-f192d23c7f72.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAyZTBkMDM5LWZiYzAtNDA1OS05MDJlLTQ1YzNlZGU0ZGY1YlwvZGdjdXk1dy01ZjUyNTBiMi1jMWI4LTRkNWMtYjljNi1mMTkyZDIzYzdmNzIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.L36pDjQ1d1ks1FS5CH5kldYy6j7x2IbfQ-znM7Lo4zU"
+                                    alt="User Avatar">
+                                <span class="user">Admin</span>
+                            </a>
+                            <button onclick="logout()">Đăng xuất</button>
+
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="header_navbar-function">
+                    <div class="header_navbar-item ">
+                        <li class="header_navbar-item">
+                            <a href="../btChinh.html" class="header_navbar-logo">
+                                <img src="../img/IMG_1077.PNG" class="logo-img">
+                                <span class="name-logo">Travel Tour</span>
+                            </a>
+                        </li>
+                    </div>
+                    <ul class="header_navbar-item-funtion menu" id="menu">
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../btChinh.html" class="home ">Trang Chủ</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../btChinh.html#region" class="home home-fun" id="active">Vùng Miền</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#dd" class="home home-fun">Địa Điểm</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="../btChinh.html#booking" class="home ">Dịch Vụ</a>
+                        </li>
+
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#fot" class="home ">Về Chúng Tôi</a>
+                        </li>
+                    </ul>
+                    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+                </nav>
+                <div class="overlay" id="overlay"></div>
+
+            </div>
+        </header>
+        <div class="background">
+            <div class="Region__name-1">TÂY NGUYÊN</div>
+        </div>
+
+        <div class="grid grid__column-region ">
+            <div class="grid__column-6   ">
+                <div class="region-content">
+                    Tây Nguyên - khu vực cao nguyên nằm ở miền Trung Việt Nam, bao gồm 5 tỉnh: Kon Tum, Gia Lai, Đắk
+                    Lắk, Đắk Nông và Lâm Đồng. Nơi đây có địa hình đồi núi cao, rừng nguyên sinh phong phú và khí hậu
+                    mát mẻ, phù hợp cho nông nghiệp, đặc biệt là trồng cà phê. Tây Nguyên cũng nổi tiếng với văn hóa
+                    cồng chiêng Tây Nguyên, đã được UNESCO công nhận là Di sản văn hóa phi vật thể của nhân loại. Khu
+                    vực này có nhiều thác nước, hồ tự nhiên đẹp và các lễ hội truyền thống của các dân tộc thiểu số như
+                    Ê Đê, Ba Na, M'Nông.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="app-copntainer" id="dd">
+            <div class="grid">
+                <p class="des__content">Địa Điểm </p>
+                <span
+                    style="display: block;text-align: center;font-size: 1.6rem;color: red;font-weight: 500;padding-bottom: 30px;">Nhấp
+                    vào ảnh để xem thông tin chi tiết</span>
+                <div class="home-filter">
+                    <div class="grid__row">
+                        <a href="region-TN/lamdong.html">
+                            <div class="grid__column-6">
+                                <div class="tour-item">
+                                    <img src="https://phongchongthamnhung.com.vn/wp-content/uploads/2023/09/y1.jpg"
+                                        class="tour-item__img-6">
+                                    <h4 class="tour-name__4">Lâm Đồng</h4>
+                                    <div class="tour-content-6">
+                                        <h4>Lâm Đồng</h4>
+                                        <p>
+                                            Là một tỉnh thuộc vùng Tây Nguyên, Việt Nam, nổi bật với địa hình cao nguyên
+                                            và khí hậu ôn đới mát mẻ quanh năm. Tỉnh này được biết đến nhiều nhất với
+                                            thành phố Đà Lạt – "thành phố ngàn hoa", nổi tiếng về du lịch và nông sản
+                                            như cà phê, hoa, rau củ. Lâm Đồng có cảnh quan thiên nhiên hùng vĩ với thác
+                                            nước, rừng thông và hồ nước, thu hút du khách trong và ngoài nước. Kinh tế
+                                            của tỉnh chủ yếu dựa vào nông nghiệp, đặc biệt là sản xuất hoa, rau và cà
+                                            phê chất lượng cao.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="region-TN/gialai.html">
+                            <div class="grid__column-3">
+                                <div class="tour-item">
+                                    <img src="https://uploads.nguoidothi.net.vn/content/bd4a568e-516c-4286-b483-de8bd4457e7d.jpg"
+                                        class="tour-item__img">
+                                    <h4 class="tour-name__2">Gia Lai</h4>
+                                    <div class="tour-content">
+                                        <h4>Gia Lai</h4>
+                                        <p>
+                                            Nằm ở phía bắc Tây Nguyên - tỉnh có diện tích lớn thứ hai của Việt
+                                            Nam. Thành phố tỉnh lỵ của Gia
+                                            Lai là Pleiku. Các điểm du lịch ở Gia Lai tập trung chủ yếu ở thành phố
+                                            Pleiku và khu vực lân cận trong bán kính 20-30 km.
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="home-filter">
+
+                    <div class="grid__row">
+                        <a href="region-TN/daklak.html">
+                            <div class="grid__column-3">
+                                <div class="tour-item">
+                                    <img src="https://mia.vn/media/uploads/blog-du-lich/kham-pha-lang-ca-phe-trung-nguyen-tu-a-den-z-1651644260.jpg"
+                                        class="tour-item__img">
+                                    <h4 class="tour-name__6">Đắk Lắk</h4>
+                                    <div class="tour-content">
+                                        <h4>Đắk Lắk</h4>
+                                        <p>
+                                            Nằm tại “trái tim” của Tây Nguyên,là một trong những “thiên đường”
+                                            dành cho các tín đồ mê du lịch bụi và trải nghiệm văn hóa. Thiếu vắng những
+                                            tòa nhà cao ốc hay khu phố sầm uất, sức hút của nơi này đến từ những núi
+                                            rừng đại ngàn, những cánh đồng cà phê hay bản làng của người dân tộc.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="region-TN/daknong.html">
+                            <div class="grid__column-3">
+                                <div class="tour-item">
+                                    <img src="https://vcdn1-dulich.vnecdn.net/2023/09/09/tadung-9314-1694257090.jpg?w=0&h=0&q=100&dpr=1&fit=crop&s=ZrRBYkCXsGEp3tq6hhe1mg"
+                                        class="tour-item__img">
+                                    <h4 class="region-name" style="font-size:2.4rem ;">Đắk Nông</h4>
+                                    <div class="tour-content">
+                                        <h4>Đắk Nông</h4>
+                                        <p>
+                                            Được biết đến một trong những địa điểm hấp dẫn của du lịch Tây
+                                            Nguyên.Mang một vẻ đẹp tự nhiên đầy hoang sơ và bí ẩn của
+                                            những ngọn thác hùng vĩ, những đồi chè xanh mướt, của rừng cao su bạt ngàn
+                                            hay của của những con đường mềm mại, uốn lượn giữa những cánh rừng thông.
+
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="region-TN/kontum.html">
+                            <div class="grid__column-3">
+                                <div class="tour-item ">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Kontum_wooden_catholic_church.jpg/1200px-Kontum_wooden_catholic_church.jpg"
+                                        class="tour-item__img ">
+                                    <h4 class="tour-name__3">Kon Tum</h4>
+                                    <div class="tour-content ">
+                                        <h4>Kon Tum</h4>
+                                        <p>
+                                            Du lịch Kon Tum sở hữu rất nhiều địa điểm đẹp đến say nắng bất cứ du khách
+                                            nào đến đây. Nằm cách Pleiku khoảng 50km, du khách có thể dạo một vòng ghé
+                                            tham quan những cảnh đẹp mà chỉ có ở Kon Tum mà không lẫn với bất cứ nơi nào
+                                            mà bạn đặt chân tới.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <p class="des__content des-ma">Ẩm Thực </p>
+        <div class="container swiper">
+            <div class="slider-wrapper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <img src="https://mia.vn/media/uploads/blog-du-lich/thuong-thuc-ga-nuong-ban-don-daklak-ben-bep-lua-1654446211.jpg"
+                            alt="User Image" class="user-image">
+                        <p class="food">Thịt gà nướng</p>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="https://giadinh.mediacdn.vn/k:2015/1-bo-mot-nang-8099-1450429128-1451442198409/bo-mot-nang-va-muoi-kien-vang-doc-dao-o-gia-lai.jpg"
+                            alt="User Image" class="user-image">
+                        <p class="food">Bò một nắng Gia Lai</p>
+
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="https://mia.vn/media/uploads/blog-du-lich/bo-sap-daklak-tru-danh-vung-dat-dai-ngan-3-1651761450.jpg"
+                            alt="User Image" class="user-image">
+                        <p class="food">Bơ sáp Đắk Lắk</p>
+
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="https://pbs.twimg.com/media/F9KWwq2b0AALp-U.png" alt="User Image" class="user-image">
+                        <p class="food">Heo rẫy nương</p>
+
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="https://cdn-i.vtcnews.vn/resize/th/upload/2023/07/07/goi-la-kon-tum-3-16480375.jpg"
+                            alt="User Image" class="user-image">
+                        <p class="food">Gỏi lá</p>
+
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="https://vietanhsongngu.com/uploads/images/post/ruou-can-mot-loai-ruou-noi-tieng-vung-tay-nguyen-viet-anh-song-ngu.com_.jpg"
+                            alt="User Image" class="user-image">
+                        <p class="food">Rượu cần</p>
+
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="https://dulichvietnam.com.vn/vnt_upload/File/Image/com_lam_tay_nguyen_3.jpg"
+                            alt="User Image" class="user-image">
+                        <p class="food">Cơm lam</p>
+
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="https://bientauvannguyenlieu.giadinhnestle.com.vn/sites/default/files/styles/wide/public/recipes-photo/recipe_1692347832.jpeg?itok=VJV2JKXH"
+                            alt="User Image" class="user-image">
+                        <p class="food">Cá lăng nướng</p>
+
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="https://cdn.dealtoday.vn/ac26ab6730674779bc7e73a3d0f7e6ea.jpg" alt="User Image"
+                            class="user-image">
+                        <p class="food">Bún đỏ Đắk Lắk</p>
+
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="https://www.huongnghiepaau.com/wp-content/uploads/2024/07/lop-pho-kho-gia-lai.jpg"
+                            alt="User Image" class="user-image">
+                        <p class="food">Phở khô Gia Lai</p>
+
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+        </div>
+
+        <section id="fot">
+            <footer class="footer__pading">
+                <div class="footer">
+                    <ul class="footer__tent">
+                        <li class="logo">
+                            <img src="../img/IMG_1077.PNG" class="logo-img">
+                            <span class="name-logo name-logo-fot">Travel Tour</span>
+                        </li>
+                    </ul>
+                    <ul class="footer__tent">
+                        <li class="logo"></li>
+                        <span class="logo__cotent">Công ty EDT</span>
+                        </li>
+                        <li class="logo">
+                            <div class="logo__sdt">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Địa chỉ : Tầng xx, Hà Nội
+                            </div>
+                        </li>
+                        <li class="logo">
+                            <div class="logo__sdt">
+                                <i class="fa-solid fa-phone"> </i>
+                                Điện thoại : 0327195539
+                            </div>
+                        </li>
+                        <li class="logo">
+                            <div class="logo__sdt">
+                                <i class="fa-regular fa-envelope"></i>
+                                Email : Contact@gmail.com
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="footer__tent">
+                        <li class="logo">
+                            <span class="logo__cotent name-logo-fot" style="margin:0 0 10px 100px;">Liên hệ</span>
+                        </li>
+                        <li class="logo">
+                            <div class="logo__sdt ">
+                                <a href="#" class="logo__size">
+                                    <img src="../img/IMG_1085.PNG" class="logo__img">
+                                </a>
+                                <a href="#" class="logo__size">
+                                    <img src="../img/IMG_1088.PNG" class="logo__img">
+                                </a>
+                                <a href="#" class="logo__size">
+                                    <img src="../img/IMG_1082.JPG" class="logo__img" style="border-radius: 50%;">
+                                </a>
+                                <a href="#" class="logo__size">
+                                    <img src="../img/IMG_1083.PNG" class="logo__img">
+                                </a>
+
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </footer>
+        </section>
+    </div>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking custom script -->
+    <!--=============== MAIN JS ===============-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

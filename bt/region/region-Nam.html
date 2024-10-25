@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tour</title>
+    <link rel="icon" href="img/IMG_1077.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/hn.css">
+    <link rel="stylesheet" href="css/region.css">
+    <link rel="stylesheet" href="css/respon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playball&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+        }
+    </style>
+    <div class="class">
+        <header class="header">
+            <div class="grid">
+                <nav class="header_navbar ">
+                    <ul class="header_navbar-list">
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="header_navbar-contact disapp1 ">0327195539</div>
+                        </a>
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div class="header_navbar-contact disapp1 ">Contact@gmail.com</div>
+                        </a>
+                    </ul>
+                    <ul class="header_navbar-list">
+                        <li class="header_navbar-item">
+                            <a href="#" class="header_navbar-facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span class="disapp">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="header_navbar-item ">
+                            <a href="#" class="header_navbar-instra">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span class="disapp">Instragram</span>
+                            </a>
+                        </li>
+
+                        <li class="header_navbar-sepa"></li>
+                        <li class="header_navbar-item" id="loginLink">
+                            <a href="login-regis/login.html" class="header_navbar-login">
+                                <i class="fa-solid fa-lock"></i>
+                                <span class="disapp">Đăng Nhập</span>
+                            </a>
+                        </li>
+                        <!-- Liên kết Đăng Ký -->
+                        <li class="header_navbar-item" id="registerLink">
+                            <a href="login-regis/register.html" class="header_navbar-regis">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="disapp">Đăng Ký</span>
+                            </a>
+                        </li>
+                        <!-- Avatar và Tên người dùng -->
+                        <li class="header_navbar-item" id="userInfo" style="display: none;">
+                            <a class="user-avatar" href="../LSGiaodich/ThToan.html">
+                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/02e0d039-fbc0-4059-902e-45c3ede4df5b/dgcuy5w-5f5250b2-c1b8-4d5c-b9c6-f192d23c7f72.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAyZTBkMDM5LWZiYzAtNDA1OS05MDJlLTQ1YzNlZGU0ZGY1YlwvZGdjdXk1dy01ZjUyNTBiMi1jMWI4LTRkNWMtYjljNi1mMTkyZDIzYzdmNzIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.L36pDjQ1d1ks1FS5CH5kldYy6j7x2IbfQ-znM7Lo4zU"
+                                    alt="User Avatar">
+                                <span class="user">Admin</span>
+                            </a>
+                            <button onclick="logout()">Đăng xuất</button>
+
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="header_navbar-function">
+                    <div class="header_navbar-item ">
+                        <li class="header_navbar-item">
+                            <a href="../btChinh.html" class="header_navbar-logo">
+                                <img src="../img/IMG_1077.PNG" class="logo-img">
+                                <span class="name-logo">Travel Tour</span>
+                            </a>
+                        </li>
+                    </div>
+                    <ul class="header_navbar-item-funtion menu" id="menu">
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../btChinh.html" class="home ">Trang Chủ</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../btChinh.html#region" class="home home-fun" id="active">Vùng Miền</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#dd" class="home home-fun">Địa Điểm</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="../btChinh.html#booking" class="home ">Dịch Vụ</a>
+                        </li>
+
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#fot" class="home ">Về Chúng Tôi</a>
+                        </li>
+                    </ul>
+                    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+                </nav>
+                <div class="overlay" id="overlay"></div>
+
+            </div>
+        </header>
+
+        <div class="background-2">
+            <div class="Region__name-1">MIỀN NAM</div>
+        </div>
+        <div class="grid grid__column-region ">
+            <div class="grid__column-6   ">
+                <div class="region-content">Miền Nam - nằm ở phía nam đất nước, bao gồm Đông Nam Bộ và Đồng bằng sông
+                    Cửu Long. Nơi đây nổi bật với nền kinh tế phát triển, đặc biệt là TP. Hồ Chí Minh – trung tâm kinh
+                    tế lớn nhất cả nước. Đồng bằng sông Cửu Long, còn gọi là "vựa lúa" của Việt Nam, nổi tiếng với mạng
+                    lưới sông ngòi chằng chịt, đất đai màu mỡ và văn hóa sông nước đặc trưng.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="app-copntainer">
+            <div class="grid">
+                <p class="des__content">Địa Điểm </p>
+                <span
+                    style="display: block;text-align: center;font-size: 1.6rem;color: red;font-weight: 500;padding-bottom: 30px;">Nhấp
+                    vào ảnh để xem thông tin chi tiết</span>
+                <div class="home-filter">
+                    <div class="grid__row">
+                        <a href="region-MN/tphcm.html">
+                            <div class="grid__column-6">
+                                <div class="tour-item">
+                                    <img src="https://media.istockphoto.com/id/532166870/vi/anh/ho-chi-minh-city-hall-in-ho-chi-minh-city-vietnam.jpg?s=612x612&w=0&k=20&c=uPfXcGumm5uZPOkS6kmNFz4K4I8PituWboHzlWqed-M="
+                                        class="tour-item__img-6">
+                                    <h4 class="tour-name__2">TP. Hồ Chí Minh</h4>
+                                    <div class="tour-content-6">
+                                        <h4>TP. Hồ Chí Minh</h4>
+                                        <p>Thành phố Hồ Chí Minh, thường được gọi là Sài Gòn, là thành phố lớn nhất và
+                                            trung tâm kinh tế của Việt Nam. Nằm ở miền Nam Việt Nam, TP.HCM là một đô
+                                            thị sôi động với sự pha trộn độc đáo giữa kiến trúc hiện đại và di sản văn
+                                            hóa. Thành phố này nổi tiếng với cuộc sống về đêm sôi động, ẩm thực đa dạng
+                                            và những điểm tham quan lịch sử như Dinh Độc Lập và Nhà thờ Đức Bà.Đồng
+                                            thời, TP.HCM còn là trung tâm công nghệ, giáo dục và thương mại quan trọng
+                                            của cả nước. </p>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="region-MN/dongthap.html">
+                            <div class="grid__column-3">
+                                <div class="tour-item">
+                                    <img src="https://scontent.iocvnpt.com/resources/portal/Images/DTP/dtblieu/2023/t3/11_71066970.png"
+                                        class="tour-item__img">
+                                    <h4 class="region-name-1">Đồng Tháp</h4>
+                                    <div class="tour-content">
+                                        <h4>Đồng Tháp</h4>
+                                        <p>
+                                            Với diện tích trải rộng ở cả hai bờ sông Tiền, Đồng Tháp nổi tiếng với các
+                                            cánh đồng lúa trù phú chạy dọc theo những con kênh hiền hòa cùng những cánh
+                                            rừng nguyên sinh và hồ sen thơm ngát. Không chỉ có thiên nhiên rực rỡ, vùng
+                                            đất miền Tây Nam Bộ này còn có rất nhiều tọa độ du hí thú vị dành cho hội mê
+                                            xê dịch.
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="home-filter">
+
+                    <div class="grid__row">
+                        <a href="region-MN/cantho.html">
+                            <div class="grid__column-3">
+                                <div class="tour-item">
+                                    <img src="https://i.ex-cdn.com/mientay.giadinhonline.vn/files/content/2024/04/30/z5396678821853_1763754b2172416be98c475edb7f0085-1752.jpg"
+                                        class="tour-item__img">
+                                    <h4 class="tour-name__1">Cần Thơ</h4>
+                                    <div class="tour-content">
+                                        <h4>Cần Thơ</h4>
+                                        <p>
+                                            Cần Thơ thành phố du lịch miền Tây Nam Bộ vô cùng nổi tiếng. Chắc chắn không
+                                            ai là chưa từng nghe câu ca dao “Cần Thơ gạo trắng nước trong – Ai đi đến đó
+                                            lòng không muốn về”. Thành phố này sở hữu vẻ đẹp hiện đại của một đô thị sầm
+                                            uất, nhưng cũng vẫn còn giữ được nét mộc mạc, giản dị đặc trưng của miền Tây
+                                            sông nước.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="region-MN/tayninh.html">
+                            <div class="grid__column-3">
+                                <div class="tour-item">
+                                    <img src="https://hotrodoanhnghiep.tayninh.gov.vn/admin/Uploads/AlbumHinhAnh/2023/9/vmhien-tayninh-day2-2022-15-676_20210410737.jpg"
+                                        class="tour-item__img">
+                                    <h4 class="tour-name__1">Tây Ninh</h4>
+                                    <div class="tour-content">
+                                        <h4>Tây Ninh
+                                        </h4>
+                                        <p>
+                                            Nằm cách trung tâm Sài Gòn khoảng 100km, Tây Ninh là một điểm du lịch miền
+                                            Nam được nhiều du khách ưa thích. Ai đến Tây Ninh cũng sẽ cảm nhận được cái
+                                            nóng, cái gió đặc trưng của vùng đất biên giới này. Với kiến tạo thiên nhiên
+                                            đặc sắc vừa có cao nguyên vừa có đồng bằng, Tây Ninh sở hữu rất nhiều cảnh
+                                            quan hấp dẫn đáng để du khách trải nghiệm
+
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="region-MN/br-vt.html">
+                            <div class="grid__column-3">
+                                <div class="tour-item ">
+                                    <img src="https://etrip4utravel.s3-ap-southeast-1.amazonaws.com/images/tinymce/2021/07/686f3690-e2cb-4502-ac11-bf4944b65500.jpg"
+                                        class="tour-item__img ">
+                                    <h4 class="tour-name__10">Bà Rịa - Vũng Tàu</h4>
+                                    <div class="tour-content ">
+                                        <h4>Bà Rịa - Vũng Tàu</h4>
+                                        <p>
+                                            Bà Rịa - Vũng Tàu là một tỉnh ven biển thuộc vùng Đông Nam Bộ của Việt Nam.
+                                            Tỉnh này nổi tiếng với những bãi biển đẹp như Vũng Tàu, Long Hải, và Hồ
+                                            Tràm, thu hút nhiều du khách đến nghỉ dưỡng. Bà Rịa - Vũng Tàu còn có nhiều
+                                            di tích lịch sử, văn hóa và các khu vực sinh thái phong phú. Kinh tế tỉnh
+                                            chủ yếu dựa vào du lịch, nông nghiệp và công nghiệp, đặc biệt là khai thác
+                                            dầu khí. Với khí hậu nhiệt đới ôn hòa, tỉnh là điểm đến lý tưởng cho các
+                                            hoạt động vui chơi giải trí và thể thao dưới nước. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <p class="des__content des-ma">Ẩm Thực </p>
+        <div class="container swiper">
+            <div class="slider-wrapper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <img src="https://file.hstatic.net/1000394081/article/com-tam_e03b4325c9914def9d66619930a73432.jpg"
+                            alt="User Image" class="user-image">
+                        <p class="food">Cơm tấm</p>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="https://statics.vinwonders.com/banh-canh-10_1631867919.jpg" alt="User Image"
+                            class="user-image">
+                        <p class="food">Bánh canh</p>
+
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMarJNGet-IWpRQCCW83Qymyag5Y4UEIixUA&s"
+                            alt="User Image" class="user-image">
+                        <p class="food">Bánh tráng trộn</p>
+
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="https://luhanhvietnam.com.vn/du-lich/vnt_upload/news/11_2022/dac-san-than-lan-nui-ba-den-xao.jpg"
+                            alt="User Image" class="user-image">
+                        <p class="food">Thằn lằn núi Bà Đen</p>
+
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="https://daynauan.info.vn/wp-content/uploads/2018/03/lau-mam.jpg" alt="User Image"
+                            class="user-image">
+                        <p class="food">Lẩu mắm</p>
+
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="https://static.vinwonders.com/2022/05/bun-ken-phu-quoc-1.png" alt="User Image"
+                            class="user-image">
+                        <p class="food">Bún kèn</p>
+
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="https://noiphosaigon.vn/wp-content/uploads/2020/11/cach-lam-hu-tieu-nam-vang.jpg"
+                            alt="User Image" class="user-image">
+                        <p class="food">Hủ tiếu</p>
+
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="https://dulichvn.net/wp-content/uploads/2021/10/goi-ca-trich-com-bac.jpg"
+                            alt="User Image" class="user-image">
+                        <p class="food">Gỏi cá trích</p>
+
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="https://maisonmando.com/wp-content/uploads/2022/04/pha-lau-la-mon-gi-1.jpg"
+                            alt="User Image" class="user-image">
+                        <p class="food">Phá lấu</p>
+
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="https://western.edu.vn/wp-content/uploads/2017/08/optimized-h2rc.jpg" alt="User Image"
+                            class="user-image">
+                        <p class="food">Bánh đúc lá dứa</p>
+
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+        </div>
+
+        <section id="fot">
+            <footer class="footer__pading">
+                <div class="footer">
+                    <ul class="footer__tent">
+                        <li class="logo">
+                            <img src="../img/IMG_1077.PNG" class="logo-img">
+                            <span class="name-logo name-logo-fot">Travel Tour</span>
+                        </li>
+                    </ul>
+                    <ul class="footer__tent">
+                        <li class="logo"></li>
+                        <span class="logo__cotent">Công ty EDT</span>
+                        </li>
+                        <li class="logo">
+                            <div class="logo__sdt">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Địa chỉ : Tầng xx, Hà Nội
+                            </div>
+                        </li>
+                        <li class="logo">
+                            <div class="logo__sdt">
+                                <i class="fa-solid fa-phone"> </i>
+                                Điện thoại : 0327195539
+                            </div>
+                        </li>
+                        <li class="logo">
+                            <div class="logo__sdt">
+                                <i class="fa-regular fa-envelope"></i>
+                                Email : Contact@gmail.com
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="footer__tent">
+                        <li class="logo">
+                            <span class="logo__cotent name-logo-fot" style="margin:0 0 10px 100px;">Liên hệ</span>
+                        </li>
+                        <li class="logo">
+                            <div class="logo__sdt ">
+                                <a href="#" class="logo__size">
+                                    <img src="../img/IMG_1085.PNG" class="logo__img">
+                                </a>
+                                <a href="#" class="logo__size">
+                                    <img src="../img/IMG_1088.PNG" class="logo__img">
+                                </a>
+                                <a href="#" class="logo__size">
+                                    <img src="../img/IMG_1082.JPG" class="logo__img" style="border-radius: 50%;">
+                                </a>
+                                <a href="#" class="logo__size">
+                                    <img src="../img/IMG_1083.PNG" class="logo__img">
+                                </a>
+
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </footer>
+        </section>
+    </div>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking custom script -->
+    <!--=============== MAIN JS ===============-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

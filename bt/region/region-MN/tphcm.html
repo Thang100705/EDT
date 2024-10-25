@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tour</title>
+    <link rel="icon" href="img/IMG_1077.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/hanoi.css">
+    <link rel="stylesheet" href="css/hn.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/respon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playball&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+        }
+    </style>
+    <div class="class">
+        <header class="header">
+            <div class="grid">
+                <nav class="header_navbar ">
+                    <ul class="header_navbar-list">
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="header_navbar-contact disapp1 ">0327195539</div>
+                        </a>
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div class="header_navbar-contact disapp1 ">Contact@gmail.com</div>
+                        </a>
+                    </ul>
+                    <ul class="header_navbar-list">
+                        <li class="header_navbar-item">
+                            <a href="#" class="header_navbar-facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span class="disapp">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="header_navbar-item ">
+                            <a href="#" class="header_navbar-instra">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span class="disapp">Instragram</span>
+                            </a>
+                        </li>
+
+                        <li class="header_navbar-sepa"></li>
+                        <li class="header_navbar-item" id="loginLink">
+                            <a href="login-regis/login.html" class="header_navbar-login">
+                                <i class="fa-solid fa-lock"></i>
+                                <span class="disapp">Đăng Nhập</span>
+                            </a>
+                        </li>
+                        <!-- Liên kết Đăng Ký -->
+                        <li class="header_navbar-item" id="registerLink">
+                            <a href="login-regis/register.html" class="header_navbar-regis">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="disapp">Đăng Ký</span>
+                            </a>
+                        </li>
+                        <!-- Avatar và Tên người dùng -->
+                        <li class="header_navbar-item" id="userInfo" style="display: none;">
+                            <a class="user-avatar" href="../../LSGiaodich/ThToan.html">
+                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/02e0d039-fbc0-4059-902e-45c3ede4df5b/dgcuy5w-5f5250b2-c1b8-4d5c-b9c6-f192d23c7f72.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAyZTBkMDM5LWZiYzAtNDA1OS05MDJlLTQ1YzNlZGU0ZGY1YlwvZGdjdXk1dy01ZjUyNTBiMi1jMWI4LTRkNWMtYjljNi1mMTkyZDIzYzdmNzIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.L36pDjQ1d1ks1FS5CH5kldYy6j7x2IbfQ-znM7Lo4zU"
+                                    alt="User Avatar">
+                                <span class="user">Admin</span>
+                            </a>
+                            <button onclick="logout()">Đăng xuất</button>
+
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="header_navbar-function">
+                    <div class="header_navbar-item ">
+                        <li class="header_navbar-item">
+                            <a href="../../btChinh.html" class="header_navbar-logo">
+                                <img src="../../img/IMG_1077.PNG" class="logo-img">
+                                <span class="name-logo">Travel Tour</span>
+                            </a>
+                        </li>
+                    </div>
+                    <ul class="header_navbar-item-funtion menu" id="menu">
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../../btChinh.html" class="home ">Trang Chủ</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../region-Nam.html" class="home home-fun">Vùng Miền</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#dd" class="home home-fun" id="active">Địa Điểm</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="../../btChinh.html#booking" class="home ">Dịch Vụ</a>
+                        </li>
+
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#fot" class="home ">Về Chúng Tôi</a>
+                        </li>
+                    </ul>
+                    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+                </nav>
+                <div class="overlay" id="overlay"></div>
+
+            </div>
+        </header>
+        <div class="app-copntainer" id="dd">
+            <p class="des__content des__content-1">TP. HỒ CHÍ MINH </p>
+
+            <div class="home-filter">
+                <div class="grid__row">
+                    <div class="grid__column-9 grid__column-6__item">
+                        <div class="tour-item">
+                            <img src="https://ik.imagekit.io/tvlk/blog/2024/07/du-lich-sai-gon-1.jpg?tr=dpr-0.9375,w-675"
+                                class="tour-item__img-6">
+                        </div>
+                        <div class="tour-item-content ">
+                            <h3>Tòa nhà Landmark 81</h3>
+                            <p>Landmark 81 được xem là địa điểm đi chơi ở Sài Gòn cực kỳ lý tưởng cho nhiều bạn trẻ hiện
+                                nay. Là toà nhà cao nhất Việt Nam với chiều cao lên đến 470m, bên trong Landmark 81 được
+                                trang bị nhiều dịch vụ vui chơi nghỉ dưỡng cực kỳ đẳng cấp. Đến đây thì ngoài việc ngắm
+                                nhìn toàn cảnh Sài Gòn từ trên cao, bạn còn có thể thư giãn với nhiều khu vực giải trí
+                                đẳng cấp như sân băng Vincom Ice Rink, rạp chiếu phim CGV, nhà hàng, cafe, quán bar,
+                                khách sạn,...</p>
+
+
+                        </div>
+                        <div class="tour-item-content-booking">
+                            <a href="../../TT/Book.html#book" class=" tour-item-content-re">
+                                <button class="booking">
+                                    <span>Đặt Tour</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="grid__column-9 grid__column-6__item">
+                        <div class="tour-item">
+                            <img src="https://ik.imagekit.io/tvlk/blog/2024/07/du-lich-sai-gon-2.jpg?tr=dpr-0.9375,w-675"
+                                class="tour-item__img-6">
+                        </div>
+                        <div class="tour-item-content ">
+                            <h3>Khu du lịch Văn hoá Suối Tiên</h3>
+                            <p>Khu du lịch Văn hóa Suối Tiên tọa lạc tại 120 Xa Lộ Hà Nội, Thành Phố Thủ Đức, Thành phố
+                                Hồ Chí Minh, là điểm đến hấp dẫn du khách với diện tích rộng lớn 105ha và hơn 150 công
+                                trình độc đáo. Nơi đây mở cửa từ 8h sáng đến 5h chiều hằng ngày. Bước chân vào Suối
+                                Tiên, du khách như lạc bước vào thế giới huyền bí, nơi giao thoa giữa văn hóa, lịch sử
+                                và giải trí. Bên cạnh đó, Suối Tiên còn là thiên đường giải trí với đa dạng trò chơi hấp
+                                dẫn: Biển Tiên Đồng Ngọc Nữ, Vòng Quay Mặt Trời, Tàu Lượn Siêu Tốc,...</p>
+                        </div>
+                    </div>
+                    <div class="grid__column-9 grid__column-6__item">
+                        <div class="tour-item">
+                            <img src="https://ik.imagekit.io/tvlk/blog/2024/07/du-lich-sai-gon-9.jpg?tr=dpr-0.9375,w-675"
+                                class="tour-item__img-6">
+                        </div>
+                        <div class="tour-item-content">
+                            <h3>Thảo Cầm Viên</h3>
+                            <p>Đừng ngỡ Thảo Cầm Viên thì chỉ dành cho trẻ em nha, đây cũng là một trong những địa điểm
+                                đi chơi ở Sài Gòn được rất nhiều người yêu thích đó. Hiện tại Thảo Cầm Viên đang lưu giữ
+                                khoảng hơn 1000 cá thể động vật, 2000 loài hoa cùng cây cảnh cực kỳ độc đáo luôn. Chưa
+                                hết đâu nơi đây còn có rất nhiều góc “sống ảo" siêu đẹp để bạn thỏa sức bung lụa luôn
+                                đó.</p>
+                        </div>
+                    </div>
+                    <div class="grid__column-9 grid__column-6__item">
+                        <div class="tour-item">
+                            <img src="https://ik.imagekit.io/tvlk/blog/2024/07/du-lich-sai-gon-14.jpg?tr=dpr-0.9375,w-675"
+                                class="tour-item__img-6">
+                        </div>
+                        <div class="tour-item-content">
+                            <h3>Nhà thờ Đức Bà</h3>
+                            <p>Đi chơi ở nhà thờ Đức Bà? Nghe cũ mà không hề chán chút nào đâu nha. Nhà thờ Đức Bà là
+                                công trình kiến trúc lâu đời tại Sài Gòn với thiết kế vô cùng đặc biệt kết hợp giữa
+                                phong cách Roman và Gothic. Bên trong nhà thờ bao gồm một lòng chính, hai lòng phụ và 2
+                                dãy nhà nguyện với sức chứa toàn bộ lên đến 1200 người. Đến thăm nhà thờ Đức Bà các bạn
+                                trẻ có thể thoải mái “sống ảo" nè, thử trải nghiệm cafe bệt nổi tiếng và đừng quên tranh
+                                thủ ghé thăm Bưu Điện Thành Phố kế bên luôn nha.</p>
+                        </div>
+                    </div>
+
+                    <div class="grid__column-9 grid__column-6__item">
+                        <div class="tour-item">
+                            <img src="https://mia.vn/media/uploads/blog-du-lich/den-dat-cang-dung-bo-qua-top-18-diem-du-lich-hai-phong-tuyet-dep-phan-1-5-1647973371.jpg"
+                                class="tour-item__img-6">
+                        </div>
+                        <div class="tour-item-content">
+                            <h3>Cầu Ánh Sao</h3>
+                            <p>Lại thêm một địa điểm đi chơi ở Sài Gòn đảm bảo các bạn sẽ cực kỳ thích thú luôn đây, đó
+                                chính là Cầu Ánh Sao. Đây là chiếc cầu nối giữa kênh Đào tại Khu đô thị Phú Mỹ Hưng và
+                                Hồ Bán Nguyệt. Điều đặc biệt tại cầu Ánh Sao chính là được trang bị hệ thống phun nước
+                                kết hợp đèn LED siêu đẹp. Nếu muốn chiêm ngưỡng khung cảnh lung linh ấy thì bạn nhớ đến
+                                đây vào ban đêm nha. Ngoài việc tham quan cầu Ánh Sao thì bạn cũng có thể đến khu vực
+                                quảng trường tại hai bên cầu để tham gia nhiều hoạt động thú vị khác nữa nhé.</p>
+                        </div>
+                    </div>
+
+                    <div class="grid__column-9 grid__column-6__item">
+                        <div class="tour-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Ben_Thanh_market_2.jpg"
+                                class="tour-item__img-6">
+                        </div>
+                        <div class="tour-item-content">
+                            <h3>Chợ Bến Thành</h3>
+                            <p>Trải qua bao nhiêu thăng trầm của lịch sử và những biến cố như cháy, sụp và di dời. Tuy
+                                nhiên, đến nay khu chợ vẫn giữ được những nét kiến trúc cổ xưa và truyền thống trao đổi
+                                giao thương.
+
+                                Là một biểu tượng nổi tiếng và xưa cũ ở Sài Gòn, nhưng chưa chắc tất cả những người con
+                                đang sinh sống tại Sài Gòn đã một lần bước chân vào chợ. Đây vừa là một địa chỉ buôn bán
+                                giao lưu, vừa là một địa điểm tham quan mà bất cứ du khách nào khi đặt chân đến Sài
+                                Thành cũng muốn một lần được trải nghiệm nơi này.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <p class="des__content des__pad">Ẩm Thực </p>
+        <section class="container">
+            <div class="card__container swiper">
+                <div class="card__content">
+                    <div class="swiper-wrapper">
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2017/06/truy-lung-dia-chi-cua-30-mon-an-ngon-sai-gon-phan-1-1.jpg?tr=dpr-2,w-675"
+                                    alt="image" class="card__img">
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Bún bò </h3>
+
+
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://cdn.tgdd.vn/Files/2019/03/12/1154316/cach-nau-bun-mam-mien-tay-chuan-thom-ngon-don-gian-tai-nha-202112211640380018.jpg"
+                                    alt="image" class="card__img">
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Bún mắm</h3>
+
+
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://i.ytimg.com/vi/h__kLq8NG2I/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDqn7vasJHB1JVJB8uobiB67rxztw"
+                                    alt="image" class="card__img">
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Cơm tấm </h3>
+
+
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2017/06/truy-lung-dia-chi-cua-30-mon-an-ngon-sai-gon-phan-1-4.jpg?tr=dpr-2,w-675"
+                                    alt="image" class="card__img">
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Phá lấu</h3>
+
+
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://scontent.iocvnpt.com/resources/portal/Images/CTO/superadminportal.cto/Nhahang/bone3ngon/bone3ngon_637063857247286554.jpg"
+                                    alt="image" class="card__img">
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Bò né</h3>
+
+
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://khoquet.vn/wp-content/uploads/2017/06/hu-tieu-bo-kho.jpg" alt="image"
+                                    class="card__img">
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Hủ tíu bò kho</h3>
+
+
+                            </div>
+                        </article>
+
+
+                    </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+
+                <!-- Pagination -->
+            </div>
+        </section>
+
+        <section id="fot">
+            <footer class="footer__pading">
+                <div class="footer">
+                    <ul class="footer__tent">
+                        <li class="logo">
+                            <img src="../../img/IMG_1077.PNG" class="logo-img-fot">
+                            <span class="name-logo name-logo-fot">Travel Tour</span>
+                        </li>
+                    </ul>
+                    <ul class="footer__tent">
+                        <li class="logo"></li>
+                        <span class="logo__cotent">Công ty EDT</span>
+                        </li>
+                        <li class="logo">
+                            <div class="logo__sdt">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Địa chỉ : Tầng xx, Hà Nội
+                            </div>
+                        </li>
+                        <li class="logo">
+                            <div class="logo__sdt">
+                                <i class="fa-solid fa-phone"> </i>
+                                Điện thoại : 0327195539
+                            </div>
+                        </li>
+                        <li class="logo">
+                            <div class="logo__sdt">
+                                <i class="fa-regular fa-envelope"></i>
+                                Email : Contact@gmail.com
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="footer__tent">
+                        <li class="logo">
+                            <span class="logo__cotent name-logo-fot" style="margin:0 0 10px 100px;">Liên hệ</span>
+                        </li>
+                        <li class="logo">
+                            <div class="logo__sdt ">
+                                <a href="#" class="logo__size">
+                                    <img src="../../img/IMG_1085.PNG" class="logo__img">
+                                </a>
+                                <a href="#" class="logo__size">
+                                    <img src="../../img/IMG_1088.PNG" class="logo__img">
+                                </a>
+                                <a href="#" class="logo__size">
+                                    <img src="../../img/IMG_1082.JPG" class="logo__img" style="border-radius: 50%;">
+                                </a>
+                                <a href="#" class="logo__size">
+                                    <img src="../../img/IMG_1083.PNG" class="logo__img">
+                                </a>
+
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </footer>
+        </section>
+    </div>
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking custom script -->
+    <!--=============== MAIN JS ===============-->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

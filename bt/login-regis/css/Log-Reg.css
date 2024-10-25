@@ -1,0 +1,238 @@
+.header_navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(194, 231, 252);
+}
+
+.header_navbar-function {
+  display: flex;
+  font-size: 1.6rem;
+  margin: 10px 20px;
+}
+
+.logo-img {
+  max-width: 130px;
+  width: 100%;
+}
+
+.name-logo {
+  font-size: 3rem;
+  font-family: "Playball", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #244065;
+  transform: scaleX(1.2);
+  margin-left: 30px;
+
+}
+
+.header_navbar-list {
+  display: flex;
+  padding: 6px 5px 8px 5px;
+}
+
+.header_navbar-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  font-size: 1.6rem;
+}
+
+.header_navbar-item-funtion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.header_navbar-contact {
+  margin-left: 4px;
+}
+
+.home:hover,
+#active {
+  cursor: pointer;
+  color: #4BBEFF;
+  transition: .4s;
+}
+
+.home {
+  position: relative;
+  color: #898686;
+  padding: 10px 20px;
+}
+
+#active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  width: 70%;
+  height: 3px;
+  transition: 0.4s;
+  border-radius: 1px;
+  background-color: #4BBEFF;
+}
+
+.home::after {
+  content: '';
+  position: absolute;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 3px;
+  transition: 0.4s;
+  border-radius: 1px;
+  background-color: #4BBEFF;
+}
+
+.home:hover:after {
+  width: 70%;
+  left: 14%;
+  transition: 0.4s ease;
+}
+
+.header_navbar-item-home {
+  margin-left: 50px;
+}
+
+.header_navbar-sepa {
+  padding: auto;
+  border-right: 1px solid #333;
+}
+
+.footer__tent {
+  padding: 0px 35px;
+}
+
+.header_navbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.header_navbar-function a {
+  font-size: 2rem;
+}
+
+.bodic {
+  background: url('https://statics.vinpearl.com/da-lat-ve-dem-1_1701780759.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  border: 1px solid #e2e6f2;
+}
+
+.wrap {
+  max-width: 420px;
+  width: 100%;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  padding: 30px 40px;
+}
+
+.wrap h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+}
+
+.wrap .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
+}
+
+.wrap-username,
+.wrap-password,
+.wrap-email {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  padding: 20px 45px 20px 20px;
+  border: 2px solid rgba(230, 226, 226, 0.2);
+  border-radius: 40px;
+  color: #fff;
+  outline: none;
+  font-size: 1.4rem;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+  font-weight: 500;
+}
+
+.input-box i {
+  color: #fff;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+}
+
+.wrap .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin: 0 15px 10px 15px;
+}
+
+.wrap .remember-forgot__register {
+  color: #fff;
+  margin: 0 10px 10px 10px;
+  font-size: 16px;
+}
+
+.remember-forgot label {
+  display: flex;
+  align-items: center;
+}
+
+.remember-forgot label input {
+  margin-right: 5px;
+}
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.login-btn {
+  width: 100%;
+  height: 45px;
+  background: #111;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: rgba(252, 252, 252, 0);
+}
+
+.register-link {
+  font-size: 15px;
+  text-align: center;
+  margin: 20px 0 15px 0;
+  color: #fff;
+}
+
+.register-link a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}

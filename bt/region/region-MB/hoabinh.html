@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/hanoi.css">
+    <link rel="stylesheet" href="css/hn.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/respon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playball&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+        }
+    </style>
+    <div class="class">
+        <header class="header">
+            <div class="grid">
+                <nav class="header_navbar ">
+                    <ul class="header_navbar-list">
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="header_navbar-contact disapp1 ">0327195539</div>
+                        </a>
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div class="header_navbar-contact disapp1 ">Contact@gmail.com</div>
+                        </a>
+                    </ul>
+                    <ul class="header_navbar-list">
+                        <li class="header_navbar-item">
+                            <a href="#" class="header_navbar-facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span class="disapp">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="header_navbar-item ">
+                            <a href="#" class="header_navbar-instra">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span class="disapp">Instragram</span>
+                            </a>
+                        </li>
+
+                        <li class="header_navbar-sepa"></li>
+                        <li class="header_navbar-item" id="loginLink">
+                            <a href="login-regis/login.html" class="header_navbar-login">
+                                <i class="fa-solid fa-lock"></i>
+                                <span class="disapp">Đăng Nhập</span>
+                            </a>
+                        </li>
+                        <!-- Liên kết Đăng Ký -->
+                        <li class="header_navbar-item" id="registerLink">
+                            <a href="login-regis/register.html" class="header_navbar-regis">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="disapp">Đăng Ký</span>
+                            </a>
+                        </li>
+                        <!-- Avatar và Tên người dùng -->
+                        <li class="header_navbar-item" id="userInfo" style="display: none;">
+                            <a class="user-avatar" href="../../LSGiaodich/ThToan.html">
+                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/02e0d039-fbc0-4059-902e-45c3ede4df5b/dgcuy5w-5f5250b2-c1b8-4d5c-b9c6-f192d23c7f72.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAyZTBkMDM5LWZiYzAtNDA1OS05MDJlLTQ1YzNlZGU0ZGY1YlwvZGdjdXk1dy01ZjUyNTBiMi1jMWI4LTRkNWMtYjljNi1mMTkyZDIzYzdmNzIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.L36pDjQ1d1ks1FS5CH5kldYy6j7x2IbfQ-znM7Lo4zU"
+                                    alt="User Avatar">
+                                <span class="user">Admin</span>
+                            </a>
+                            <button onclick="logout()">Đăng xuất</button>
+
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="header_navbar-function">
+                    <div class="header_navbar-item ">
+                        <li class="header_navbar-item">
+                            <a href="../../btChinh.html" class="header_navbar-logo">
+                                <img src="../../img/IMG_1077.PNG" class="logo-img">
+                                <span class="name-logo">Travel Tour</span>
+                            </a>
+                        </li>
+                    </div>
+                    <ul class="header_navbar-item-funtion menu" id="menu">
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../../btChinh.html" class="home ">Trang Chủ</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../region-Bac.html" class="home home-fun">Vùng Miền</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#dd" class="home home-fun" id="active">Địa Điểm</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="../../btChinh.html#booking" class="home ">Dịch Vụ</a>
+                        </li>
+
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#fot" class="home ">Về Chúng Tôi</a>
+                        </li>
+                    </ul>
+                    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+                </nav>
+                <div class="overlay" id="overlay"></div>
+
+            </div>
+        </header>
+
+        <div class="app-copntainer" id="dd">
+            <div class="grid">
+                <p class="des__content des__content-1">HÒA BÌNH </p>
+                <div class="home-filter">
+                    <div class="grid__row">
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://mia.vn/media/uploads/blog-du-lich/11-diem-du-lich-hoa-binh-ban-khong-muon-bo-lo-trong-hanh-trinh-kham-pha-tay-bac-01-1681119361.jpeg"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content ">
+                                <h3>Động Cóc Đá Bạc</h3>
+                                <p>Có tên gọi khác là Động Tiên, Động Cóc Đá Bạc là điểm tham quan thu hút sự chú ý của
+                                    tín đồ yêu thích khám phá trong hành trình du lịch Hòa Bình. Động gắn liền với điển
+                                    tích về tiên nữ xuống trần gian dạo chơi vẫn đang được người dân địa phương truyền
+                                    tai nhau đến tận ngày nay.
+
+                                    Động Cóc Đá Bạc là quần thể gồm ba hang động nhỏ, bao gồm động Cô Tiên, Long Tiên và
+                                    động Mẫu. Cả ba hang đều sở hữu vẻ đẹp hoang sơ, thơ mộng với những nhũ đá rũ từ
+                                    trên trần tựa rèm châu lung linh.
+
+                                </p>
+
+
+                            </div>
+                            <div class="tour-item-content-booking">
+                                <a href="../../TT/Book.html#book" class=" tour-item-content-re">
+                                    <button class="booking">
+                                        <span>Đặt Tour</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://mia.vn/media/uploads/blog-du-lich/11-diem-du-lich-hoa-binh-ban-khong-muon-bo-lo-trong-hanh-trinh-kham-pha-tay-bac-02-1681119361.jpeg"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content ">
+                                <h3>Hang Mãn Nguyện</h3>
+                                <p>Sở dĩ điểm du lịch Hòa Bình này có cái tên độc đáo là vì người dân mách nhau rằng,
+                                    mỗi khi rời hang về nhà, tâm trạng ai cũng cảm thấy sảng khoái và mãn nguyện với mọi
+                                    thứ diễn ra xung quanh. Và cái tên hang Mãn Nguyện đã ra đời như thế.
+
+                                    Ngay từ khoảnh khắc đầu tiên đặt chân đến hang, bạn sẽ bị choáng ngợp trước khung
+                                    cảnh nên thơ nhưng cũng không kém phần ngoạn mục tại đây. Bên trong lòng hang là hệ
+                                    thống nhũ đá muôn hình vạn trạng rũ xuống tựa rèm châu lung linh.</p>
+                            </div>
+                        </div>
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://mia.vn/media/uploads/blog-du-lich/11-diem-du-lich-hoa-binh-ban-khong-muon-bo-lo-trong-hanh-trinh-kham-pha-tay-bac-03-1681119361.jpeg"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Hang Mỏ Luông</h3>
+                                <p>Cách trung tâm Hòa Bình áng chừng 60km, hành trình du lịch khám phá xứ Mường của bạn
+                                    sẽ trở nên thú vị hơn khi ghé đến hang Mỏ Luông du ngoạn. Đây là hang động gắn liền
+                                    với điển tích rắn hóa rồng của đồng bào người Thái.
+
+                                    Hang Mỏ Luông là quần thể gồm bốn hang động với mỗi hang sở hữu một nét đẹp rất
+                                    riêng. Đến với hang Mỏ Luông trong hành trình du lịch Hòa Bình, bạn sẽ không khỏi
+                                    cảm thán trước vẻ đẹp lung linh, huyền bí mà Mẹ thiên nhiên dành tặng cho quần thể
+                                    hang động này.</p>
+                            </div>
+                        </div>
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://mia.vn/media/uploads/blog-du-lich/11-diem-du-lich-hoa-binh-ban-khong-muon-bo-lo-trong-hanh-trinh-kham-pha-tay-bac-04-1681119361.jpeg"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Bản Lác</h3>
+                                <p>Ngôi làng có tuổi đời ngót nghét hơn trăm năm này vốn là nơi lưu trú bao đời nay của
+                                    đồng bào dân tộc người Thái. Ngày nay, không gian tại Bản Lác vẫn giữ được vẻ đẹp
+                                    nguyên sơ thuở đầu với những ngôi nhà sàn cao 2m, lũy tre làng, đồng nội xanh rì và
+                                    tiếng suối reo đậm chất thơ. Đến với Bản Lác, bạn sẽ có cơ hội hiểu rõ hơn về nét
+                                    đẹp văn hóa của chốn non cao Tây Bắc.</p>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://mia.vn/media/uploads/blog-du-lich/11-diem-du-lich-hoa-binh-ban-khong-muon-bo-lo-trong-hanh-trinh-kham-pha-tay-bac-05-1681119497.jpeg"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Thác Thăng Thiên</h3>
+                                <p>Chung quanh thác nước này là rừng già xanh rì cùng hệ động thực vật trù phú, đa dạng.
+                                    Thác Thăng Thiên quanh năm tuôn đổ nước từ trên cao tung bọt trắng xóa xuống lòng hồ
+                                    bên dưới. Nước tại thác trong veo màu ngọc bích, lại mát lạnh quanh năm nên thu hút
+                                    rất nhiều bạn trẻ đến đây bơi lội nhằm xua đi cái nắng ngày thường.
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://mia.vn/media/uploads/blog-du-lich/11-diem-du-lich-hoa-binh-ban-khong-muon-bo-lo-trong-hanh-trinh-kham-pha-tay-bac-11-1681119529.jpeg"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Suối khoáng Kim Bôi</h3>
+                                <p>Được ví von là "viên ngọc quý của núi rừng Tây Bắc", Suối khoáng Kim Bôi sở hữu dòng
+                                    nước khoáng trong veo quanh năm nóng 36 độ C. Đây là điểm du lịch Hòa Bình hoàn hảo
+                                    dành cho những ai muốn có giây phút thư giãn.
+
+                                    Không chỉ thu hút với dòng suối khoáng ngầm độc đáo, tại điểm du lịch Hòa Bình này
+                                    còn sở hữu dịch vụ tắm bùn khoáng cực tốt cho sức khỏe, các hoạt động vui chơi, giải
+                                    trí cùng nhiều món ăn hấp dẫn đang chờ bạn ghé đến thưởng thức.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <p class="des__content des__pad ">Ẩm Thực </p>
+                <section class="container">
+                    <div class="card__container swiper">
+                        <div class="card__content">
+                            <div class="swiper-wrapper">
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/06/dac-san-hoa-binh-1-1024x683.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Cơm Lam</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/06/dac-san-hoa-binh-2-1024x577.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Thịt lợn muối chua</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/06/dac-san-hoa-binh-3-1024x597.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Lợn mán thui luộc</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/06/dac-san-hoa-binh-4-1024x683.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Măng chua nấu thịt gà</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/06/dac-san-hoa-binh-5-1024x577.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Chả cuốn lá bưởi</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/06/dac-san-hoa-binh-6-1024x683.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Cá nướng sông Đà</h3>
+
+
+                                    </div>
+                                </article>
+
+
+                            </div>
+                        </div>
+
+                        <!-- Navigation buttons -->
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+
+                        <!-- Pagination -->
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <section id="fot">
+        <footer class="footer__pading">
+            <div class="footer">
+                <ul class="footer__tent">
+                    <li class="logo">
+                        <img src="../../img/IMG_1077.PNG" class="logo-img-fot">
+                        <span class="name-logo name-logo-fot">Travel Tour</span>
+                    </li>
+                </ul>
+                <ul class="footer__tent">
+                    <li class="logo"></li>
+                    <span class="logo__cotent">Công ty EDT</span>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Địa chỉ : Tầng xx, Hà Nội
+                        </div>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-solid fa-phone"> </i>
+                            Điện thoại : 0327195539
+                        </div>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-regular fa-envelope"></i>
+                            Email : Contact@gmail.com
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="footer__tent">
+                    <li class="logo">
+                        <span class="logo__cotent name-logo-fot" style="margin:0 0 10px 100px;">Liên hệ</span>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt ">
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1085.PNG" class="logo__img">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1088.PNG" class="logo__img">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1082.JPG" class="logo__img" style="border-radius: 50%;">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1083.PNG" class="logo__img">
+                            </a>
+
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </footer>
+    </section>
+    <!--=============== SWIPER JS ===============-->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

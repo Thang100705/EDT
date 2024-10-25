@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tour</title>
+    <link rel="icon" href="img/IMG_1077.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/hanoi.css">
+    <link rel="stylesheet" href="css/hn.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/respon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playball&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+        }
+    </style>
+    <div class="class">
+        <header class="header">
+            <div class="grid">
+                <nav class="header_navbar ">
+                    <ul class="header_navbar-list">
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="header_navbar-contact disapp1 ">0327195539</div>
+                        </a>
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div class="header_navbar-contact disapp1 ">Contact@gmail.com</div>
+                        </a>
+                    </ul>
+                    <ul class="header_navbar-list">
+                        <li class="header_navbar-item">
+                            <a href="#" class="header_navbar-facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span class="disapp">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="header_navbar-item ">
+                            <a href="#" class="header_navbar-instra">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span class="disapp">Instragram</span>
+                            </a>
+                        </li>
+
+                        <li class="header_navbar-sepa"></li>
+                        <li class="header_navbar-item" id="loginLink">
+                            <a href="login-regis/login.html" class="header_navbar-login">
+                                <i class="fa-solid fa-lock"></i>
+                                <span class="disapp">Đăng Nhập</span>
+                            </a>
+                        </li>
+                        <!-- Liên kết Đăng Ký -->
+                        <li class="header_navbar-item" id="registerLink">
+                            <a href="login-regis/register.html" class="header_navbar-regis">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="disapp">Đăng Ký</span>
+                            </a>
+                        </li>
+                        <!-- Avatar và Tên người dùng -->
+                        <li class="header_navbar-item" id="userInfo" style="display: none;">
+                            <a class="user-avatar" href="../../LSGiaodich/ThToan.html">
+                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/02e0d039-fbc0-4059-902e-45c3ede4df5b/dgcuy5w-5f5250b2-c1b8-4d5c-b9c6-f192d23c7f72.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAyZTBkMDM5LWZiYzAtNDA1OS05MDJlLTQ1YzNlZGU0ZGY1YlwvZGdjdXk1dy01ZjUyNTBiMi1jMWI4LTRkNWMtYjljNi1mMTkyZDIzYzdmNzIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.L36pDjQ1d1ks1FS5CH5kldYy6j7x2IbfQ-znM7Lo4zU"
+                                    alt="User Avatar">
+                                <span class="user">Admin</span>
+                            </a>
+                            <button onclick="logout()">Đăng xuất</button>
+
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="header_navbar-function">
+                    <div class="header_navbar-item ">
+                        <li class="header_navbar-item">
+                            <a href="../../btChinh.html" class="header_navbar-logo">
+                                <img src="../../img/IMG_1077.PNG" class="logo-img">
+                                <span class="name-logo">Travel Tour</span>
+                            </a>
+                        </li>
+                    </div>
+                    <ul class="header_navbar-item-funtion menu" id="menu">
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../../btChinh.html" class="home ">Trang Chủ</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../region- TayNguyen.html" class="home home-fun">Vùng Miền</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#dd" class="home home-fun" id="active">Địa Điểm</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="../../btChinh.html#booking" class="home ">Dịch Vụ</a>
+                        </li>
+
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#fot" class="home ">Về Chúng Tôi</a>
+                        </li>
+                    </ul>
+                    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+                </nav>
+                <div class="overlay" id="overlay"></div>
+
+            </div>
+        </header>
+
+        <div class="app-copntainer" id="dd">
+            <div class="grid">
+                <p class="des__content des__content-1">GIA LAI</p>
+                <div class="home-filter">
+                    <div class="grid__row">
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://image.tienphong.vn/w890/Uploaded/2024/krpexlpve_mrekzve/2021_03_24/Tien_Phong_Nui_lua_Chu_Dang_Ya_cach_trung_tam_thanh_pho_Pleiku_khoang_15km_Anh_Phan_Nguyen_NSEX.jpg"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content ">
+                                <h3> Núi lửa Chư Đăng Ya</h3>
+                                <p>Cách trung tâm thành phố hơn 20km, núi lửa Chư Đăng Ya là tọa độ yêu thích của hội mê
+                                    khám phá thiên nhiên. Cụm từ “Chư Đăng Ya” trong tiếng dân tộc J’rai có nghĩa là “củ
+                                    gừng dại” và liên quan đến một câu chuyện cổ. Nằm giữa những thửa ruộng chữ nhật của
+                                    ngôi làng Ploi lagri, đây vốn là một ngọn núi lửa đã ngừng hoạt động hàng triệu năm.
+                                </p>
+
+
+                            </div>
+                            <div class="tour-item-content-booking">
+                                <a href="../../TT/Book.html#book" class=" tour-item-content-re">
+                                    <button class="booking">
+                                        <span>Đặt Tour</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/03/dia-diem-du-lich-gia-lai-6-812x1024.jpg?tr=dpr-2,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content ">
+                                <h3>Biển hồ</h3>
+                                <p>Còn được gọi bằng cái tên khác - hồ T’nưng, Biển Hồ là địa điểm du lịch Gia Lai không
+                                    thể bỏ qua khi đến phố núi này. Nằm giữa cao nguyên ở độ cao 800m so với mực nước
+                                    biển, nơi này bao gồm hai hồ nước ngọt tự nhiên được ôm trọn bởi những cánh rừng
+                                    thông xanh mướt và núi nón trùng điệp.
+                                    Với diện tích mặt nước lên đến 230ha, Biển Hồ đẹp như một bức tranh thủy mặc với làn
+                                    nước xanh ngắt mang lại cảm giác cực mát mẻ, dù thời tiết Gia Lai vốn oi nồng. Vì
+                                    vậy, nơi này còn được xem là “lá phổi xanh” hay “đôi mắt Pleiku”.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/03/dia-diem-du-lich-gia-lai-9-819x1024.jpg?tr=dpr-2,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Thác Hang Én</h3>
+                                <p>Địa điểm du lịch Gia Lai này hay còn được gọi bằng một cái tên khác là thác K50. Vốn
+                                    là thượng nguồn của dòng sông Côn, thác Hang Én nằm bên ẩn sâu trong những cánh rừng
+                                    nguyên sinh thuộc khu bảo tồn Kon Chư Răng. Với độ cao hơn 50m và chiều rộng tối đa
+                                    100m, dòng thác này đẹp như một dải lụa xanh bạc giữa đại ngàn.
+                                    Thác Hang Én được mệnh danh là con thác đẹp nhất Tây Nguyên, tuy nhiên, nó không
+                                    dành cho đại đa số tín đồ xê dịch. Bởi cung đường di chuyển đến đây khá trắc trở và
+                                    quãng đường 2 ngày băng rừng cũng không dành cho hội yếu tim. Khu vực này cũng không
+                                    có homestay hay khách sạn nào nên bạn chỉ có thể cắm trại nghỉ ngơi qua đêm.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/03/dia-diem-du-lich-gia-lai-13.jpg?tr=dpr-2,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Núi Hàm Rồng</h3>
+                                <p>Huyện đảo này chỉ cách trung tâm Hải Phòng độ 9km và cực hút khách vào mỗi dịp hè.
+                                    Lúc này chúng ta có thể được đắm mình trong làn nước mát và chiêm ngưỡng thiên nhiên
+                                    tươi đẹp. Bởi có khí hậu mát mẻ quanh năm nên nó cũng sớm trở thành điểm tham quan
+                                    lý tưởng trong mắt du khách.
+
+                                    Ở đảo bạn có thể tham quan nhiều nơi như Vịnh Lan Hạ, Đảo Khỉ, vườn quốc gia Cát Bà…
+                                    Bên cạnh đó khu vực này còn nổi tiếng với nhiều loại đặc sản: tu hài, bề bề rang
+                                    muối, sam trứng nướng… Đó cũng là lý do mà những chương trình tour hay chọn Đảo Cát
+                                    Bà đưa vào các Điểm du lịch Hải Phòng tuyệt đẹp.</p>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://datviettour.com.vn/uploads/images/tin-tuc-SEO/tay-nguyen/danh-thang/chua-minh-thanh-pleiku.jpg"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3> Chùa Minh Thành</h3>
+                                <p>Đâu chỉ có rừng cây, ao hồ hay núi non hùng vỹ, Gia Lai còn có một tọa độ check-in
+                                    đậm chất Á Đông, chính là chùa Minh Thành. Nằm trên một ngọn đồi cách trung tâm
+                                    thành phố 2km, ngôi chùa này được xây dựng từ năm 1964 và trở thành nơi hành hương,
+                                    thờ cúng quen thuộc của người dân địa phương.
+
+                                    Minh Thành được xem là ngôi chùa đẹp nhất Pleiku khi kết hợp hài hòa giữa kiến trúc
+                                    Nhật Bản và một ít Trung Hoa. Từ tháp chính điện, hàng liễu và tượng điêu khắc trong
+                                    khuôn viên sân vườn cho đến thiết kế mái lợp, mọi chi tiết trong quần thể công trình
+                                    này đều làm bạn cảm giác như đang lạc bước vào ngôi chùa nào đó ở xứ Phù Tang.</p>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://dulichgialai.vn/files/common/nui-da-iagrai-gia-lai-bcr4r.jpg"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Núi Đá Pleiku</h3>
+                                <p>Một địa điểm du lịch Gia Lai mới “mọc” lên gần đây chính là núi Đá Pleiku. Nằm ở
+                                    ngoại ô thành phố, tọa độ này vốn là mỏ khai thác đá cũ và được người dân địa phương
+                                    tận dụng thành bãi chăn thả gia súc. Tuy nhiên, núi đá Pleiku thu hút cực nhiều tín
+                                    đồ xê dịch bởi vẻ đẹp mộc mạc của nó.
+
+                                    Từ núi Đá, bạn có thể phóng tầm mắt bắt trọn khung cảnh Pleiku xinh đẹp bên dưới, từ
+                                    những cánh rừng xanh mướt, hồ nước trong vắt cho đến phố thị ở xa xa. Mọi thứ dường
+                                    như thu bé lại chỉ tại tọa độ này. Vì núi Đá còn khá hoang sơ nên bạn có thể cắm
+                                    trại qua đêm và tự tay nấu nướng sau khi trekking đến đây nhé.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <p class="des__content des__pad ">Ẩm Thực </p>
+                <section class="container">
+                    <div class="card__container swiper">
+                        <div class="card__content swiper-initialized swiper-horizontal swiper-pointer-events">
+                            <div class="swiper-wrapper" id="swiper-wrapper-a0baa0e76104f610c2" aria-live="polite"
+                                style="cursor: grab; transform: translate3d(-1092px, 0px, 0px); transition-duration: 0ms;">
+                                <article class="card__article swiper-slide swiper-slide-duplicate"
+                                    data-swiper-slide-index="3" role="group" aria-label="4 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/05/dac-san-gia-lai-5.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bò một nắng</h3>
+
+
+                                    </div>
+                                </article>
+                                <article class="card__article swiper-slide swiper-slide-duplicate"
+                                    data-swiper-slide-index="4" role="group" aria-label="5 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/05/dac-san-gia-lai-8.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Thịt bò nướng ống tre</h3>
+
+
+                                    </div>
+                                </article>
+                                <article class="card__article swiper-slide swiper-slide-duplicate swiper-slide-prev"
+                                    data-swiper-slide-index="5" role="group" aria-label="6 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/05/dac-san-gia-lai-7-1024x683.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Nấm Linh Chi</h3>
+
+
+                                    </div>
+                                </article>
+                                <article class="card__article swiper-slide swiper-slide-active"
+                                    data-swiper-slide-index="0" role="group" aria-label="1 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/05/dac-san-gia-lai-2-1024x662.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bún mắm cua </h3>
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide swiper-slide-next"
+                                    data-swiper-slide-index="1" role="group" aria-label="2 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/05/dac-san-gia-lai-3-1024x661.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Muối kiến vàng</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide" data-swiper-slide-index="2" role="group"
+                                    aria-label="3 / 6" style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/05/dac-san-gia-lai-6-1024x740.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bún mắm nêm</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide" data-swiper-slide-index="3" role="group"
+                                    aria-label="4 / 6" style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/05/dac-san-gia-lai-5.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bò một nắng</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide" data-swiper-slide-index="4" role="group"
+                                    aria-label="5 / 6" style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/05/dac-san-gia-lai-8.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Thịt bò nướng ống tre</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide swiper-slide-duplicate-prev"
+                                    data-swiper-slide-index="5" role="group" aria-label="6 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/05/dac-san-gia-lai-7-1024x683.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Nấm Linh Chi</h3>
+
+
+                                    </div>
+                                </article>
+
+
+                                <article
+                                    class="card__article swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                                    data-swiper-slide-index="0" role="group" aria-label="1 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/05/dac-san-gia-lai-2-1024x662.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bún mắm cua </h3>
+
+                                    </div>
+                                </article>
+                                <article
+                                    class="card__article swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                                    data-swiper-slide-index="1" role="group" aria-label="2 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/05/dac-san-gia-lai-3-1024x661.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Muối kiến vàng</h3>
+
+
+                                    </div>
+                                </article>
+                                <article class="card__article swiper-slide swiper-slide-duplicate"
+                                    data-swiper-slide-index="2" role="group" aria-label="3 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/05/dac-san-gia-lai-6-1024x740.jpeg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bún mắm nêm</h3>
+
+
+                                    </div>
+                                </article>
+                            </div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+
+                        <!-- Navigation buttons -->
+                        <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+                            aria-controls="swiper-wrapper-a0baa0e76104f610c2">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                        <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"
+                            aria-controls="swiper-wrapper-a0baa0e76104f610c2">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+
+                        <!-- Pagination -->
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+    <section id="fot">
+        <footer class="footer__pading">
+            <div class="footer">
+                <ul class="footer__tent">
+                    <li class="logo">
+                        <img src="../../img/IMG_1077.PNG" class="logo-img-fot">
+                        <span class="name-logo name-logo-fot">Travel Tour</span>
+                    </li>
+                </ul>
+                <ul class="footer__tent">
+                    <li class="logo"></li>
+                    <span class="logo__cotent">Công ty EDT</span>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Địa chỉ : Tầng xx, Hà Nội
+                        </div>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-solid fa-phone"> </i>
+                            Điện thoại : 0327195539
+                        </div>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-regular fa-envelope"></i>
+                            Email : Contact@gmail.com
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="footer__tent">
+                    <li class="logo">
+                        <span class="logo__cotent name-logo-fot" style="margin:0 0 10px 100px;">Liên hệ</span>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt ">
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1085.PNG" class="logo__img">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1088.PNG" class="logo__img">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1082.JPG" class="logo__img" style="border-radius: 50%;">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1083.PNG" class="logo__img">
+                            </a>
+
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </footer>
+    </section>
+    <!--=============== SWIPER JS ===============-->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

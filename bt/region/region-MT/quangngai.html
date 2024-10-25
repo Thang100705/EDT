@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tour</title>
+    <link rel="icon" href="img/IMG_1077.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/hanoi.css">
+    <link rel="stylesheet" href="css/hn.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/respon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playball&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+        }
+    </style>
+    <div class="class">
+        <header class="header">
+            <div class="grid">
+                <nav class="header_navbar ">
+                    <ul class="header_navbar-list">
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="header_navbar-contact disapp1 ">0327195539</div>
+                        </a>
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div class="header_navbar-contact disapp1 ">Contact@gmail.com</div>
+                        </a>
+                    </ul>
+                    <ul class="header_navbar-list">
+                        <li class="header_navbar-item">
+                            <a href="#" class="header_navbar-facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span class="disapp">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="header_navbar-item ">
+                            <a href="#" class="header_navbar-instra">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span class="disapp">Instragram</span>
+                            </a>
+                        </li>
+
+                        <li class="header_navbar-sepa"></li>
+                        <li class="header_navbar-item" id="loginLink">
+                            <a href="login-regis/login.html" class="header_navbar-login">
+                                <i class="fa-solid fa-lock"></i>
+                                <span class="disapp">Đăng Nhập</span>
+                            </a>
+                        </li>
+                        <!-- Liên kết Đăng Ký -->
+                        <li class="header_navbar-item" id="registerLink">
+                            <a href="login-regis/register.html" class="header_navbar-regis">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="disapp">Đăng Ký</span>
+                            </a>
+                        </li>
+                        <!-- Avatar và Tên người dùng -->
+                        <li class="header_navbar-item" id="userInfo" style="display: none;">
+                            <a class="user-avatar" href="../../LSGiaodich/ThToan.html">
+                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/02e0d039-fbc0-4059-902e-45c3ede4df5b/dgcuy5w-5f5250b2-c1b8-4d5c-b9c6-f192d23c7f72.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAyZTBkMDM5LWZiYzAtNDA1OS05MDJlLTQ1YzNlZGU0ZGY1YlwvZGdjdXk1dy01ZjUyNTBiMi1jMWI4LTRkNWMtYjljNi1mMTkyZDIzYzdmNzIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.L36pDjQ1d1ks1FS5CH5kldYy6j7x2IbfQ-znM7Lo4zU"
+                                    alt="User Avatar">
+                                <span class="user">Admin</span>
+                            </a>
+                            <button onclick="logout()">Đăng xuất</button>
+
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="header_navbar-function">
+                    <div class="header_navbar-item ">
+                        <li class="header_navbar-item">
+                            <a href="../../btChinh.html" class="header_navbar-logo">
+                                <img src="../../img/IMG_1077.PNG" class="logo-img">
+                                <span class="name-logo">Travel Tour</span>
+                            </a>
+                        </li>
+                    </div>
+                    <ul class="header_navbar-item-funtion menu" id="menu">
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../../btChinh.html" class="home ">Trang Chủ</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../region-Trung.html" class="home home-fun">Vùng Miền</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#dd" class="home home-fun" id="active">Địa Điểm</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="../../btChinh.html#booking" class="home ">Dịch Vụ</a>
+                        </li>
+
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#fot" class="home ">Về Chúng Tôi</a>
+                        </li>
+                    </ul>
+                    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+                </nav>
+                <div class="overlay" id="overlay"></div>
+
+            </div>
+        </header>
+
+        <div class="app-copntainer" id="dd">
+            <div class="grid">
+                <p class="des__content des__content-1">QUẢNG NGÃI</p>
+                <div class="home-filter">
+                    <div class="grid__row">
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/09/dia-diem-check-in-quang-ngai-2.jpg?tr=dpr-2,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content ">
+                                <h3>Biển Dung Quất</h3>
+                                <p>
+                                    Là một phần của Vịnh Dung Quất, biển Dung Quất đã nhanh chóng thu hút du khách khắp
+                                    nơi bởi vẻ đẹp thơ mộng và yên bình. Không gian hoang sơ nhưng rất quyến rũ chính là
+                                    những gì bạn có thể cảm nhận khi đến địa điểm check-in Quảng Ngãi xinh đẹp này. Vậy
+                                    nên nếu yêu thích vị biển thì bạn nhớ ghé qua biển Dung Quất nhé.</p>
+
+
+                            </div>
+                            <div class="tour-item-content-booking">
+                                <a href="../../TT/Book.html#book" class=" tour-item-content-re">
+                                    <button class="booking">
+                                        <span>Đặt Tour</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/09/dia-diem-check-in-quang-ngai-3.jpeg?tr=dpr-2,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content ">
+                                <h3>Bãi biển Mỹ Khê</h3>
+                                <p>Khi tìm kiếm các địa điểm check-in Quảng Ngãi thì bạn nhất định phải đến bãi biển Mỹ
+                                    Khê - một trong những bãi biển quyến rũ nhất hành tinh. Đây có thể được xem là một
+                                    nàng thơ được du khách trong và ngoài nước không ngớt lời khen ngợi và mong muốn
+                                    được đến đây thật lâu để chill và tận hưởng không gian yên bình đến diệu kỳ.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/09/dia-diem-check-in-quang-ngai-4.jpg?tr=dpr-2,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Núi Thiên Ấn</h3>
+                                <p>Núi Thiên Ấn còn có tên gọi là Kim Ấn Sơn, với hình dạng tựa như chiếc ấn của trời và
+                                    nằm cạnh dòng sông xanh nên còn được người xưa gọi là Thiên Ấn Niêm Hà. Đây cũng là
+                                    một trong những ngọn núi cổ của Việt Nam vang danh khắp nơi với khung cảnh hùng vĩ
+                                    và xinh đẹp. Và Núi Thiên Ấn chắc chắn sẽ là một địa điểm check-in Quảng Ngãi mà bạn
+                                    không thể bỏ lỡ.
+
+                                    Bên cạnh đó, ngọn núi này còn mang một giá trị lịch sử vô cùng thiêng liêng vì trên
+                                    đỉnh núi có ngôi chùa cổ được Chúa Nguyễn Phúc Chu ban biển ngạch vào năm 1716. Ngọn
+                                    núi đã vinh dự được khắc vào dinh tự, cùng với đó là được vua Tự Đức đưa núi vào
+                                    hàng danh sơn của đất nước.</p>
+                            </div>
+                        </div>
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/09/dia-diem-check-in-quang-ngai-5.jpg?tr=dpr-2,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Đồng muối Sa Huỳnh</h3>
+                                <p>Nếu bạn muốn có một nơi vừa bình yên, gần gũi và thân thuộc thì hãy đến với đồng muối
+                                    Sa Huỳnh - một vựa muối quan trọng của khu vực miền Trung. Không chỉ đẹp bởi nét đẹp
+                                    lao động mà không gian đến cảnh vật đều vô cùng quyến rũ. Vì thế mà không khó khi
+                                    đồng muối đã trở thành một trong những địa điểm check-in Quảng Ngãi nổi tiếng được
+                                    du khách trong và ngoài nước săn lùng.</p>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/09/dia-diem-check-in-quang-ngai-7.jpg?tr=dpr-2,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Núi Cà Đam</h3>
+                                <p>Nếu như Đà Nẵng có núi Bà Nà là địa danh trên cao nổi tiếng độc đáo thì tại Quảng
+                                    Ngãi sẽ gọi tên núi Cà Đam. Khu núi là nơi giáp ranh của 3 huyện Sơn Tây, Sơn Hà,
+                                    Trà Bồng, thuộc huyện Trà Bồng, tỉnh Quảng Ngãi.
+
+                                    Không chỉ mang giá trị du lịch sinh thái, núi Cà Đam còn là ngôi nhà chung của nhiều
+                                    loại thực vật quý dùng để điều chế thuốc như sâm bảy lá, rau củ nhiệt đới…
+
+                                    Với vẻ đẹp hoang sơ còn giữ nguyên những gì thiên nhiên ban tặng thì chắc chắn đứng
+                                    trên đỉnh núi sẽ là giây phút thư giãn tuyệt vời dành cho bạn. Dù chưa được chú
+                                    trọng đầu tư nhưng chắc chắn đây sẽ là điểm đến cực chất cho bạn trải nghiệm.</p>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/09/dia-diem-check-in-quang-ngai-11.jpeg?tr=dpr-2,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Đảo Lý Sơn</h3>
+                                <p>Một thương hiệu khác làm nên sự nổi tiếng của Quảng Ngãi chính là Đảo Lý Sơn - hay
+                                    còn gọi là Cù Lao Ré. Với nguồn gốc cực kỳ đặc biệt, đảo được sinh ra từ một miệng
+                                    núi lửa đã tắt vì thế nên màu sắc ở đây vô cùng lạ mắt và xinh đẹp.
+
+                                    Khi kết hợp với màu nước biển trong xanh thì vẻ đẹp của đảo lại được tôn thêm mấy
+                                    phần. Một chút review về địa điểm check-in Quảng Ngãi này chắc chắn chỉ là một phần
+                                    nhỏ xíu của vẻ đẹp nơi đây. Vậy nên, bạn nhất định phải tự mình đến và trải nghiệm
+                                    đấy.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <p class="des__content des__pad">Ẩm Thực </p>
+                <section class="container">
+                    <div class="card__container swiper">
+                        <div class="card__content">
+                            <div class="swiper-wrapper">
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2023/5/11/1191108/Mon-An-Dac-San-Quang.jpg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Don</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://afamilycdn.com/150157425591193600/2022/10/7/anh-mia-16651052232721576591400-1665131295402-1665131295568844873985.jpeg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Mì quảng </h3>
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSRA0ozmDa12Z0qWD0-P1P1qqXqzOCkCe2BnAyQXwpfGbV3XHZdbhqthlfVlp-m2DAj1pmegvRhMMebGdDOuveIhscuFaQKPmv-XLmDsN08ZtyIoJAXapdoNuMYo9uxT07K2P9pmnzsAFQ/s1600/goi-toi-ly-son-1.jpg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Gỏi tỏi</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/09/dac-san-quang-ngai-5-1024x768.jpg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bánh đập</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/09/dac-san-quang-ngai-6.jpg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Cúm núm Sa Huỳnh</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://media.vneconomy.vn/w900/images/upload/2021/04/21/bu1-1538625811973486385079.jpg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bún cá ngừ um</h3>
+
+
+                                    </div>
+                                </article>
+
+
+
+
+                            </div>
+                        </div>
+
+                        <!-- Navigation buttons -->
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+
+                        <!-- Pagination -->
+                    </div>
+                </section>
+
+
+            </div>
+        </div>
+    </div>
+    <section id="fot">
+        <footer class="footer__pading">
+            <div class="footer">
+                <ul class="footer__tent">
+                    <li class="logo">
+                        <img src="../../img/IMG_1077.PNG" class="logo-img-fot">
+                        <span class="name-logo name-logo-fot">Travel Tour</span>
+                    </li>
+                </ul>
+                <ul class="footer__tent">
+                    <li class="logo"></li>
+                    <span class="logo__cotent">Công ty EDT</span>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Địa chỉ : Tầng xx, Hà Nội
+                        </div>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-solid fa-phone"> </i>
+                            Điện thoại : 0327195539
+                        </div>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-regular fa-envelope"></i>
+                            Email : Contact@gmail.com
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="footer__tent">
+                    <li class="logo">
+                        <span class="logo__cotent name-logo-fot" style="margin:0 0 10px 100px;">Liên hệ</span>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt ">
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1085.PNG" class="logo__img">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1088.PNG" class="logo__img">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1082.JPG" class="logo__img" style="border-radius: 50%;">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1083.PNG" class="logo__img">
+                            </a>
+
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </footer>
+    </section>
+    <!--=============== SWIPER JS ===============-->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

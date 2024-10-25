@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tour</title>
+    <link rel="icon" href="img/IMG_1077.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/hanoi.css">
+    <link rel="stylesheet" href="css/hn.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/respon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playball&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+        }
+    </style>
+    <div class="class">
+        <header class="header">
+            <div class="grid">
+                <nav class="header_navbar ">
+                    <ul class="header_navbar-list">
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="header_navbar-contact disapp1 ">0327195539</div>
+                        </a>
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div class="header_navbar-contact disapp1 ">Contact@gmail.com</div>
+                        </a>
+                    </ul>
+                    <ul class="header_navbar-list">
+                        <li class="header_navbar-item">
+                            <a href="#" class="header_navbar-facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span class="disapp">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="header_navbar-item ">
+                            <a href="#" class="header_navbar-instra">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span class="disapp">Instragram</span>
+                            </a>
+                        </li>
+
+                        <li class="header_navbar-sepa"></li>
+                        <li class="header_navbar-item" id="loginLink">
+                            <a href="login-regis/login.html" class="header_navbar-login">
+                                <i class="fa-solid fa-lock"></i>
+                                <span class="disapp">Đăng Nhập</span>
+                            </a>
+                        </li>
+                        <!-- Liên kết Đăng Ký -->
+                        <li class="header_navbar-item" id="registerLink">
+                            <a href="login-regis/register.html" class="header_navbar-regis">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="disapp">Đăng Ký</span>
+                            </a>
+                        </li>
+                        <!-- Avatar và Tên người dùng -->
+                        <li class="header_navbar-item" id="userInfo" style="display: none;">
+                            <a class="user-avatar" href="../../LSGiaodich/ThToan.html">
+                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/02e0d039-fbc0-4059-902e-45c3ede4df5b/dgcuy5w-5f5250b2-c1b8-4d5c-b9c6-f192d23c7f72.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAyZTBkMDM5LWZiYzAtNDA1OS05MDJlLTQ1YzNlZGU0ZGY1YlwvZGdjdXk1dy01ZjUyNTBiMi1jMWI4LTRkNWMtYjljNi1mMTkyZDIzYzdmNzIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.L36pDjQ1d1ks1FS5CH5kldYy6j7x2IbfQ-znM7Lo4zU"
+                                    alt="User Avatar">
+                                <span class="user">Admin</span>
+                            </a>
+                            <button onclick="logout()">Đăng xuất</button>
+
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="header_navbar-function">
+                    <div class="header_navbar-item ">
+                        <li class="header_navbar-item">
+                            <a href="../../btChinh.html" class="header_navbar-logo">
+                                <img src="../../img/IMG_1077.PNG" class="logo-img">
+                                <span class="name-logo">Travel Tour</span>
+                            </a>
+                        </li>
+                    </div>
+                    <ul class="header_navbar-item-funtion menu" id="menu">
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../../btChinh.html" class="home ">Trang Chủ</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../region-Trung.html" class="home home-fun">Vùng Miền</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#dd" class="home home-fun" id="active">Địa Điểm</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="../../btChinh.html#booking" class="home ">Dịch Vụ</a>
+                        </li>
+
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#fot" class="home ">Về Chúng Tôi</a>
+                        </li>
+                    </ul>
+                    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+                </nav>
+                <div class="overlay" id="overlay"></div>
+
+            </div>
+        </header>
+        <div class="app-copntainer" id="dd">
+            <div class="grid">
+                <p class="des__content des__content-1">BÌNH ĐỊNH</p>
+                <div class="home-filter">
+                    <div class="grid__row">
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-binh-dinh-1.jpg?tr=dpr-2,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content ">
+                                <h3>Bãi tắm Quy Nhơn</h3>
+                                <p>Nằm giữa lòng thành phố biển xinh đẹp cùng tên, bãi tắm Quy Nhơn được thiên nhiên cực
+                                    ưu ái với bãi cát vàng dài lấp lánh dọc bờ biển cùng những rặng núi thấp bao xung
+                                    quanh. Trước đây, bãi tắm này là nơi nuôi trồng thủy - hải sản của người dân địa
+                                    phương và mới chỉ đi vào khai thác du lịch từ 2014.
+                                    Là một trong những địa điểm du lịch Bình Định mới mẻ, bãi tắm này thu hút du khách
+                                    nhờ hình dáng trăng khuyết cực độc đáo ôm dọc theo bờ biển kéo dài tầm 5km (từ Mũi
+                                    Tấn đến Ghềnh Ráng). Đặc biệt, bãi tắm này còn gần kề phố ẩm thực Xuân Diệu nên bạn
+                                    sẽ không lo bụng đói khi đang tham gia các hoạt động giải trí tại đây.
+                                </p>
+
+
+                            </div>
+                            <div class="tour-item-content-booking">
+                                <a href="../../TT/Book.html#book" class=" tour-item-content-re">
+                                    <button class="booking">
+                                        <span>Đặt Tour</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-binh-dinh-5-1024x1024.jpg?tr=dpr-2,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content ">
+                                <h3>Ghềnh Ráng Tiên Sa</h3>
+                                <p>Tương tự bãi tắm Quy Nhơn, Ghềnh Ráng Tiên Sa là địa điểm du lịch Bình Định nằm gần
+                                    trung tâm thành phố (chỉ cách khoảng 3km về phía Đông Nam). Bạn có thể di chuyển
+                                    bằng xe máy, ô tô, xe khách hoặc máy bay để đến Quy Nhơn, sau đó, bắt xe tiếp ra
+                                    Ghềnh Ráng nằm ở số 3 Hàn Mặc Tử, phường Ghềnh Ráng.
+
+                                    Nơi đây nổi tiếng với chuỗi bãi đá nằm liền kề nhau chạy dọc theo núi Xuân Vân.
+                                    Không chỉ có thiên nhiên, Ghềnh Ráng Tiên Sa còn “chiêu đãi” bạn bằng một loạt tọa
+                                    độ hấp dẫn khác nằm trong khu du lịch cùng tên như bãi tắm Hoàng Hậu (hay bãi Đá
+                                    Trứng), mộ thi sĩ Hàn Mặc Tử, nhà thờ Ghềnh Ráng…</p>
+                            </div>
+                        </div>
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-binh-dinh-8-819x1024.jpg?tr=dpr-2,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Eo Gió</h3>
+                                <p>Cách nội đô Quy Nhơn khoảng 20km, Eo Gió là một tọa độ sơn thủy hữu tình với những
+                                    mỏm núi đá phủ đầy cây bụi “vòng tay” ôm trọn eo biển xanh màu ngọc bích. Nếu bạn
+                                    yêu thích du lịch bụi thì đây là một trong những địa điểm check-in ở Bình Định lý
+                                    tưởng nhất.
+
+                                    Chưa cần đặt chân đến Eo Gió, bạn sẽ ngỡ càng trước khung cảnh cực đã mắt của cung
+                                    đường dẫn đến điểm đến nổi tiếng này. Di chuyển từ trung tâm Quy Nhơn, bạn sẽ đi qua
+                                    đầm Thị Nại rồi đến cầu vượt biển và mở ra một màu xanh tít tắp của mây trời, núi,
+                                    biển và hàng phi lao chạy dọc theo đồi cát.</p>
+                            </div>
+                        </div>
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://static.vinwonders.com/production/cu-lao-xanh-2.jpg"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Cù Lao Xanh</h3>
+                                <p>Cách thành phố Quy Nhơn khoảng 30 phút di chuyển bằng cano, Cù Lao Xanh là một hòn
+                                    đảo ngoài khơi vịnh Xuân Đài và giao thoa giữa hai tỉnh Phú Yên - Bình Định. Dù chỉ
+                                    có diện tích vỏn vẹn 365 ha và dân cư thưa thớt nhưng nơi này được xem là một trong
+                                    những đảo đẹp nhất của miền Trung.
+                                    Thời điểm lý tưởng để đặt chân đến hòn đảo này là tháng 3 - tháng 8 khi tiết trời ôn
+                                    hòa và biển êm nhất. Sở dĩ Cù Lao Xanh được đánh giá cao là do thiên nhiên nơi đây
+                                    còn rất nguyên sơ, biển trong xanh màu ngọc bích sẽ và chưa được khai thác du lịch
+                                    nhiều. Đặc biệt, các bãi tắm trên đảo đều cực kì sạch sẽ (bãi Đông, bãi Nhỏ, bãi
+                                    Nam).
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-binh-dinh-13-825x1024.jpg?tr=dpr-2,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Biển Kỳ Co</h3>
+                                <p>Như bao địa danh khác ở Bình Định, bạn sẽ choáng ngợp bởi nước non hùng vỹ và thiên
+                                    nhiên hoang sơ nơi đây. Biển Kỳ Co cực trong xanh (nhất là vào bình minh) và được
+                                    bao bọc bởi nhiều phiến đá có hình thù độc đáo.
+
+                                    Đặt chân đến đây, bạn có thể nô đùa dưới làn nước trong xanh, đi bộ dọc theo bãi
+                                    biển, cắm trại hoặc lặn ngắm san hô ở bãi Dứa. Kỳ Co cũng rất gần Eo Gió nên bạn có
+                                    thể tham quan cả 2 địa điểm trong 1 ngày. </p>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-binh-dinh-25-819x1024.jpg?tr=dpr-2,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Hòn Khô</h3>
+                                <p>Là một trong 32 đảo gần bờ của biển Bình Định, hòn Khô (hay còn gọi là cù lao hòn
+                                    Khô) được mệnh danh là “Maldives của Việt Nam”. Với vẻ đẹp hoang sơ và thơ mộng, hòn
+                                    đảo này thu hút khá nhiều tín đồ xê dịch, đặc biệt là những ai muốn trải nghiệm cảm
+                                    giác “đi trốn” đúng nghĩa.
+
+                                    Đặt chân đến hòn Khô, bạn sẽ ngạc nhiên trước khung cảnh thiên nhiên quá đỗi bình
+                                    yên và chưa có nhiều sự khai thác thương mại. Trong đó, điểm đặc trưng của hòn Khô
+                                    là con đường dài 500m giữa biển được tạo thành khi nước rút, kết nối làng chài Nhơn
+                                    Hải và hòn đảo này.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <p class="des__content des__pad ">Ẩm Thực </p>
+                <section class="container">
+                    <div class="card__container swiper">
+                        <div class="card__content">
+                            <div class="swiper-wrapper">
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/03/dac-san-binh-dinh-2-1024x682.jpg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Chả cá Quy Nhơn </h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/03/dac-san-binh-dinh-3.jpg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Gỏi cá Chình</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/03/dac-san-binh-dinh-4.jpg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Mắm Nhum Mỹ An Bình Định </h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/03/dac-san-binh-dinh-5-1024x576.jpg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Gié bò Tây Sơn</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/03/dac-san-binh-dinh-7.jpg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bánh ít lá gai</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide">
+                                    <div class="card__image">
+                                        <img src="https://ik.imagekit.io/tvlk/blog/2022/03/dac-san-binh-dinh-10-1024x576.jpg?tr=dpr-2,w-675"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bánh thuẫn</h3>
+
+
+                                    </div>
+                                </article>
+
+
+                            </div>
+                        </div>
+
+                        <!-- Navigation buttons -->
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+
+                        <!-- Pagination -->
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+    <section id="fot">
+        <footer class="footer__pading">
+            <div class="footer">
+                <ul class="footer__tent">
+                    <li class="logo">
+                        <img src="../../img/IMG_1077.PNG" class="logo-img-fot">
+                        <span class="name-logo name-logo-fot">Travel Tour</span>
+                    </li>
+                </ul>
+                <ul class="footer__tent">
+                    <li class="logo"></li>
+                    <span class="logo__cotent">Công ty EDT</span>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Địa chỉ : Tầng xx, Hà Nội
+                        </div>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-solid fa-phone"> </i>
+                            Điện thoại : 0327195539
+                        </div>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-regular fa-envelope"></i>
+                            Email : Contact@gmail.com
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="footer__tent">
+                    <li class="logo">
+                        <span class="logo__cotent name-logo-fot" style="margin:0 0 10px 100px;">Liên hệ</span>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt ">
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1085.PNG" class="logo__img">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1088.PNG" class="logo__img">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1082.JPG" class="logo__img" style="border-radius: 50%;">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1083.PNG" class="logo__img">
+                            </a>
+
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </footer>
+    </section>
+    <!--=============== SWIPER JS ===============-->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,467 @@
+.menu-toggle {
+    display: none;
+    font-size: 5rem;
+    color: #111;
+    background: none;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+.header_navbar-function {
+    position: relative;
+    display: flex;
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    /* Màu đen mờ */
+    z-index: 1;
+    /* Đặt overlay dưới navbar */
+    display: none;
+    /* Ẩn overlay theo mặc định */
+}
+
+.overlay.show {
+    display: block;
+    /* Hiển thị overlay khi lớp 'show' được thêm vào */
+}
+
+@media only screen and (max-width: 480px) {
+    .slideshow-container {
+        height: 300px;
+        /* Giảm chiều cao xuống 300px cho màn hình rất nhỏ */
+    }
+
+    .mySlides img {
+        height: 300px;
+        /* Hình ảnh cũng điều chỉnh theo */
+    }
+
+    .footer__tent {
+        padding: 0 20px !important;
+    }
+
+}
+
+
+@media (min-width: 740px) and (max-width: 1023px) {
+
+    .disapp,
+    .fa-plane-departure,
+    .fa-plane-arrival,
+    .fa-hotel,
+    .name-logo-fot,
+    .disapp-pad,
+    .menu {
+        display: none;
+    }
+
+    .footer__tent {
+        padding: 0 28px;
+    }
+
+    .book-nav_item-content {
+        margin-left: 0;
+        justify-content: center;
+        padding: 10px 25px 10px 10px;
+    }
+
+    a {
+        font-size: 1.8rem;
+    }
+
+    .menu {
+        position: absolute;
+        flex-direction: column;
+        justify-items: end;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu.open {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .logo__sdt {
+        font-size: 1.2rem;
+    }
+
+    .logo__cotent {
+        font-size: 1.6rem;
+    }
+
+    .logo__img {
+        margin-top: 10px;
+    }
+
+    .footer {
+        padding: 0;
+        text-align: start;
+        align-items: start;
+    }
+
+    .footer__pading {
+        padding-top: 50px;
+    }
+
+    .btn-book {
+        width: 40%;
+        font-size: 1.4rem;
+    }
+
+    .ThToan__name {
+        font-size: 6rem;
+        right: 30%;
+        top: 35%;
+    }
+
+    .main-feed {
+        width: 40%;
+        margin-top: 10px;
+    }
+
+    .tt-price {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .tt-item_content,
+    .tt-item-text,
+    .tt-item_cont,
+    .tt-item-te,
+    .tt-item-te1 {
+        font-size: 1.6rem;
+    }
+
+    .tt-item {
+        font-size: 2.4rem;
+        line-height: 1.3;
+    }
+
+    .tt-item-text {
+        text-align: end;
+        margin: 0 !important;
+        margin-top: 5px;
+    }
+
+    .tt-complex {
+        flex-wrap: wrap;
+    }
+
+    .tt-content {
+        display: block;
+    }
+
+    .feed-back {
+        padding: 10px 15px;
+        height: 70%;
+    }
+
+    .bodic {
+        min-height: 75vh;
+    }
+
+    .wrap {
+        width: 80%;
+        padding: 20px 30px;
+    }
+
+    .name-logo {
+        font-size: 2.6rem;
+    }
+
+    .logo-img {
+        width: 50%;
+    }
+
+    .ThToan__content {
+        font-size: 2.8rem;
+        padding: 0;
+    }
+
+    .tt-bg1 {
+        display: block;
+    }
+
+    .background {
+        height: 60vh;
+    }
+}
+
+
+
+@media (min-width:1024px) and (max-width: 1100px) {
+    .header_navbar-function a {
+        font-size: 1.6rem;
+    }
+
+    .header_navbar-item-home {
+        margin: 0;
+    }
+
+    .logo-img {
+        width: 40%;
+    }
+
+    .name-logo {
+        font-size: 2.8rem;
+    }
+
+    .header_navbar-item-funtion {
+        margin: 0;
+    }
+
+    .ThToan__name {
+        top: 25%;
+        right: 25%;
+    }
+
+    .feed-back {
+        padding: 20px 15px;
+    }
+
+    .tt-price {
+        font-size: 1.7rem;
+    }
+
+    .tt-item_content {
+        width: 60%;
+    }
+
+    .tt-item {
+        width: 150%;
+    }
+
+    .ThToan__content {
+        padding: 0;
+    }
+
+
+}
+
+@media (min-width:1101px) and (max-width: 1460px) {
+
+    .header_navbar-function a {
+        font-size: 1.8rem;
+    }
+
+    .header_navbar-item-home {
+        margin: 0;
+    }
+
+    .logo-img {
+        width: 50%;
+    }
+
+    .name-logo {
+        font-size: 2.8rem;
+    }
+
+
+}
+
+@media (max-width:740px) {
+    .header_navbar-function {
+        justify-content: space-between;
+    }
+
+    .footer__tent {
+        padding: 0 28px;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        justify-items: end;
+        top: 100%;
+        /* Đặt menu ngay dưới navbar */
+        right: 0;
+        /* Căn menu sang bên phải */
+        z-index: 1000;
+        /* Đảm bảo menu nổi bật hơn */
+        float: right;
+    }
+
+    .disapp,
+    .disapp1,
+    .name-logo-fot {
+        display: none;
+    }
+
+    /* Hiển thị nút toggle menu */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Hiển thị menu khi người dùng nhấn vào nút toggle */
+    .menu.open {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    img {
+        height: 70%;
+        overflow: hidden;
+    }
+
+    .book-filter {
+        margin-left: 39px;
+        justify-content: start;
+    }
+
+    .btn-book {
+        width: 80%;
+    }
+
+    .logo-img {
+        width: 50%;
+    }
+
+    .name-logo {
+        font-size: 1.8rem;
+        margin-left: 10px;
+    }
+
+    .logo-img-fot {
+        width: 100%;
+    }
+
+    .logo__img {
+        max-width: 26px;
+        margin: 10px 0 0 0;
+    }
+
+
+    .ThToan__name {
+        font-size: 5rem;
+        right: 15%;
+        top: 25%;
+
+    }
+
+    .ThToan__content {
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 0;
+    }
+
+    .book-copntainer {
+        flex-wrap: wrap;
+    }
+
+    .main-feed {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .tour-item {
+        width: 151%;
+    }
+
+    .tt-price {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
+    .tt-item_content {
+        font-size: 1.2rem;
+        padding: 0;
+    }
+
+    .tt-item-text {
+        padding: 0 2px;
+        text-align: end;
+        font-size: 1.2rem;
+        margin: 0 !important;
+    }
+
+    .tt-item {
+        font-size: 1.4rem;
+    }
+
+    .tt-item_cont {
+        font-size: 1rem;
+    }
+
+    .tt-item-te {
+        font-size: 1rem;
+    }
+
+    .tt-complex {
+        flex-wrap: wrap;
+
+    }
+
+    .tt-item-te1 {
+        font-size: 1.2rem;
+    }
+
+    .tt-content {
+        display: block;
+    }
+
+    .tt-bg1 {
+        display: block;
+    }
+
+    .logo__sdt {
+        width: 80%;
+        font-size: 1.5rem;
+    }
+
+    .logo__cotent {
+        display: none;
+    }
+
+    .logo__img {
+        margin-top: 10px;
+    }
+
+    .footer {
+        padding: 0;
+        text-align: start;
+        align-items: start;
+    }
+
+    .footer__pading {
+        padding-top: 50px;
+    }
+
+    .feed-back {
+        padding: 15px 20px;
+        height: 100%;
+    }
+
+    .Region__name-1 {
+        font-size: 6rem;
+    }
+
+    .background {
+        height: 50vh;
+    }
+
+
+
+
+
+}

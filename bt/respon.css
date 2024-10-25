@@ -1,0 +1,494 @@
+.menu-toggle {
+    display: none;
+    font-size: 5rem;
+    color: #111;
+    background: none;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+.header_navbar-function {
+    position: relative;
+    display: flex;
+    margin: 10px 20px;
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    /* Màu đen mờ */
+    z-index: 1;
+    /* Đặt overlay dưới navbar */
+    display: none;
+    /* Ẩn overlay theo mặc định */
+}
+
+.overlay.show {
+    display: block;
+    /* Hiển thị overlay khi lớp 'show' được thêm vào */
+}
+
+@media only screen and (max-width: 768px) {
+    .slideshow-container {
+        height: 400px;
+        /* Giảm chiều cao xuống 400px cho màn hình nhỏ */
+    }
+
+    .mySlides img {
+        height: 400px;
+        /* Hình ảnh cũng điều chỉnh theo */
+    }
+}
+
+/* Responsive styling for screens smaller than 480px */
+@media only screen and (max-width: 480px) {
+    .slideshow-container {
+        height: 300px;
+        /* Giảm chiều cao xuống 300px cho màn hình rất nhỏ */
+    }
+
+    .mySlides img {
+        height: 300px;
+        /* Hình ảnh cũng điều chỉnh theo */
+    }
+
+    .footer__tent {
+        padding: 0 20px !important;
+    }
+
+}
+
+@media (max-width: 1023px) {
+    .footer__tent {
+        padding: 0 28px;
+    }
+
+    /* Ẩn menu trên màn hình nhỏ */
+    .disapp {
+        display: none;
+    }
+
+    .book-nav_item-content {
+        margin-left: 0;
+    }
+
+    a {
+        font-size: 1.4rem;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        justify-items: end;
+        top: 100%;
+        /* Đặt menu ngay dưới navbar */
+        right: 0;
+        /* Căn menu sang bên phải */
+        z-index: 1000;
+        /* Đảm bảo menu nổi bật hơn */
+        float: right;
+    }
+
+    /* Hiển thị nút toggle menu */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Hiển thị menu khi người dùng nhấn vào nút toggle */
+    .menu.open {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    img {
+        height: 70%;
+        overflow: hidden;
+    }
+
+    .header_navbar-search {
+        width: 50%;
+        top: 20%;
+        right: 24%;
+        margin: 0 auto;
+    }
+
+    .des__content {
+        font-size: 3rem;
+    }
+
+    /* Intro */
+    .intro-filter {
+        flex-direction: column;
+
+    }
+
+    .intro-text {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .grid__column-6 {
+        width: 100%;
+    }
+
+    /* Region responsive */
+    .home-region {
+        flex-direction: column;
+    }
+
+    .tour-item__img-4 {
+        max-width: 200px;
+        height: 200px;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+
+    .region-name {
+        transform: translate(70%, -450%);
+        font-size: 1.8rem;
+
+    }
+
+    .region-name-1 {
+        transform: translate(60%, -450%);
+        font-size: 1.8rem;
+
+
+    }
+
+    .region-name-2 {
+        transform: translate(50%, -450%);
+        font-size: 1.8rem;
+    }
+
+    .region-name-3 {
+        transform: translate(45%, -450%);
+        font-size: 1.8rem;
+    }
+
+    .card__article {
+        margin-left: 4%;
+    }
+
+    .header__book-input {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 1.4rem;
+    }
+
+    .book-nav_content-add {
+        width: 70%;
+        font-size: 1rem;
+    }
+
+    .fa-plane-departure,
+    .fa-plane-arrival,
+    .fa-hotel {
+        display: none;
+    }
+
+    .book-nav_content {
+        font-size: 1rem;
+        width: 30%;
+
+    }
+
+    /* Footer */
+    .logo__sdt {
+        font-size: 1.2rem;
+    }
+
+    .logo__cotent {
+        font-size: 1.6rem;
+    }
+
+    .name-logo-fot {
+        display: none;
+    }
+
+    .logo__img {
+        margin-top: 10px;
+    }
+
+    .footer {
+        padding: 0;
+        text-align: start;
+        align-items: start;
+    }
+
+    .footer__pading {
+        padding-top: 50px;
+    }
+
+    .btn-book {
+        width: 40%;
+        font-size: 1.4rem;
+    }
+
+    .book-nav_item-content {
+        justify-content: center;
+        padding: 10px 25px 10px 10px;
+    }
+
+    .book-drive {
+        font-size: 1rem;
+
+    }
+}
+
+
+@media(min-width :740px) and (max-width: 1023px) {
+
+    /* Ẩn menu trên màn hình nhỏ */
+    .disapp-pad {
+        display: none;
+    }
+
+    a {
+        font-size: 1.8rem;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        justify-items: end;
+        top: 100%;
+        /* Đặt menu ngay dưới navbar */
+        right: 0;
+        /* Căn menu sang bên phải */
+        z-index: 1000;
+        /* Đảm bảo menu nổi bật hơn */
+        float: right;
+    }
+
+    .header_navbar-function {
+        justify-content: space-between;
+    }
+
+    /* Hiển thị nút toggle menu */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Hiển thị menu khi người dùng nhấn vào nút toggle */
+    .menu.open {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    img {
+        height: 70%;
+        overflow: hidden;
+    }
+
+    .bodic {
+        min-height: 75vh;
+    }
+
+    .wrap {
+        width: 80%;
+        padding: 20px 30px;
+    }
+
+    .name-logo {
+        font-size: 2.6rem;
+    }
+
+    .logo-img {
+        width: 50%;
+    }
+
+
+}
+
+
+@media (min-width:1024px) and (max-width: 1100px) {
+    .header_navbar-search {
+        right: 27%;
+        top: 12%;
+        margin: 0 auto;
+    }
+
+    .header__search-input {}
+
+    .intro-text {
+        font-size: 2.4rem;
+    }
+
+    .region-name {
+        transform: translate(60%, -550%);
+    }
+
+    .region-name-3 {
+        transform: translate(30%, -550%);
+    }
+
+    .region-name-1 {
+        transform: translate(50%, -550%);
+    }
+
+    .region-name-2 {
+        transform: translate(40%, -550%);
+    }
+
+    .header__book-input {
+        font-size: 1.4rem;
+        width: 200px;
+    }
+
+    .des__content {
+        font-size: 3.4rem;
+    }
+
+    .book-nav_list__drive {
+        flex-wrap: nowrap;
+    }
+
+    .header_navbar-function a {
+        font-size: 1.6rem;
+    }
+
+    .header_navbar-item-home {
+        margin: 0;
+    }
+
+    .logo-img {
+        width: 40%;
+    }
+
+    .name-logo {
+        font-size: 2.8rem;
+    }
+
+    .header_navbar-item-funtion {
+        margin: 0;
+    }
+
+}
+
+@media (min-width:1101px) and (max-width: 1460px) {
+
+    .header_navbar-function a {
+        font-size: 1.8rem;
+    }
+
+    .header_navbar-item-home {
+        margin: 0;
+    }
+
+    .logo-img {
+        width: 50%;
+    }
+
+    .name-logo {
+        font-size: 2.8rem;
+    }
+
+}
+
+@media (max-width:740px) {
+    .intro-text {
+        font-size: 1.4rem;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        justify-items: end;
+        top: 100%;
+        /* Đặt menu ngay dưới navbar */
+        right: 0;
+        /* Căn menu sang bên phải */
+        z-index: 1000;
+        /* Đảm bảo menu nổi bật hơn */
+        float: right;
+    }
+
+    .logout {
+        font-size: 1.4rem !important;
+    }
+
+    .des__content {
+        font-size: 2.4rem;
+        margin-top: 20px;
+    }
+
+    .header_navbar-function {
+        justify-content: space-between;
+    }
+
+
+
+    .disapp {
+        display: none;
+    }
+
+    .disapp1 {
+        display: none;
+    }
+
+
+    /* Hiển thị nút toggle menu */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Hiển thị menu khi người dùng nhấn vào nút toggle */
+    .menu.open {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    img {
+        height: 70%;
+        overflow: hidden;
+    }
+
+    .book-filter {
+        margin-left: 39px;
+        justify-content: start;
+    }
+
+    .btn-book {
+        width: 80%;
+    }
+
+    .logo-img {
+        width: 50%;
+    }
+
+    .name-logo {
+        font-size: 1.8rem;
+        margin-left: 10px;
+    }
+
+    .logo-img-fot {
+        width: 100%;
+    }
+
+    .logo__img {
+        max-width: 26px;
+        margin: 10px 0 0 0;
+    }
+
+
+
+}

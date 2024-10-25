@@ -1,0 +1,818 @@
+.menu-toggle {
+    display: none;
+    font-size: 5rem;
+    color: #111;
+    background: none;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+.header_navbar-function {
+    position: relative;
+    display: flex;
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    /* Màu đen mờ */
+    z-index: 1;
+    /* Đặt overlay dưới navbar */
+    display: none;
+    /* Ẩn overlay theo mặc định */
+}
+
+.overlay.show {
+    display: block;
+    /* Hiển thị overlay khi lớp 'show' được thêm vào */
+}
+
+@media only screen and (max-width: 480px) {
+    .slideshow-container {
+        height: 300px;
+        /* Giảm chiều cao xuống 300px cho màn hình rất nhỏ */
+    }
+
+    .mySlides img {
+        height: 300px;
+        /* Hình ảnh cũng điều chỉnh theo */
+    }
+
+    .footer__tent {
+        padding: 0 20px !important;
+    }
+
+}
+
+
+@media (max-width: 1023px) {
+    .footer__tent {
+        padding: 0 28px;
+    }
+
+    /* Ẩn menu trên màn hình nhỏ */
+    .disapp {
+        display: none;
+    }
+
+    .book-nav_item-content {
+        margin-left: 0;
+    }
+
+    a {
+        font-size: 1.4rem;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        justify-items: end;
+        top: 100%;
+        /* Đặt menu ngay dưới navbar */
+        right: 0;
+        /* Căn menu sang bên phải */
+        z-index: 1000;
+        /* Đảm bảo menu nổi bật hơn */
+        float: right;
+    }
+
+    /* Hiển thị nút toggle menu */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Hiển thị menu khi người dùng nhấn vào nút toggle */
+    .menu.open {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    img {
+        height: 70%;
+        overflow: hidden;
+    }
+
+    .header_navbar-search {
+        width: 50%;
+        top: 20%;
+        right: 24%;
+        margin: 0 auto;
+    }
+
+    .des__content {
+        font-size: 3rem;
+    }
+
+    /* Intro */
+    .intro-filter {
+        flex-direction: column;
+
+    }
+
+    .intro-text {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .grid__column-6 {
+        width: 100%;
+    }
+
+    /* Region responsive */
+    .home-region {
+        flex-direction: column;
+    }
+
+    .tour-item__img-4 {
+        max-width: 200px;
+        height: 200px;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+
+    .region-name {
+        transform: translate(70%, -450%);
+        font-size: 1.8rem;
+
+    }
+
+    .region-name-1 {
+        transform: translate(60%, -450%);
+        font-size: 1.8rem;
+
+
+    }
+
+    .region-name-2 {
+        transform: translate(50%, -450%);
+        font-size: 1.8rem;
+    }
+
+    .region-name-3 {
+        transform: translate(45%, -450%);
+        font-size: 1.8rem;
+    }
+
+    .card__article {
+        margin-left: 4%;
+    }
+
+    .header__book-input {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 1.4rem;
+    }
+
+    .book-nav_content-add {
+        width: 70%;
+        font-size: 1rem;
+    }
+
+    .fa-plane-departure,
+    .fa-plane-arrival,
+    .fa-hotel {
+        display: none;
+    }
+
+    .book-nav_content {
+        font-size: 1rem;
+        width: 30%;
+
+    }
+
+    /* Footer */
+    .logo__sdt {
+        font-size: 1.2rem;
+    }
+
+    .logo__cotent {
+        font-size: 1.6rem;
+    }
+
+    .name-logo-fot {
+        display: none;
+    }
+
+    .logo__img {
+        margin-top: 10px;
+    }
+
+    .footer {
+        padding: 0;
+        text-align: start;
+        align-items: start;
+    }
+
+
+    .btn-book {
+        width: 40%;
+        font-size: 1.4rem;
+    }
+
+    .book-nav_item-content {
+        justify-content: center;
+        padding: 10px 25px 10px 10px;
+    }
+
+    .book-drive {
+        font-size: 1rem;
+
+    }
+}
+
+
+@media (min-width: 740px) and (max-width: 1023px) {
+
+    .disapp,
+    .fa-plane-departure,
+    .fa-plane-arrival,
+    .fa-hotel,
+    .name-logo-fot,
+    .disapp-pad,
+    .menu {
+        display: none;
+    }
+
+    .header_navbar-function {
+        justify-content: space-between;
+    }
+
+    .book-nav_item-content {
+        margin-left: 0;
+        justify-content: center;
+        padding: 10px 25px 10px 10px;
+    }
+
+    a {
+        font-size: 1.8rem;
+    }
+
+    .menu {
+        position: absolute;
+        flex-direction: column;
+        justify-items: end;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu.open {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .logo__sdt {
+        font-size: 1.2rem;
+    }
+
+    .logo__cotent {
+        font-size: 1.6rem;
+    }
+
+    .logo__img {
+        margin-top: 10px;
+    }
+
+    .footer {
+        padding: 0;
+        text-align: start;
+        align-items: start;
+    }
+
+    .footer__pading {
+        padding-top: 50px;
+    }
+
+    .btn-book {
+        width: 40%;
+        font-size: 1.4rem;
+    }
+
+    .ThToan__name {
+        font-size: 3rem;
+        right: 18%;
+        top: 35%;
+    }
+
+    .main-feed {
+        width: 40%;
+        margin-top: 10px;
+    }
+
+    .tt-price {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .tt-item_content,
+    .tt-item-text,
+    .tt-item_cont,
+    .tt-item-te,
+    .tt-item-te1 {
+        font-size: 1.6rem;
+    }
+
+    .tt-item {
+        font-size: 2.4rem;
+        line-height: 1.3;
+    }
+
+    .tt-item-text {
+        text-align: end;
+        margin: 0 !important;
+        margin-top: 5px;
+    }
+
+    .tt-complex {
+        flex-wrap: wrap;
+    }
+
+    .tt-content {
+        display: block;
+    }
+
+    .feed-back {
+        padding: 10px 15px;
+        height: 70%;
+    }
+
+    .bodic {
+        min-height: 75vh;
+    }
+
+    .wrap {
+        width: 80%;
+        padding: 20px 30px;
+    }
+
+    .name-logo {
+        font-size: 2.6rem;
+    }
+
+    .logo-img {
+        width: 50%;
+    }
+
+    .ThToan__content {
+        font-size: 2.8rem;
+        padding: 0;
+    }
+
+    .tt-bg1 {
+        display: block;
+    }
+
+    .grid__row {
+        flex-wrap: nowrap;
+    }
+
+    .Region__name-2 {
+        font-size: 3.6rem;
+    }
+
+    .TT__img-6 {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .TT__img {
+        max-width: 440px;
+        width: 500%;
+        height: auto;
+    }
+
+    .TT__imgc,
+    .TT__imgC {
+
+        width: 215px;
+        height: 278px;
+    }
+
+    .TT__content {
+        font-size: 2rem;
+        transform: translate(8%, -300%);
+    }
+
+    .TT__book {
+        width: 20%;
+        transform: translate(14%, -180%);
+    }
+
+    .padding-none {
+        padding-right: 0;
+    }
+
+    .TT__book1 {
+        width: 15%;
+        height: 3.5%;
+    }
+
+    .TT__book3 {
+        width: 13%;
+        height: 3.5%;
+        transform: translate(250%, -130%)
+    }
+
+    .TT__content3 {
+        font-size: 1.8rem;
+        transform: translate(80%, -400%)
+    }
+
+    .TT__content1 {
+        font-size: 1.5rem;
+        transform: translate(5%, -550%)
+    }
+
+    .TT__content8 {
+        transform: translate(8%, -400%)
+    }
+
+    .TT__content4,
+    .TT__content5 {
+        transform: translate(40%, -400%)
+    }
+
+    .TT__img-ss {
+        max-width: 390px;
+        height: 100px;
+    }
+
+    .TT__content6,
+    .TT__content7 {
+        transform: translate(20%, -400%)
+    }
+
+    .Region__name-3 {
+        font-size: 4rem;
+    }
+
+    .btn {
+        width: 20%;
+    }
+
+    .background-image {
+        height: 70vh;
+    }
+
+
+}
+
+
+
+@media (min-width:1024px) and (max-width: 1100px) {
+    .header_navbar-function a {
+        font-size: 1.6rem;
+    }
+
+    .header_navbar-item-home {
+        margin: 0;
+    }
+
+    .logo-img {
+        width: 40%;
+    }
+
+    .name-logo {
+        font-size: 2.8rem;
+    }
+
+    .header_navbar-item-funtion {
+        margin: 0;
+    }
+
+    .ThToan__name {
+        font-size: 5rem;
+        right: 15%;
+        top: 30%;
+    }
+
+    .feed-back {
+        padding: 20px 15px;
+    }
+
+    .tt-price {
+        font-size: 1.7rem;
+    }
+
+    .tt-item_content {
+        width: 60%;
+    }
+
+    .tt-item {
+        width: 150%;
+    }
+
+    .ThToan__content {
+        padding: 0;
+    }
+
+    .container {
+        width: 70%;
+    }
+
+
+}
+
+@media (min-width:1101px) and (max-width: 1460px) {
+
+    .header_navbar-function a {
+        font-size: 1.8rem;
+    }
+
+    .header_navbar-item-home {
+        margin: 0;
+    }
+
+    .logo-img {
+        width: 50%;
+    }
+
+    .name-logo {
+        font-size: 2.8rem;
+    }
+
+    .ThToan__name {
+        font-size: 5.4rem;
+        right: 10%;
+        top: 34%;
+
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width:740px) {
+    .menu {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        justify-items: end;
+        top: 100%;
+        /* Đặt menu ngay dưới navbar */
+        right: 0;
+        /* Căn menu sang bên phải */
+        z-index: 1000;
+        /* Đảm bảo menu nổi bật hơn */
+        float: right;
+    }
+
+    .header_navbar-function {
+        justify-content: space-between;
+    }
+
+    .disapp,
+    .disapp1,
+    .name-logo-fot {
+        display: none;
+    }
+
+    /* Hiển thị nút toggle menu */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Hiển thị menu khi người dùng nhấn vào nút toggle */
+    .menu.open {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    img {
+        height: 70%;
+        overflow: hidden;
+    }
+
+    .book-filter {
+        margin-left: 39px;
+        justify-content: start;
+    }
+
+    .btn-book {
+        width: 80%;
+    }
+
+
+
+    .ThToan__name {
+        font-size: 1.8rem;
+        right: 10%;
+        top: 34%;
+
+        text-align: center;
+
+    }
+
+    .ThToan__content {
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 0;
+    }
+
+
+
+    .logo-img {
+        width: 50%;
+    }
+
+    .name-logo {
+        font-size: 1.8rem;
+        margin-left: 10px;
+    }
+
+    .logo-img-fot {
+        width: 100%;
+    }
+
+    .logo__img {
+        max-width: 26px;
+        margin: 10px 0 0 0;
+    }
+
+
+    .container {
+        width: 90%;
+    }
+
+    h2,
+    h3 {
+        font-size: 18px;
+    }
+
+    .notice {
+        font-size: 12px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .submit {
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    .des__content {
+        font-size: 2.6rem;
+    }
+
+    .TT__img-6,
+    .TT__imgC {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+    }
+
+    .TT__img {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .TT__imgc {
+        max-width: 500px;
+        width: 97.5%;
+        height: auto;
+        margin-top: 5px;
+    }
+
+    .TT__img-ss,
+    .TT__imgC {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .grid__column-12 {
+        padding-right: 0;
+    }
+
+    .grid__column-12-item {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .TT__content,
+    .TT__content3 {
+        font-size: 1.8rem;
+        transform: translate(11%, -320%)
+    }
+
+    .TT__content1 {
+        font-size: 1.5rem;
+        transform: translate(5%, -550%)
+    }
+
+    .TT__content8 {
+        transform: translate(8%, -550%)
+    }
+
+    .TT__content4,
+    .TT__content5,
+    .TT__content6,
+    .TT__content7 {
+        transform: translate(10%, -450%)
+    }
+
+    .TT__book,
+    .TT__book1,
+    .TT__book3 {
+        width: 30%;
+    }
+
+    .TT__book1,
+    .TT__book3 {
+        transform: translate(22%, -160%)
+    }
+
+    .TT__content2 {
+        transform: translate(18%, -280%)
+    }
+
+    .TT__content3 {
+        transform: translate(15%, -450%)
+    }
+
+    .Region__name-2 {
+        font-size: 2.5rem;
+        top: 30%;
+        width: 90%;
+        height: 30%;
+        right: 6%;
+    }
+
+    .img-region {
+        height: auto;
+    }
+
+    .TT__name-3 {
+        top: 600%;
+        font-size: 3rem;
+        right: 0%;
+    }
+
+    .booking-form {
+        top: 610%;
+        width: auto;
+        right: 20%;
+        padding: 0;
+    }
+
+    .row {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        border-radius: 0px;
+    }
+
+    .book-ticket {
+        width: 30%;
+        font-size: 1.4rem;
+        margin: 0 auto;
+
+    }
+
+    input,
+    select {
+        width: 100%;
+        font-size: 1.2rem;
+        border-right: 0;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        width: auto;
+    }
+
+    .Region__name-3 {
+        font-size: 2.2rem;
+    }
+
+
+}

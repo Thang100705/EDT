@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tour</title>
+    <link rel="icon" href="img/IMG_1077.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/hanoi.css">
+    <link rel="stylesheet" href="css/hn.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/respon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playball&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+        }
+    </style>
+    <div class="class">
+        <header class="header">
+            <div class="grid">
+                <nav class="header_navbar ">
+                    <ul class="header_navbar-list">
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="header_navbar-contact disapp1 ">0327195539</div>
+                        </a>
+                        <a class="header_navbar-item " href="#">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div class="header_navbar-contact disapp1 ">Contact@gmail.com</div>
+                        </a>
+                    </ul>
+                    <ul class="header_navbar-list">
+                        <li class="header_navbar-item">
+                            <a href="#" class="header_navbar-facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span class="disapp">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="header_navbar-item ">
+                            <a href="#" class="header_navbar-instra">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span class="disapp">Instragram</span>
+                            </a>
+                        </li>
+
+                        <li class="header_navbar-sepa"></li>
+                        <li class="header_navbar-item" id="loginLink">
+                            <a href="login-regis/login.html" class="header_navbar-login">
+                                <i class="fa-solid fa-lock"></i>
+                                <span class="disapp">Đăng Nhập</span>
+                            </a>
+                        </li>
+                        <!-- Liên kết Đăng Ký -->
+                        <li class="header_navbar-item" id="registerLink">
+                            <a href="login-regis/register.html" class="header_navbar-regis">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="disapp">Đăng Ký</span>
+                            </a>
+                        </li>
+                        <!-- Avatar và Tên người dùng -->
+                        <li class="header_navbar-item" id="userInfo" style="display: none;">
+                            <a class="user-avatar" href="../../LSGiaodich/ThToan.html">
+                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/02e0d039-fbc0-4059-902e-45c3ede4df5b/dgcuy5w-5f5250b2-c1b8-4d5c-b9c6-f192d23c7f72.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAyZTBkMDM5LWZiYzAtNDA1OS05MDJlLTQ1YzNlZGU0ZGY1YlwvZGdjdXk1dy01ZjUyNTBiMi1jMWI4LTRkNWMtYjljNi1mMTkyZDIzYzdmNzIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.L36pDjQ1d1ks1FS5CH5kldYy6j7x2IbfQ-znM7Lo4zU"
+                                    alt="User Avatar">
+                                <span class="user">Admin</span>
+                            </a>
+                            <button onclick="logout()">Đăng xuất</button>
+
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="header_navbar-function">
+                    <div class="header_navbar-item ">
+                        <li class="header_navbar-item">
+                            <a href="../../btChinh.html" class="header_navbar-logo">
+                                <img src="../../img/IMG_1077.PNG" class="logo-img">
+                                <span class="name-logo">Travel Tour</span>
+                            </a>
+                        </li>
+                    </div>
+                    <ul class="header_navbar-item-funtion menu" id="menu">
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../../btChinh.html" class="home ">Trang Chủ</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="../region-Nam.html" class="home home-fun">Vùng Miền</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#dd" class="home home-fun" id="active">Địa Điểm</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="../../btChinh.html#booking" class="home ">Dịch Vụ</a>
+                        </li>
+
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#fot" class="home ">Về Chúng Tôi</a>
+                        </li>
+                    </ul>
+                    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+                </nav>
+                <div class="overlay" id="overlay"></div>
+
+            </div>
+        </header>
+
+        <div class="app-copntainer" id="dd">
+            <div class="grid">
+                <p class="des__content des__content-1">BÀ RỊA - VŨNG TÀU</p>
+                <div class="home-filter">
+                    <div class="grid__row">
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2024/07/dia-diem-tham-quan-vung-tau-1.jpg?tr=dpr-2,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content ">
+                                <h3>Hòn Bà</h3>
+                                <p>
+                                    Hòn Bà là một hòn đảo nhỏ nằm giữa biển Vũng Tàu, gần kề mũi Nghinh Phong và cách
+                                    chân núi Nhỏ tầm 200m. Đây là điểm du lịch tâm linh nổi tiếng của Vũng Tàu vì trên
+                                    đảo có một ngôi miếu thờ Thuỷ long Thần nữ.
+
+                                    Để đến được hòn Bà, bạn có thể di chuyển bằng thuyền hoặc chờ nước rút và đi bộ bằng
+                                    con đường nhỏ bằng đá hàu dẫn đến đảo. Tuy nhiên, điều thú vị là không phải lúc nào
+                                    bạn cũng có thể đi bộ ra đảo, vì vậy, hãy kiểm tra lịch nước rút trước khi đến đây
+                                    nhé.</p>
+
+
+                            </div>
+                            <div class="tour-item-content-booking">
+                                <a href="../../TT/Book.html#book" class=" tour-item-content-re">
+                                    <button class="booking">
+                                        <span>Đặt Tour</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2024/07/dia-diem-tham-quan-vung-tau6.jpg?tr=dpr-2,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content ">
+                                <h3>Hồ Cốc</h3>
+                                <p>Đây sẽ là điểm đến lý tưởng cho ai thích cảnh sắc thiên nhiên hoang sơ, gần gũi. Bạn
+                                    như được trở về tuổi thơ với cây cầu mộc tại Hồ Cốc. Nơi đây sở hữu khí hậu thoáng
+                                    mát bởi cây xanh phủ rộng khắp nơi.
+                                    Đặc biệt, bạn hãy dành thời gian lắng lại lòng mình nghe tiếng sóng vỗ. Mỗi tiếng
+                                    sóng dạt dào, liên tiếp, như hòa vào nhau như bản nhạc du dương. Đâu đó trong khung
+                                    cảnh đó còn có tiếng gió khẽ khàng. Tất cả như một bản hòa tấu giúp lòng ta bình yên
+                                    đến lạ kỳ.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2022/08/dia-diem-du-lich-vung-tau-9-2-1024x538.jpg?tr=dpr-2,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Bến thuyền Marina</h3>
+                                <p>Đây vừa là bến thuyền “chanh sả” đầu tiên và vừa là điểm tham quan Vũng Tàu được
+                                    check-in nhiều nhất. Nằm trên dòng sông Sinh và liền kề đảo Long Sơn, bến thuyền này
+                                    được xây dựng để đón hành khách tham gia các tuyến du lịch ven sông từ thành phố Hồ
+                                    Chí Minh.
+
+                                    Khung cảnh tàu thuyền cano neo đậu phía sau sẽ là “background” chụp ảnh cực sang
+                                    chảnh cho hội mê “sống ảo”. Đặc điểm nhận dạng của bến thuyền này chính là cầu tàu
+                                    màu vàng. Bạn có thể đến đây vào cả ban ngày và ban đêm để khám phá.</p>
+                            </div>
+                        </div>
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://anchoivungtau.vn/wp-content/uploads/2022/06/Bao_tang_tinh_Ba_Ria_Vung_Tau_09.jpeg"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Bảo tàng Vũng Tàu</h3>
+                                <p>Bảo tàng Vũng Tàu, tọa lạc tại số 4 Trần Phú, là một địa điểm hấp dẫn dành cho những
+                                    ai yêu thích lịch sử và văn hóa. Bảo tàng trưng bày nhiều hiện vật và tài liệu quý
+                                    giá về lịch sử phát triển của thành phố Vũng Tàu và tỉnh Bà Rịa - Vũng Tàu. Các khu
+                                    trưng bày bao gồm hiện vật khảo cổ, văn hóa dân gian, cuộc sống ngư dân, và lịch sử
+                                    đấu tranh cách mạng của người dân địa phương. Ngoài ra, bảo tàng còn có khu vực
+                                    triển lãm chuyên đề về nghệ thuật và văn hóa đặc trưng của vùng biển. Đây là điểm
+                                    đến lý tưởng để tìm hiểu sâu hơn về lịch sử và văn hóa địa phương.</p>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://dulichviet.com.vn/images/bandidau/Noi-dia-ha-noi/VUNG-TAU/mui-nghinh-phong-du-lich-vung-tau-du-lich-viet%20(2).jpg"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Mũi Nghinh Phong</h3>
+                                <p>Mũi Nghinh Phong là một mũi đất nhô ra biển, tạo nên hai bãi biển nhỏ tuyệt đẹp là
+                                    bãi Vọng Nguyệt và bãi Hương Phong. Đây là điểm đến lý tưởng để tắm biển, ngắm cảnh
+                                    và chụp ảnh. Mũi Nghinh Phong còn có một cổng trời nổi tiếng, nơi du khách có thể
+                                    ngắm toàn cảnh biển xanh bao la và hít thở không khí trong lành. Đây là điểm đến
+                                    không thể bỏ qua khi du lịch Vũng Tàu.</p>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-9 grid__column-6__item">
+                            <div class="tour-item">
+                                <img src="https://ik.imagekit.io/tvlk/blog/2024/07/dia-diem-tham-quan-vung-tau-18.jpg?tr=dpr-2,w-675"
+                                    class="tour-item__img-6">
+                            </div>
+                            <div class="tour-item-content">
+                                <h3>Tu viện Chơn Không</h3>
+                                <p>Tu viện Chơn Không, nằm trên núi Lớn ở Vũng Tàu, là một điểm đến tâm linh thanh tịnh
+                                    và bình yên. Được thành lập vào năm 1966 bởi thiền sư Thích Thanh Từ, tu viện Chơn
+                                    Không là nơi tu tập và giảng dạy pháp môn Thiền Tông. Không gian tu viện rộng rãi,
+                                    thoáng mát, được bao quanh bởi rừng cây xanh mát và khung cảnh thiên nhiên hùng vĩ.
+                                    Du khách đến đây có thể tham quan các công trình kiến trúc tâm linh, như chánh điện,
+                                    thiền đường, và tháp chuông, cũng như tham gia các khóa tu thiền ngắn hạn để tìm lại
+                                    sự tĩnh lặng và cân bằng trong tâm hồn.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <p class="des__content des__pad ">Ẩm Thực </p>
+                <section class="container">
+                    <div class="card__container swiper">
+                        <div class="card__content swiper-initialized swiper-horizontal swiper-pointer-events">
+                            <div class="swiper-wrapper" id="swiper-wrapper-108789a59e78346e" aria-live="polite"
+                                style="cursor: grab; transition-duration: 0ms; transform: translate3d(-1092px, 0px, 0px);">
+                                <article class="card__article swiper-slide swiper-slide-duplicate"
+                                    data-swiper-slide-index="3" role="group" aria-label="4 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://vielimousine.com/wp-content/uploads/2023/07/5-dac-san-vung-tau-1024x682.jpeg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bánh hỏi An Nhứt</h3>
+
+
+                                    </div>
+                                </article>
+                                <article class="card__article swiper-slide swiper-slide-duplicate"
+                                    data-swiper-slide-index="4" role="group" aria-label="5 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://vielimousine.com/wp-content/uploads/2023/07/8-dac-san-vung-tau-1024x576.jpeg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Gỏi cá mai</h3>
+
+
+                                    </div>
+                                </article>
+                                <article class="card__article swiper-slide swiper-slide-duplicate swiper-slide-prev"
+                                    data-swiper-slide-index="5" role="group" aria-label="6 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://vielimousine.com/wp-content/uploads/2023/07/13-dac-san-vung-tau.jpeg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Tiết canh tôm hùm Long Hải</h3>
+
+
+                                    </div>
+                                </article>
+                                <article class="card__article swiper-slide swiper-slide-active"
+                                    data-swiper-slide-index="0" role="group" aria-label="1 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://vielimousine.com/wp-content/uploads/2023/07/2-dac-san-vung-tau-1024x586.jpeg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bún tôm tích</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide swiper-slide-next"
+                                    data-swiper-slide-index="1" role="group" aria-label="2 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://vielimousine.com/wp-content/uploads/2023/07/3-dac-san-vung-tau.jpg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bánh khọt </h3>
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide" data-swiper-slide-index="2" role="group"
+                                    aria-label="3 / 6" style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://vielimousine.com/wp-content/uploads/2023/07/4-dac-san-vung-tau.jpeg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Gà nướng Long Sơn</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide" data-swiper-slide-index="3" role="group"
+                                    aria-label="4 / 6" style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://vielimousine.com/wp-content/uploads/2023/07/5-dac-san-vung-tau-1024x682.jpeg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bánh hỏi An Nhứt</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide" data-swiper-slide-index="4" role="group"
+                                    aria-label="5 / 6" style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://vielimousine.com/wp-content/uploads/2023/07/8-dac-san-vung-tau-1024x576.jpeg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Gỏi cá mai</h3>
+
+
+                                    </div>
+                                </article>
+
+                                <article class="card__article swiper-slide swiper-slide-duplicate-prev"
+                                    data-swiper-slide-index="5" role="group" aria-label="6 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://vielimousine.com/wp-content/uploads/2023/07/13-dac-san-vung-tau.jpeg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Tiết canh tôm hùm Long Hải</h3>
+
+
+                                    </div>
+                                </article>
+
+
+
+
+                                <article
+                                    class="card__article swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                                    data-swiper-slide-index="0" role="group" aria-label="1 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://vielimousine.com/wp-content/uploads/2023/07/2-dac-san-vung-tau-1024x586.jpeg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bún tôm tích</h3>
+
+
+                                    </div>
+                                </article>
+                                <article
+                                    class="card__article swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                                    data-swiper-slide-index="1" role="group" aria-label="2 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://vielimousine.com/wp-content/uploads/2023/07/3-dac-san-vung-tau.jpg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Bánh khọt </h3>
+
+                                    </div>
+                                </article>
+                                <article class="card__article swiper-slide swiper-slide-duplicate"
+                                    data-swiper-slide-index="2" role="group" aria-label="3 / 6"
+                                    style="width: 332px; margin-right: 32px;">
+                                    <div class="card__image">
+                                        <img src="https://vielimousine.com/wp-content/uploads/2023/07/4-dac-san-vung-tau.jpeg"
+                                            alt="image" class="card__img">
+                                    </div>
+
+                                    <div class="card__data">
+                                        <h3 class="card__name">Gà nướng Long Sơn</h3>
+
+
+                                    </div>
+                                </article>
+                            </div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+
+                        <!-- Navigation buttons -->
+                        <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+                            aria-controls="swiper-wrapper-108789a59e78346e">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                        <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"
+                            aria-controls="swiper-wrapper-108789a59e78346e">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+
+                        <!-- Pagination -->
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <section id="fot">
+        <footer class="footer__pading">
+            <div class="footer">
+                <ul class="footer__tent">
+                    <li class="logo">
+                        <img src="../../img/IMG_1077.PNG" class="logo-img-fot">
+                        <span class="name-logo name-logo-fot">Travel Tour</span>
+                    </li>
+                </ul>
+                <ul class="footer__tent">
+                    <li class="logo"></li>
+                    <span class="logo__cotent">Công ty EDT</span>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Địa chỉ : Tầng xx, Hà Nội
+                        </div>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-solid fa-phone"> </i>
+                            Điện thoại : 0327195539
+                        </div>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt">
+                            <i class="fa-regular fa-envelope"></i>
+                            Email : Contact@gmail.com
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="footer__tent">
+                    <li class="logo">
+                        <span class="logo__cotent name-logo-fot" style="margin:0 0 10px 100px;">Liên hệ</span>
+                    </li>
+                    <li class="logo">
+                        <div class="logo__sdt ">
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1085.PNG" class="logo__img">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1088.PNG" class="logo__img">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1082.JPG" class="logo__img" style="border-radius: 50%;">
+                            </a>
+                            <a href="#" class="logo__size">
+                                <img src="../../img/IMG_1083.PNG" class="logo__img">
+                            </a>
+
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </footer>
+    </section>
+    <!--=============== SWIPER JS ===============-->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

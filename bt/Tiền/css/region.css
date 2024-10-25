@@ -1,0 +1,400 @@
+.header_navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(194, 231, 252);
+}
+
+.header_navbar-function {
+    display: flex;
+    font-size: 1.6rem;
+    margin: 10px 20px;
+}
+
+.logo-img {
+    max-width: 130px;
+    width: 100%;
+}
+
+.logo-img-fot {
+    max-width: 130px;
+    width: 100%;
+}
+
+.user-avatar {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.user {
+    font-weight: bold;
+    padding: 0 3px;
+}
+
+.header_navbar-item button {
+    border: none;
+    background-color: rgb(194, 231, 252);
+    font-size: 1.6rem;
+}
+
+.header_navbar-item button:hover {
+    cursor: pointer;
+}
+
+.name-logo {
+    font-size: 3rem;
+    font-family: "Playball", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #244065;
+    transform: scaleX(1.2);
+    margin-left: 10px;
+
+}
+
+.header_navbar-list {
+    display: flex;
+    padding: 6px 5px 8px 5px;
+}
+
+.header_navbar-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    font-size: 1.6rem;
+}
+
+.header_navbar-item-funtion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+
+.header_navbar-contact {
+    margin-left: 4px;
+}
+
+.home:hover,
+#active {
+    cursor: pointer;
+    color: #4BBEFF;
+    transition: .4s;
+}
+
+.home {
+    position: relative;
+    color: #898686;
+    padding: 10px 20px;
+}
+
+#active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 70%;
+    height: 3px;
+    transition: 0.4s;
+    border-radius: 1px;
+    background-color: #4BBEFF;
+}
+
+.home::after {
+    content: '';
+    position: absolute;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 3px;
+    transition: 0.4s;
+    border-radius: 1px;
+    background-color: #4BBEFF;
+}
+
+.home:hover:after {
+    width: 70%;
+    left: 14%;
+    transition: 0.4s ease;
+}
+
+.header_navbar-item-home {
+    margin-left: 50px;
+}
+
+.header_navbar-sepa {
+    padding: auto;
+    border-right: 1px solid #333;
+}
+
+.header_navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.header_navbar-function a {
+    font-size: 2rem;
+}
+
+
+
+/*       Region  banner */
+
+
+.ThToan__name {
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-size: 6rem;
+    font-weight: 600;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    right: 15%;
+    line-height: 1.3;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.container p {
+    text-align: justify;
+}
+
+h2,
+h3 {
+    color: #3498db;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.notice {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="date"] {
+    padding: 9px;
+}
+
+#so-dien-thoai-khac::placeholder {
+    font-weight: 700;
+    color: black;
+}
+
+#so-dien-thoai-khac {
+    background-color: #fff;
+}
+
+.des__content {
+    font-size: 36px;
+    font-weight: 600;
+    color: #4BBEFF;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.submit {
+    background-color: #4BBEFF;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    width: 45%;
+    font-weight: 600;
+}
+
+.submit:hover {
+    background-color: #2980b9;
+}
+
+.background {
+    position: relative;
+    height: 80vh;
+    /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url('Banner\ của\ page\ Thanh\ Toán.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer__tent {
+    padding: 0px 35px;
+}
+
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit;
+    /* Inherit the background image */
+    background-repeat: inherit;
+    background-position: inherit;
+    background-size: inherit;
+    /* Adjust the blur amount */
+    /* Adjust opacity as needed */
+    z-index: 0;
+    filter: brightness(0.7);
+    /* Ensure it's behind the text */
+}
+
+.Region__name-1 {
+    /* Ensure the text stays above the blurred background */
+    z-index: 1;
+    /* Higher index than the pseudo-element */
+    font-family: "Platypi", serif;
+    font-size: 6rem;
+    /* Adjust font size */
+    font-weight: 600;
+    line-height: 1.3;
+    color: #fff;
+    /* White text color for contrast */
+    text-align: center;
+    /* Center text */
+}
+
+
+/* Responsive adjustments */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer__pading {
+    padding-top: 100px;
+}
+
+.footer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: rgb(194, 231, 252);
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.logo__cotent {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.logo__sdt {
+    font-size: 1.8rem;
+}
+
+.logo__size {
+    font-size: 3.4rem;
+}
+
+.logo__size i {
+    margin: 0 10px;
+}
+
+.logo__img {
+    max-width: 40px;
+    margin: 0 10px;
+}
+
+.footer__margin {
+    padding: 0 50px 0 50px;
+}
+
+.logo-img-fot {
+    max-width: 130px;
+    width: 100%;
+}
