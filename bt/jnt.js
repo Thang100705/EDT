@@ -47,7 +47,7 @@ function logout() {
     // Tải lại trang hoặc chuyển hướng người dùng
     window.location.reload();
 }
-setTimeout(logout, 300000); // 20000 milliseconds = 20 seconds
+setTimeout(logout, 300000); // 20000 milliseconds = 20 seconds ->5p
 
 
 // Kiểm tra trạng thái đăng nhập khi tài liệu được tải hoàn toàn
