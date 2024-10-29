@@ -203,12 +203,13 @@
         padding: 0 10px;
     }
 
-    .name-logo {
-        font-size: 2rem;
+    .logo-img {
+        width: 45%;
     }
 
-    .logo-img {
-        width: 30%;
+    .name-logo {
+        font-size: 2.4rem;
+        margin-left: 10px;
     }
 
     .wrap-username,
