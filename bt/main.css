@@ -265,7 +265,7 @@
 .tour-item__img-4 {
     position: relative;
     object-fit: cover;
-    height: 350px;
+    height: 400px;
     max-width: 320px;
     width: 100%;
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.8);
